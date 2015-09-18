@@ -1,0 +1,22 @@
+//
+//  My-Prefix.pch
+//  MyTemplate
+//
+//  Created by qnsoft on 15/9/14.
+//  Copyright (c) 2015年 wzp. All rights reserved.
+//
+
+#ifndef MyTemplate_My_Prefix_pch
+#define MyTemplate_My_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "AppConfig.h"
+#import "AppDefine.h"
+
+
+
+
+#endif
