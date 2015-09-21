@@ -42,6 +42,30 @@
 }
 
 
+
+
+/**项目文件路径相关*/
++ (NSString *) getSandboxDirectoryForHome{
+    return NSHomeDirectory();
+}
++ (NSString *) getSandboxDirectoryForDocuments{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *docDir = [paths objectAtIndex:0];
+    return docDir;
+}
++ (NSString *) getSandboxDirectoryForCaches{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    NSString *cachesDir = [paths objectAtIndex:0];
+    return cachesDir;
+}
++ (NSString *) getSandboxDirectoryForTmp{
+    NSString *tmpDir = NSTemporaryDirectory();
+    return tmpDir;
+}
+
+
+
+
 // 判断是否为手机号
 + (BOOL)isPhoneNumberFormat:(NSString *)accountStr {
     BOOL ret = NO;

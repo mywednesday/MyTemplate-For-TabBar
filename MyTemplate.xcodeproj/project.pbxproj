@@ -39,7 +39,6 @@
 		88A9074A1BB001C900A50224 /* MyMessageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMessageHelper.h; sourceTree = "<group>"; };
 		88A9074B1BB001C900A50224 /* MyMessageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMessageHelper.m; sourceTree = "<group>"; };
 		88C10E7B1BA65AB700E1D0E8 /* MyTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		88C10E7F1BA65AB700E1D0E8 /* Supporting Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Supporting Files"; sourceTree = "<group>"; };
 		88C10E801BA65AB700E1D0E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		88C10E821BA65AB700E1D0E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		88C10E831BA65AB700E1D0E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -159,7 +158,6 @@
 			children = (
 				88C10E801BA65AB700E1D0E8 /* main.m */,
 				88C10E8B1BA65AB700E1D0E8 /* Images.xcassets */,
-				88C10E7F1BA65AB700E1D0E8 /* Supporting Files */,
 				88C10EC11BA6AAF100E1D0E8 /* My-Prefix.pch */,
 			);
 			name = "Supporting Files";

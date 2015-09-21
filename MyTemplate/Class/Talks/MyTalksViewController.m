@@ -8,6 +8,7 @@
 
 #import "MyTalksViewController.h"
 
+
 @implementation MyTalksViewController
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -36,6 +37,32 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:MyNotification_Login_Success
                                                         object:nil
                                                       userInfo:userInfoForNotify];
+    
+    
+    
+    
+    
+    
+    
+    
+    NSLog(@"\nHome : %@",[MyGlobalHelper getSandboxDirectoryForHome]);
+    NSLog(@"\nDocuments : %@",[MyGlobalHelper getSandboxDirectoryForDocuments]);
+    NSLog(@"\nCaches : %@",[MyGlobalHelper getSandboxDirectoryForCaches]);
+    NSLog(@"\nTmp : %@",[MyGlobalHelper getSandboxDirectoryForTmp]);
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 @end

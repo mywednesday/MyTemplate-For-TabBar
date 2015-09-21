@@ -10,10 +10,32 @@
 
 @interface MyGlobalHelper : NSObject
 
-
-
-
 + (instancetype)sharedHelper;
+
+
+
+/**项目文件路径相关*/
+
+
+/**返回项目的Home目录的路径*/
++ (NSString *) getSandboxDirectoryForHome;
+/**
+    返回项目的Documents目录的路径，
+    存放数据库文件、备份文件，设备重启文件不丢失
+    如果进行备份会将此文件夹中的文件包括其中
+ */
++ (NSString *) getSandboxDirectoryForDocuments;
+/**
+    返回项目的Library/Caches目录的路径，
+    设备重启文件不丢失
+    备份不包含此文件夹 ，同级别的Preferences目录存放NSUserDefault设置的用户偏好文件
+ */
++ (NSString *) getSandboxDirectoryForCaches;
+/**
+    返回项目的Tmp目录的路径
+    存放临时文件，重启丢失
+ */
++ (NSString *) getSandboxDirectoryForTmp;
 
 // 判断是否为手机号
 + (BOOL)isPhoneNumberFormat:(NSString *)accountStr;
@@ -65,10 +87,7 @@
 
 + (void)checkUniqueIdIsExsit;
 
-//用户的经纬度
-+ (double)getUserLongitude;
 
-+ (double)getUserLatitude;
 
 + (void)setUserLongitude:(double)longitude;
 
