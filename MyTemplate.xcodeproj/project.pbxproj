@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		88735D711BABFE970080AFB8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88735D701BABFE970080AFB8 /* LoginViewController.m */; };
+		88A907491BAFFE7E00A50224 /* MyGlobalHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A907481BAFFE7E00A50224 /* MyGlobalHelper.m */; };
+		88A9074C1BB001C900A50224 /* MyMessageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A9074B1BB001C900A50224 /* MyMessageHelper.m */; };
 		88C10E811BA65AB700E1D0E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C10E801BA65AB700E1D0E8 /* main.m */; };
 		88C10E841BA65AB700E1D0E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C10E831BA65AB700E1D0E8 /* AppDelegate.m */; };
 		88C10E8C1BA65AB700E1D0E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88C10E8B1BA65AB700E1D0E8 /* Images.xcassets */; };
@@ -32,6 +34,10 @@
 /* Begin PBXFileReference section */
 		88735D6F1BABFE970080AFB8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		88735D701BABFE970080AFB8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		88A907471BAFFE7E00A50224 /* MyGlobalHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGlobalHelper.h; sourceTree = "<group>"; };
+		88A907481BAFFE7E00A50224 /* MyGlobalHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGlobalHelper.m; sourceTree = "<group>"; };
+		88A9074A1BB001C900A50224 /* MyMessageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMessageHelper.h; sourceTree = "<group>"; };
+		88A9074B1BB001C900A50224 /* MyMessageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMessageHelper.m; sourceTree = "<group>"; };
 		88C10E7B1BA65AB700E1D0E8 /* MyTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C10E7F1BA65AB700E1D0E8 /* Supporting Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Supporting Files"; sourceTree = "<group>"; };
 		88C10E801BA65AB700E1D0E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -80,6 +86,38 @@
 				88735D701BABFE970080AFB8 /* LoginViewController.m */,
 			);
 			path = UserLogin;
+			sourceTree = "<group>";
+		};
+		88A907431BAFFDAB00A50224 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		88A907441BAFFDAB00A50224 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		88A907451BAFFDAB00A50224 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		88A907461BAFFDAB00A50224 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				88A907471BAFFE7E00A50224 /* MyGlobalHelper.h */,
+				88A907481BAFFE7E00A50224 /* MyGlobalHelper.m */,
+				88A9074A1BB001C900A50224 /* MyMessageHelper.h */,
+				88A9074B1BB001C900A50224 /* MyMessageHelper.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		88C10E721BA65AB700E1D0E8 = {
@@ -157,6 +195,10 @@
 		88C10EA61BA65D0600E1D0E8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				88A907431BAFFDAB00A50224 /* Base */,
+				88A907441BAFFDAB00A50224 /* Categories */,
+				88A907451BAFFDAB00A50224 /* Network */,
+				88A907461BAFFDAB00A50224 /* Utils */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -291,11 +333,13 @@
 			files = (
 				88C10EB61BA6A33C00E1D0E8 /* MyPersonCenterViewController.m in Sources */,
 				88C10E841BA65AB700E1D0E8 /* AppDelegate.m in Sources */,
+				88A907491BAFFE7E00A50224 /* MyGlobalHelper.m in Sources */,
 				88C10EB91BA6A3B600E1D0E8 /* MyPersonCenterNavViewController.m in Sources */,
 				88C10E811BA65AB700E1D0E8 /* main.m in Sources */,
 				88735D711BABFE970080AFB8 /* LoginViewController.m in Sources */,
 				88C10EC01BA6A7B100E1D0E8 /* MyTalksViewController.m in Sources */,
 				88C10EBD1BA6A78B00E1D0E8 /* MyTalksNavViewController.m in Sources */,
+				88A9074C1BB001C900A50224 /* MyMessageHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

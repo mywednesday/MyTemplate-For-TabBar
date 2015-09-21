@@ -13,8 +13,13 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 
+#import <UIKit/UIKit.h>
+//#import <CocoaLumberjack/CocoaLumberjack.h>
 #import "AppConfig.h"
 #import "AppDefine.h"
+#import "MyGlobalHelper.h"
+//#import "XWNetworkEngine.h"
+#import "MyMessageHelper.h"
 
 
 
