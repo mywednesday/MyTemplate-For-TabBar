@@ -12,7 +12,7 @@
 
 + (instancetype)sharedHelper;
 
-
+//@property (nonatomic, assign) BOOL isOperateTipsShowing;
 
 /**项目文件路径相关*/
 

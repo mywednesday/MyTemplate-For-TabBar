@@ -19,6 +19,9 @@
 //#import "XWUserManager.h"
 //#import "SQLiteInstanceManager.h"
 
+
+
+
 @implementation MyGlobalHelper
 
 
@@ -36,7 +39,7 @@
 - (instancetype)init{
     self = [super init];
     if (self) {
-        
+    
     }
     return self;
 }
