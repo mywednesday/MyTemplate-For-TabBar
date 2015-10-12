@@ -7,6 +7,7 @@
 //
 
 #import "MyTalksViewController.h"
+#import "MyOperateTipsHelper.h"
 
 
 @implementation MyTalksViewController
@@ -41,7 +42,13 @@
     
     
     
+    UIButton *myTestBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     
+    [myTestBtn setTitle:@"显示" forState:UIControlStateNormal];
+    [myTestBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [self.view addSubview:myTestBtn];
+    myTestBtn.frame = CGRectMake(100, 100, 100, 100);
+    [myTestBtn addTarget:self action:nil forControlEvents:UIControlEventTouchDown];
     
     
     
@@ -51,14 +58,23 @@
     NSLog(@"\nTmp : %@",[MyGlobalHelper getSandboxDirectoryForTmp]);
 
 
+    
+    NSString *testStr = @"文志平wzp";
+    NSString *testStr1 = @"wzp";
+    NSLog(@"\n%@ length = %lu",testStr,[testStr length]);
+    NSLog(@"\n%@ length = %lu",testStr1,[testStr1 length]);
 }
 
 
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
 
-
-
-
-
+    
+//    //添加显示帮助向导的代码
+//    MyOperateTipsHelper *channelManageTips = [[MyOperateTipsHelper alloc] initWithNibName:nil bundle:nil];
+//    [channelManageTips showOperateTipsForChannelManageAtPoint:CGPointMake(95, 25)];
+    
+}
 
 
 

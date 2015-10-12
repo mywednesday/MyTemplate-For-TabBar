@@ -51,7 +51,7 @@
     [super viewDidAppear:animated];
     
     MyOperateTipsHelper *myTips = [[MyOperateTipsHelper alloc] initWithNibName:nil bundle:nil];
-    [myTips showOperateTipsForSpecificView: SpecificViewKey_ForTalk];
+//    [myTips showOperateTipsForSpecificView: SpecificViewKey_ForTalk];
     
 }
 

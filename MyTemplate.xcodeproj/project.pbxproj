@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		883CBD0A1BB51DD1009CF223 /* MyGlobalHelper+OperateTips.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CBD091BB51DD1009CF223 /* MyGlobalHelper+OperateTips.m */; };
 		883CBD0D1BB5264C009CF223 /* MyOperateTipsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CBD0C1BB5264C009CF223 /* MyOperateTipsHelper.m */; };
 		88735D711BABFE970080AFB8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88735D701BABFE970080AFB8 /* LoginViewController.m */; };
 		88A907491BAFFE7E00A50224 /* MyGlobalHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A907481BAFFE7E00A50224 /* MyGlobalHelper.m */; };
@@ -34,8 +33,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		883CBD081BB51DD1009CF223 /* MyGlobalHelper+OperateTips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyGlobalHelper+OperateTips.h"; sourceTree = "<group>"; };
-		883CBD091BB51DD1009CF223 /* MyGlobalHelper+OperateTips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MyGlobalHelper+OperateTips.m"; sourceTree = "<group>"; };
 		883CBD0B1BB5264C009CF223 /* MyOperateTipsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOperateTipsHelper.h; sourceTree = "<group>"; };
 		883CBD0C1BB5264C009CF223 /* MyOperateTipsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOperateTipsHelper.m; sourceTree = "<group>"; };
 		88735D6F1BABFE970080AFB8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -121,8 +118,6 @@
 				88A907481BAFFE7E00A50224 /* MyGlobalHelper.m */,
 				88A9074A1BB001C900A50224 /* MyMessageHelper.h */,
 				88A9074B1BB001C900A50224 /* MyMessageHelper.m */,
-				883CBD081BB51DD1009CF223 /* MyGlobalHelper+OperateTips.h */,
-				883CBD091BB51DD1009CF223 /* MyGlobalHelper+OperateTips.m */,
 				883CBD0B1BB5264C009CF223 /* MyOperateTipsHelper.h */,
 				883CBD0C1BB5264C009CF223 /* MyOperateTipsHelper.m */,
 			);
@@ -342,7 +337,6 @@
 				88C10EB61BA6A33C00E1D0E8 /* MyPersonCenterViewController.m in Sources */,
 				88C10E841BA65AB700E1D0E8 /* AppDelegate.m in Sources */,
 				88A907491BAFFE7E00A50224 /* MyGlobalHelper.m in Sources */,
-				883CBD0A1BB51DD1009CF223 /* MyGlobalHelper+OperateTips.m in Sources */,
 				883CBD0D1BB5264C009CF223 /* MyOperateTipsHelper.m in Sources */,
 				88C10EB91BA6A3B600E1D0E8 /* MyPersonCenterNavViewController.m in Sources */,
 				88C10E811BA65AB700E1D0E8 /* main.m in Sources */,
