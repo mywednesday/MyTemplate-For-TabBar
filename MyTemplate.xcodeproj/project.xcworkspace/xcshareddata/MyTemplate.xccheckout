@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>E2EDFD45-BB26-4175-91AD-7FA1C60986D8</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>MyTemplate</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A31D68322FF5CEB9645C9E67F055E145E6D77462</key>
 		<string>https://github.com/mywednesday/MyTemplate-For-TabBar.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MyTemplate.xcodeproj/project.xcworkspace</string>
+	<string>MyTemplate.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A31D68322FF5CEB9645C9E67F055E145E6D77462</key>
