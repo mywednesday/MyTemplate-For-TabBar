@@ -17,14 +17,11 @@
  */
 
 
-// 颜色
-#define RGBCOLOR(r, g, b)                                                      \
-[UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1]
 
 #define NAVBAR_FONT [UIFont systemFontOfSize:22]
 #define NAVBAR_TITLE_COLOR RGBCOLOR(255,255,255)
+#define APP_BASE_COLOR [UIColor colorWithRed:(255.0)/255.0 green:(255.0)/255.0 blue:(255.0)/255.0 alpha:1]
+#define APP_TINT_COLOR [UIColor colorWithRed:(204.0)/255.0 green:(0.0)/255.0 blue:(0.0)/255.0 alpha:1]
 
-#define APP_TINT_COLOR    [UIColor colorWithRed:(204.0)/255.0 green:(0.0)/255.0 blue:(0.0)/255.0 alpha:1]
-#define APP_BASE_COLOR    [UIColor colorWithRed:(255.0)/255.0 green:(255.0)/255.0 blue:(255.0)/255.0 alpha:1]
 
 #endif
