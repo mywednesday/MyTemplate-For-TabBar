@@ -300,6 +300,32 @@
 }
 
 
+/**
+ 将UIImage转换为base64编码的字符串，方便上传后台数据库
+ */
+- (NSString *)convertImageToNSString :(UIImage *) image {
+    NSData *data;
+    NSString *logoBase64Str;
+    UIImage *resizedImage;
+    if(image){
+        resizedImage = [MyGlobalHelper image:image scaledToSize:CGSizeMake(77, 77) allowEnlarge:NO];
+        if (UIImagePNGRepresentation(resizedImage) == nil) {
+            data = [UIImageJPEGRepresentation(resizedImage, 1) base64EncodedDataWithOptions:NSDataBase64Encoding64CharacterLineLength];
+        } else {
+            data = [UIImagePNGRepresentation(resizedImage) base64EncodedDataWithOptions:NSDataBase64Encoding64CharacterLineLength];
+        }
+        
+        logoBase64Str = [NSString stringWithUTF8String:[data bytes]];
+    }else{
+        logoBase64Str = @"";
+    }
+    
+    return logoBase64Str;
+}
+
+
+
+
 + (NSString *)getHeadImageDir{
     
     NSFileManager *fileManager = [NSFileManager defaultManager];

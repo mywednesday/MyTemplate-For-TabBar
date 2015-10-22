@@ -19,8 +19,9 @@
 
 
 
-//通知
+//通知，一般在AppDefine.h中定义，可供全局使用
 #define MyNotification_Login_Success @"MyNotification_Login_Success"
+#define MyNotification_PassValue @"MyNotification_PassValue"            //页面传值通知的定义
 
 
 //颜色
@@ -46,9 +47,9 @@
 
 //调试信息
 #ifdef DEBUG
-#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#   define CustomLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 #else
-#   define DLog(...)
+#   define CustomLog(...)
 #endif
 
 
