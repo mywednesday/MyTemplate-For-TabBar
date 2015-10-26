@@ -434,6 +434,22 @@
 }
 
 
+- (CGSize)boundingRectWithSize:(CGSize)size
+{
+//    NSDictionary *attribute = @{NSFontAttributeName: self.font};
+    CGSize retSize = CGSizeZero;
+//    retSize = [self.text boundingRectWithSize:size
+//                                             options:\
+//                      NSStringDrawingTruncatesLastVisibleLine |
+//                      NSStringDrawingUsesLineFragmentOrigin |
+//                      NSStringDrawingUsesFontLeading
+//                                          attributes:attribute
+//                                             context:nil].size;
+    
+    return retSize;
+}
+
+
 
 + (NSString *)md5:(NSString *)str
 {

@@ -107,6 +107,10 @@
 + (NSString *)getBundleId;
 
 
+- (CGSize)boundingRectWithSize:(CGSize)size;
+
+
+
 + (BOOL)autoriseCamera;
 
 

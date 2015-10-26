@@ -121,24 +121,22 @@
     
     //显示状态栏
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
+    
+    
     //设置状态栏风格
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    
     //设置导航栏属性
     NSDictionary *navBarTextAttributes = @{NSFontAttributeName:NAVBAR_FONT,
                                            NSForegroundColorAttributeName:NAVBAR_TITLE_COLOR};
-    
     if([UIDevice currentDevice].systemVersion.floatValue >= 8.0) {
         [[UINavigationBar appearance] setTranslucent:NO];
     }
     [[UINavigationBar appearance] setTitleTextAttributes:navBarTextAttributes];
-    //    [[UINavigationBar appearance] setBarTintColor:APP_BASE_COLOR];
-    //    [[UINavigationBar appearance] setTintColor:APP_TINT_COLOR]; //navbar上除标题外的元素的颜色
-    
     [[UINavigationBar appearance] setBarTintColor:APP_TINT_COLOR];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]]; //navbar上除标题外的元素的颜色
     
-    
-    //    [[UITableViewCell appearance] setBackgroundColor:CELL_LIGHT_BG_COLOR];
     
     // 设置UITabBar的显示效果
     [[UITabBar appearance] setBarTintColor:APP_BASE_COLOR];

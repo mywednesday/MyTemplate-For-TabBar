@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		88207F961BCF8CAC00C3B3A0 /* MyBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88207F951BCF8CAC00C3B3A0 /* MyBaseViewController.m */; };
 		883CBD0D1BB5264C009CF223 /* MyOperateTipsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CBD0C1BB5264C009CF223 /* MyOperateTipsHelper.m */; };
+		8843FAE01BDA230900066628 /* TextSizeCaculateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8843FADF1BDA230900066628 /* TextSizeCaculateViewController.m */; };
 		88735D711BABFE970080AFB8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88735D701BABFE970080AFB8 /* LoginViewController.m */; };
 		8885D2C91BD481370010B6D9 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8885D2B01BD481370010B6D9 /* MASCompositeConstraint.m */; };
 		8885D2CA1BD481370010B6D9 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8885D2B31BD481370010B6D9 /* MASConstraint.m */; };
@@ -52,6 +53,8 @@
 		88207F951BCF8CAC00C3B3A0 /* MyBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBaseViewController.m; sourceTree = "<group>"; };
 		883CBD0B1BB5264C009CF223 /* MyOperateTipsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOperateTipsHelper.h; sourceTree = "<group>"; };
 		883CBD0C1BB5264C009CF223 /* MyOperateTipsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOperateTipsHelper.m; sourceTree = "<group>"; };
+		8843FADE1BDA230900066628 /* TextSizeCaculateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextSizeCaculateViewController.h; sourceTree = "<group>"; };
+		8843FADF1BDA230900066628 /* TextSizeCaculateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextSizeCaculateViewController.m; sourceTree = "<group>"; };
 		88735D6F1BABFE970080AFB8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		88735D701BABFE970080AFB8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		8885D2AF1BD481370010B6D9 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
@@ -131,6 +134,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8843FADD1BDA22E000066628 /* text_size_caculate */ = {
+			isa = PBXGroup;
+			children = (
+				8843FADE1BDA230900066628 /* TextSizeCaculateViewController.h */,
+				8843FADF1BDA230900066628 /* TextSizeCaculateViewController.m */,
+			);
+			path = text_size_caculate;
+			sourceTree = "<group>";
+		};
 		88735D6E1BABFE6F0080AFB8 /* UserLogin */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +315,7 @@
 		88C10EB31BA6A2FD00E1D0E8 /* PersonCenter */ = {
 			isa = PBXGroup;
 			children = (
+				8843FADD1BDA22E000066628 /* text_size_caculate */,
 				88D21D831BD72CAC005BB8E9 /* protocol_delegate */,
 				88C10EB41BA6A33C00E1D0E8 /* MyPersonCenterViewController.h */,
 				88C10EB51BA6A33C00E1D0E8 /* MyPersonCenterViewController.m */,
@@ -445,6 +458,7 @@
 				8885D2CE1BD481370010B6D9 /* MASViewConstraint.m in Sources */,
 				88C10E811BA65AB700E1D0E8 /* main.m in Sources */,
 				88D21D891BD72D2F005BB8E9 /* ProDelegateSecondViewController.m in Sources */,
+				8843FAE01BDA230900066628 /* TextSizeCaculateViewController.m in Sources */,
 				8885D2D11BD481370010B6D9 /* View+MASAdditions.m in Sources */,
 				8885D2D01BD481370010B6D9 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				8885D2CC1BD481370010B6D9 /* MASLayoutConstraint.m in Sources */,

@@ -11,6 +11,9 @@
 #import "Masonry.h"
 #import "MyTableViewCell.h"
 #import "ProDelegateFirstViewController.h"
+#import "TextSizeCaculateViewController.h"
+
+
 
 
 @interface MyPersonCenterViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -128,7 +131,18 @@
         }
         case 1:
         {
-            
+            TextSizeCaculateViewController *myVC = [[TextSizeCaculateViewController alloc] initWithNibName:nil bundle:nil];
+            myVC.leftBarButtonItemStyle = UILeftBarButtonItemStyleImage;
+            myVC.sideSlipForNavBackWorked = YES;
+            myVC.hidesBottomBarWhenPushed = YES;        //隐藏底部导航Bar
+            if(self.navigationController){
+                [self.navigationController pushViewController:myVC animated:YES];
+                
+            }else if(self.presentingViewController){
+                [self presentViewController:myVC animated:YES completion:^{
+                    
+                }];
+            }
             break;
         }
         default:
@@ -163,7 +177,7 @@
     
     
     NSArray *titleAndContents = @[@[@"IOS页面间传值的方式",@"Delegate/NSNotification/Block/NSUserDefault/单例/设置属性",],
-                                  @[@"待定",@"还没想好",],
+                                  @[@"动态计算高度",@"根据UILabel中的文字，动态计算其高度",],
                                   @[@"0",@"1",],
                                   @[@"2",@"3",]];
     
