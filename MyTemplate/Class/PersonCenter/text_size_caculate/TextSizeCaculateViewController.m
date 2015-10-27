@@ -43,6 +43,7 @@
     if(!_myTextView)
         _myTextView = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
     [_myTextView setFont:[UIFont systemFontOfSize:17.0]];
+    [_myTextView setText:@"请输入文字"];
     [self.view addSubview:_myTextView];
     [_myTextView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(SCREEN_WIDTH * 0.9);
@@ -60,7 +61,7 @@
     [_myButton addTarget:self action:@selector(myBtnClickAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_myButton];
     [_myButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(50, 40));
+        make.size.mas_equalTo(CGSizeMake(60, 30));
         make.right.equalTo(_myTextView);
         make.top.equalTo(_myTextView.mas_bottom).offset(20);
     }];
@@ -71,7 +72,7 @@
     _myLabel.textColor = [UIColor blackColor];
     _myLabel.font = [UIFont systemFontOfSize:15];   //字体一定要设置
     _myLabel.numberOfLines = 0;                     //无限换行一定要设置
-    _myLabel.text = @"要显示的信息";
+    _myLabel.text = @"文字太长的话，也会出现...的情况";
     _myLabel.textAlignment = NSTextAlignmentLeft;
 //    _myLabel.lineBreakMode = NSLineBreakByWordWrapping;
     _myLabel.backgroundColor = [UIColor lightGrayColor];
@@ -79,7 +80,7 @@
     [self.view addSubview:_myLabel];
     [_myLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(SCREEN_WIDTH * 0.9);
-        make.top.equalTo(_myButton.mas_bottom).offset(30);
+        make.top.equalTo(_myButton.mas_bottom).offset(20);
         make.height.mas_equalTo(40);
         make.centerX.equalTo(self.view);
     }];

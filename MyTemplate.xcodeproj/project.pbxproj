@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		233FF178749BB2822714D140 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E285C43812B3E4B8CD42A4D6 /* libPods.a */; };
 		88207F961BCF8CAC00C3B3A0 /* MyBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88207F951BCF8CAC00C3B3A0 /* MyBaseViewController.m */; };
 		883CBD0D1BB5264C009CF223 /* MyOperateTipsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CBD0C1BB5264C009CF223 /* MyOperateTipsHelper.m */; };
 		8843FAE01BDA230900066628 /* TextSizeCaculateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8843FADF1BDA230900066628 /* TextSizeCaculateViewController.m */; };
@@ -36,6 +37,9 @@
 		88CB44E81BD8BF0E009279BD /* ProDelegateSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CB44E71BD8BF0E009279BD /* ProDelegateSingleton.m */; };
 		88D21D861BD72D0C005BB8E9 /* ProDelegateFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D21D851BD72D0C005BB8E9 /* ProDelegateFirstViewController.m */; };
 		88D21D891BD72D2F005BB8E9 /* ProDelegateSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D21D881BD72D2F005BB8E9 /* ProDelegateSecondViewController.m */; };
+		88D4DBA11BDF1EAD0068BE2F /* CustomNetworkError_AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D4DBA01BDF1EAD0068BE2F /* CustomNetworkError_AFNetworking.m */; };
+		88D4DBA41BDF1EEC0068BE2F /* CustomNetworkEngine_AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D4DBA31BDF1EEC0068BE2F /* CustomNetworkEngine_AFNetworking.m */; };
+		BB5DE01D347A29B04CE945DA /* libPods-MyTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E7AF75FF6F85FEF3D77B4B /* libPods-MyTemplate.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0442254637E7E9A47F8ECD9A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		04CC08DC1C216DE592307910 /* Pods-MyTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTemplate/Pods-MyTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		88207F941BCF8CAC00C3B3A0 /* MyBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBaseViewController.h; sourceTree = "<group>"; };
 		88207F951BCF8CAC00C3B3A0 /* MyBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBaseViewController.m; sourceTree = "<group>"; };
 		883CBD0B1BB5264C009CF223 /* MyOperateTipsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOperateTipsHelper.h; sourceTree = "<group>"; };
@@ -114,6 +120,14 @@
 		88D21D851BD72D0C005BB8E9 /* ProDelegateFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProDelegateFirstViewController.m; sourceTree = "<group>"; };
 		88D21D871BD72D2F005BB8E9 /* ProDelegateSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProDelegateSecondViewController.h; sourceTree = "<group>"; };
 		88D21D881BD72D2F005BB8E9 /* ProDelegateSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProDelegateSecondViewController.m; sourceTree = "<group>"; };
+		88D4DB9F1BDF1EAD0068BE2F /* CustomNetworkError_AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNetworkError_AFNetworking.h; sourceTree = "<group>"; };
+		88D4DBA01BDF1EAD0068BE2F /* CustomNetworkError_AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNetworkError_AFNetworking.m; sourceTree = "<group>"; };
+		88D4DBA21BDF1EEC0068BE2F /* CustomNetworkEngine_AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNetworkEngine_AFNetworking.h; sourceTree = "<group>"; };
+		88D4DBA31BDF1EEC0068BE2F /* CustomNetworkEngine_AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNetworkEngine_AFNetworking.m; sourceTree = "<group>"; };
+		B84190E75364927C79568943 /* Pods-MyTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTemplate/Pods-MyTemplate.release.xcconfig"; sourceTree = "<group>"; };
+		E285C43812B3E4B8CD42A4D6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E46EE02C02F4C2CFCB69AB25 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F2E7AF75FF6F85FEF3D77B4B /* libPods-MyTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +135,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				233FF178749BB2822714D140 /* libPods.a in Frameworks */,
+				BB5DE01D347A29B04CE945DA /* libPods-MyTemplate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +150,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		110C7C664F0C9315DA91A4EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E46EE02C02F4C2CFCB69AB25 /* Pods.debug.xcconfig */,
+				0442254637E7E9A47F8ECD9A /* Pods.release.xcconfig */,
+				04CC08DC1C216DE592307910 /* Pods-MyTemplate.debug.xcconfig */,
+				B84190E75364927C79568943 /* Pods-MyTemplate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6AFA7B53AE68155EAD9A5787 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E285C43812B3E4B8CD42A4D6 /* libPods.a */,
+				F2E7AF75FF6F85FEF3D77B4B /* libPods-MyTemplate.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8843FADD1BDA22E000066628 /* text_size_caculate */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +241,8 @@
 		88A907451BAFFDAB00A50224 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				88D4DB9D1BDF1DA20068BE2F /* CustomNetworkEngine(AFNetworking) */,
+				88D4DB9E1BDF1DA20068BE2F /* CustomNetworkEngine(FMDB) */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -228,6 +266,8 @@
 				88C10E7D1BA65AB700E1D0E8 /* MyTemplate */,
 				88C10E971BA65AB700E1D0E8 /* MyTemplateTests */,
 				88C10E7C1BA65AB700E1D0E8 /* Products */,
+				110C7C664F0C9315DA91A4EB /* Pods */,
+				6AFA7B53AE68155EAD9A5787 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -349,6 +389,24 @@
 			path = protocol_delegate;
 			sourceTree = "<group>";
 		};
+		88D4DB9D1BDF1DA20068BE2F /* CustomNetworkEngine(AFNetworking) */ = {
+			isa = PBXGroup;
+			children = (
+				88D4DB9F1BDF1EAD0068BE2F /* CustomNetworkError_AFNetworking.h */,
+				88D4DBA01BDF1EAD0068BE2F /* CustomNetworkError_AFNetworking.m */,
+				88D4DBA21BDF1EEC0068BE2F /* CustomNetworkEngine_AFNetworking.h */,
+				88D4DBA31BDF1EEC0068BE2F /* CustomNetworkEngine_AFNetworking.m */,
+			);
+			path = "CustomNetworkEngine(AFNetworking)";
+			sourceTree = "<group>";
+		};
+		88D4DB9E1BDF1DA20068BE2F /* CustomNetworkEngine(FMDB) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "CustomNetworkEngine(FMDB)";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -456,7 +514,9 @@
 				88C10EB91BA6A3B600E1D0E8 /* MyPersonCenterNavViewController.m in Sources */,
 				88D21D861BD72D0C005BB8E9 /* ProDelegateFirstViewController.m in Sources */,
 				8885D2CE1BD481370010B6D9 /* MASViewConstraint.m in Sources */,
+				88D4DBA11BDF1EAD0068BE2F /* CustomNetworkError_AFNetworking.m in Sources */,
 				88C10E811BA65AB700E1D0E8 /* main.m in Sources */,
+				88D4DBA41BDF1EEC0068BE2F /* CustomNetworkEngine_AFNetworking.m in Sources */,
 				88D21D891BD72D2F005BB8E9 /* ProDelegateSecondViewController.m in Sources */,
 				8843FAE01BDA230900066628 /* TextSizeCaculateViewController.m in Sources */,
 				8885D2D11BD481370010B6D9 /* View+MASAdditions.m in Sources */,
@@ -543,7 +603,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -581,7 +641,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -591,6 +651,7 @@
 		};
 		88C10E9F1BA65AB700E1D0E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E46EE02C02F4C2CFCB69AB25 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "MyTemplate/My-Prefix.pch";
@@ -602,6 +663,7 @@
 		};
 		88C10EA01BA65AB700E1D0E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0442254637E7E9A47F8ECD9A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "MyTemplate/My-Prefix.pch";
