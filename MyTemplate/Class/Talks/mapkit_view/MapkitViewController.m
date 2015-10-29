@@ -11,6 +11,8 @@
 #import <Masonry.h>
 #import <MAMapKit/MAMapKit.h>
 #import <AMapSearchKit/AMapSearchAPI.h>
+#import <AMapSearchKit/AMapSearchObj.h>
+
 
 
 
@@ -56,13 +58,47 @@
     
     //初始化地图视图
     _mapView = [[MAMapView alloc]initWithFrame:CGRectMake(0, 0, 320, 480)];
-    _mapView.showsUserLocation  = YES;//显示定位图标
-    [_mapView  setUserTrackingMode:MAUserTrackingModeFollow];//设置定位模式
+    _mapView.language = MAMapLanguageZhCN;
+    _mapView.showsUserLocation  = YES;      //显示当前位置，IOS8+需要设置Info.list文件
+    _mapView.mapType = MAMapTypeStandard;  //MAMapTypeStandard/MAMapTypeSatellite/MAMapTypeStandardNight(3D )
+    _mapView.showTraffic = NO;             //实时路况,  要求MAMapTypeStandard模式
+    _mapView.delegate = self;
     [self.view addSubview:_mapView];
     [_mapView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
     
+    
+    
+    //初始化定位服务
+    [self initLocation];
+    
+    
+    
+    
+    //大头针 标注
+    MAPointAnnotation *pointAnnotation = [[MAPointAnnotation alloc] init]; pointAnnotation.coordinate = CLLocationCoordinate2DMake(39.989631, 116.481018); pointAnnotation.title = @"方恒国际";
+    pointAnnotation.subtitle = @"阜通东大街 6 号";
+    [_mapView addAnnotation:pointAnnotation];
+    
+    
+    
+    
+    //添加缩放按钮
+    UIStepper *mySteper = [[UIStepper alloc] initWithFrame:CGRectMake(0, 0, 40, 20)];
+    mySteper.maximumValue = 100;
+    mySteper.minimumValue = -100;
+    
+    mySteper.value = 0;     //default : 0
+    mySteper.stepValue = 1;     //尽可能保持一个较大的范围
+    mySteper.tintColor = [UIColor redColor];
+    [mySteper addTarget:<#(id)#> action:<#(SEL)#> forControlEvents:<#(UIControlEvents)#>]
+    [_mapView addSubview:mySteper];
+    [mySteper mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(40, 20));
+        make.right.equalTo(_mapView).offset(-50);
+        make.bottom.equalTo(_mapView).offset(-20);
+    }];
     
 }
 
@@ -148,4 +184,37 @@
         [_mapView showAnnotations:poiAnnotations animated:NO];
     }
 }
+
+
+
+
+#pragma mark -- MAMapViewDelegate --
+- (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
+{
+    
+    //设置标注样式
+    if ([annotation isKindOfClass:[MAPointAnnotation class]]) {
+        static NSString *pointReuseIndetifier = @"pointReuseIndetifier";
+        MAPinAnnotationView*annotationView = (MAPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:pointReuseIndetifier];
+        if (annotationView == nil) {
+            annotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pointReuseIndetifier];
+        }
+        //可以改变标注的图标
+//        annotationView.image = [UIImage imageNamed:@"restaurant"];
+        //设置中心心点偏移,使得标注底部中间点成为经纬度对应点
+        annotationView.centerOffset = CGPointMake(0, 18);
+        
+        annotationView.canShowCallout= YES; //设置气泡可以弹出,默认为 NO
+        annotationView.animatesDrop = YES; //设置标注动画显示,默认为 NO
+        annotationView.draggable = YES; //设置标注可以拖动,默认为 NO
+        annotationView.pinColor = MAPinAnnotationColorGreen;
+        return annotationView;
+    }
+    return nil;
+}
+
+
+
+
+
 @end
