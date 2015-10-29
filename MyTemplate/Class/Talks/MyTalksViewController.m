@@ -10,7 +10,8 @@
 #import "MyOperateTipsHelper.h"
 #import "Masonry.h"
 #import "MyTableViewCell.h"
-#import "MyBaseViewController.h"
+#import "CustomViewController.h"
+#import "MapkitViewController.h"
 
 
 
@@ -115,15 +116,12 @@
     switch (indexPath.row) {
         case 0:
         {
-            MyBaseViewController *myBaseVC = [[MyBaseViewController alloc] initWithNibName:nil bundle:nil];
-            myBaseVC.leftBarButtonItemStyle = UILeftBarButtonItemStyleImage;
-            myBaseVC.sideSlipForNavBackWorked = YES;
-            myBaseVC.hidesBottomBarWhenPushed = YES;        //隐藏底部导航Bar
+            CustomViewController *customVC = [[CustomViewController alloc] initWithNibName:nil bundle:nil];
             if(self.navigationController){
-                [self.navigationController pushViewController:myBaseVC animated:YES];
+                [self.navigationController pushViewController:customVC animated:YES];
                 
             }else if(self.presentingViewController){
-                [self presentViewController:myBaseVC animated:YES completion:^{
+                [self presentViewController:customVC animated:YES completion:^{
                     
                 }];
             }
@@ -131,7 +129,16 @@
         }
         case 1:
         {
-            
+            MapkitViewController *mapkitVC = [[MapkitViewController alloc] initWithNibName:nil bundle:nil];
+            if(self.navigationController){
+                [self.navigationController pushViewController:mapkitVC animated:YES];
+                
+            }else if(self.presentingViewController){
+                [self presentViewController:mapkitVC animated:YES completion:^{
+                    
+                }];
+            }
+            break;
             break;
         }
         default:
@@ -165,8 +172,8 @@
     cell.detailTextLabel.textColor = [UIColor lightGrayColor];
     
     
-    NSArray *titleAndContents = @[@[@"MyBaseViewController",@"自定义的ViewController，可根据需要设置风格",],
-                                  @[@"待定",@"还没想好",],
+    NSArray *titleAndContents = @[@[@"CustomViewController",@"自定义的ViewController，可根据需要设置风格",],
+                                  @[@"地图",@"高德地图，苹果内置地图也是调用的高德接口",],
                                   @[@"0",@"1",],
                                   @[@"2",@"3",]];
     

@@ -21,6 +21,8 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - AMap2DMap (2.6.0)
+  - AMapSearch (2.6.0)
   - CocoaLumberjack (2.0.1):
     - CocoaLumberjack/Default (= 2.0.1)
     - CocoaLumberjack/Extensions (= 2.0.1)
@@ -44,6 +46,8 @@ PODS:
 DEPENDENCIES:
   - ActionSheetPicker-3.0 (~> 1.7.0)
   - AFNetworking (~> 2.5.4)
+  - AMap2DMap
+  - AMapSearch
   - CocoaLumberjack (~> 2.0.1)
   - Masonry (~> 0.6.2)
   - MBProgressHUD (~> 0.9.1)
@@ -54,6 +58,8 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: 6516052442fc8ca8f3cc4b3c7aa0436de12373df
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  AMap2DMap: b5ce82581ca53b71a0136da858f7ef04db1ffc59
+  AMapSearch: 0ea3101eec4b9f500b53e33dcda30d343d41613b
   CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
@@ -62,4 +68,4 @@ SPEC CHECKSUMS:
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0
