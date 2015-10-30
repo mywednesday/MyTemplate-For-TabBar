@@ -15,8 +15,6 @@
 //@property (nonatomic, assign) BOOL isOperateTipsShowing;
 
 /**项目文件路径相关*/
-
-
 /**返回项目的Home目录的路径*/
 + (NSString *) getSandboxDirectoryForHome;
 /**
