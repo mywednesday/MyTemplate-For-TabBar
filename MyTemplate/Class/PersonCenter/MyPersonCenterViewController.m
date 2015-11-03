@@ -12,6 +12,8 @@
 #import "MyTableViewCell.h"
 #import "ProDelegateFirstViewController.h"
 #import "TextSizeCaculateViewController.h"
+#import "OCGrammarViewController.h"
+#import "DataPersistenceViewController.h"
 
 
 
@@ -145,6 +147,38 @@
             }
             break;
         }
+        case 2:
+        {
+            OCGrammarViewController *myVC = [[OCGrammarViewController alloc] initWithNibName:nil bundle:nil];
+            myVC.leftBarButtonItemStyle = UILeftBarButtonItemStyleImage;
+            myVC.sideSlipForNavBackWorked = YES;
+            myVC.hidesBottomBarWhenPushed = YES;        //隐藏底部导航Bar
+            if(self.navigationController){
+                [self.navigationController pushViewController:myVC animated:YES];
+                
+            }else if(self.presentingViewController){
+                [self presentViewController:myVC animated:YES completion:^{
+                    
+                }];
+            }
+            break;
+        }
+        case 3:
+        {
+            DataPersistenceViewController *myVC = [[DataPersistenceViewController alloc] initWithNibName:nil bundle:nil];
+            myVC.leftBarButtonItemStyle = UILeftBarButtonItemStyleImage;
+            myVC.sideSlipForNavBackWorked = YES;
+            myVC.hidesBottomBarWhenPushed = YES;        //隐藏底部导航Bar
+            if(self.navigationController){
+                [self.navigationController pushViewController:myVC animated:YES];
+                
+            }else if(self.presentingViewController){
+                [self presentViewController:myVC animated:YES completion:^{
+                    
+                }];
+            }
+            break;
+        }
         default:
         {
             CustomLog(@"indexPath.Row  越界");
@@ -162,7 +196,15 @@
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 2;
+    NSInteger numberofrows = 0;
+    switch (section) {
+        case 0:
+            numberofrows = 4;
+            break;
+        default:
+            break;
+    }
+    return numberofrows;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -178,8 +220,8 @@
     
     NSArray *titleAndContents = @[@[@"IOS页面间传值的方式",@"Delegate/NSNotification/Block/NSUserDefault/单例/设置属性",],
                                   @[@"动态计算高度",@"根据UILabel中的文字，动态计算其高度",],
-                                  @[@"0",@"1",],
-                                  @[@"2",@"3",]];
+                                  @[@"OC Grammar",@"Array用法",],
+                                  @[@"数据持久化",@"自定义对象、NSArray、NSDictionary",]];
     
     
     if (indexPath.section < 1) {
@@ -196,6 +238,16 @@
             break;
         }
         case 1:
+        {
+            
+            break;
+        }
+        case 2:
+        {
+            
+            break;
+        }
+        case 3:
         {
             
             break;
