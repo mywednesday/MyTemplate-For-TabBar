@@ -16,6 +16,7 @@
 
 @property (nonatomic, strong) UIButton *myArrayButton;              //NSArray按钮
 @property (nonatomic, strong) UIButton *myDictionaryButton;         //NSDictionary按钮
+@property (nonatomic, strong) UIButton *mySetButton;                //NSSet按钮
 
 @end
 
@@ -62,6 +63,25 @@
         make.height.mas_equalTo(30);
         make.centerX.equalTo(self.view);
     }];
+    
+    
+#pragma mark -- NSSet按钮 --
+    _mySetButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
+    [_mySetButton setTitle:@"按钮(NSSet)" forState:UIControlStateNormal];
+    [_mySetButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_mySetButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateFocused];
+    [_mySetButton setBackgroundColor:[UIColor redColor]];
+    [_mySetButton addTarget:self action:@selector(setBtnAction) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:_mySetButton];
+    [_mySetButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_myDictionaryButton.mas_bottom).offset(40);
+        make.width.mas_equalTo(180);
+        make.height.mas_equalTo(30);
+        make.centerX.equalTo(self.view);
+    }];
+    
+    
+    
     
     
 }
@@ -600,21 +620,71 @@
     
 #pragma mark -- Storing Dictionaries --
     CustomLog(@"\n10.___Storing Dictionaries___");
-    NSDictionary *initTmp10 = @{@"1": @"Monday",         //key: value
-                                @"2": @"Tuesday",
-                                @"3": @"Wednesday",
-                                @"4": @"Thursday",
-                                @"5": @"Friday",
-                                @"6": @"Saturday",
-                                @"7": @"Sunday"};
-    CustomLog(@"\n****  writeToFile: atomically:  ****");
-    NSString *myFilePath = [NSTemporaryDirectory() stringByAppendingString:@"/dicFile/text.plist"];
-    if([initTmp10 writeToFile:myFilePath atomically:NO]) {
-        CustomLog(@"\n文件写入成功！");
-    } else {
-        CustomLog(@"\n文件写入失败！");
-    }
+//    NSDictionary *initTmp10 = @{@"1": @"Monday",         //key: value
+//                                @"2": @"Tuesday",
+//                                @"3": @"Wednesday",
+//                                @"4": @"Thursday",
+//                                @"5": @"Friday",
+//                                @"6": @"Saturday",
+//                                @"7": @"Sunday"};
+//    CustomLog(@"\n****  writeToFile: atomically:  ****");
+//    NSString *error;
+//    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+//    NSString *plistPath = [rootPath stringByAppendingPathComponent:@"Data.plist"];
+//    NSData *plistData = [NSPropertyListSerialization dataFromPropertyList:initTmp10
+//                                                                   format:NSPropertyListXMLFormat_v1_0
+//                                                         errorDescription:&error];
+//    if(plistData) {
+//        [plistData writeToFile:plistPath atomically:YES];
+//    }
+//    else {
+//        NSLog(@"\n%@",error);
+//    }
+//    //从文件直接读取Dic内容
+//    NSDictionary *plistDic = [NSDictionary dictionaryWithContentsOfFile:plistPath];
+//    CustomLog(@"\n%@",plistDic);
     
+    
+    
+    
+    
+#pragma mark -- Accessing File Attributes --
+    CustomLog(@"\n11.___Accessing File Attributes___");
+//    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+//    NSFileManager *fileManager = [[NSFileManager alloc] init];
+//    NSString *path = [rootPath stringByAppendingPathComponent:@"Data.plist"];
+//    NSDictionary *fileAttributes = [fileManager fileAttributesAtPath:path traverseLink:YES];
+//    if (fileAttributes != nil) {
+//        
+//        CustomLog(@"\nfileAttributes = %@", fileAttributes);
+//        
+//        
+//        NSNumber *fileSize;
+//        NSString *fileOwner;
+//        NSDate *fileModDate;
+//        if (fileSize = [fileAttributes objectForKey:NSFileSize]) {
+//            CustomLog(@"File size: %qi\n", [fileSize unsignedLongLongValue]);
+//        }
+//        if (fileOwner = [fileAttributes objectForKey:NSFileOwnerAccountName]) {
+//            CustomLog(@"Owner: %@\n", fileOwner);
+//        }
+//        if (fileModDate = [fileAttributes objectForKey:NSFileModificationDate]) {
+//            CustomLog(@"Modification date: %@\n", fileModDate);
+//        }
+//    }
+//    else {
+//        NSLog(@"Path (%@) is invalid.", path);
+//    }
+//    
+    
+    
+    
+    
+    
+    
+    
+#pragma mark -- Creating a Description --
+    CustomLog(@"\n12.___Creating a Description___");
     
     
     
@@ -633,7 +703,57 @@
 }
 
 
-
+/**
+    NSSet按钮点击事件
+ */
+- (void) setBtnAction {
+    /*   由于 NSSet 和 NSArray 操作相似，这里不在做过多的实现   */
+    /*
+     NSArray：有序的集合，存储的元素在一个整块的内存中并按序排列（废话，我学过c语言的数组这还不知道啊）；
+     NSSet：无序的集合，散列存储。
+     ------
+     同NSArray(数组)相比，NSSet(集合)是一个无序的；
+     数组中的元素可以重复，但是集合不同;
+     ------
+     NSSet由于在底层使用hash的思想实现的，所以他就保证了里面存储的对象必须是唯一的，而数组可以存储相同的几个对象。
+     由于NSSet是用hash实现的所以就造就了它查询速度比较快，但是我们不能把某某对象存在第几个元素后面之类的有关脚标的操作。
+     */
+    CustomLog(@"\n-- NSSet按钮点击事件 --");
+    
+    
+#pragma mark -- Creating a Set --
+    CustomLog(@"\n1.___Creating a Set___");
+    CustomLog(@"\n****  setWithObjects  ****");
+    NSSet *initTmp1 = [NSSet setWithObjects:@"Monday", @"Tuesday", @"Wednesday", @"Thursday", @"Friday", @"Saturday", @"Sunday", nil];
+    CustomLog(@"\ninitTmp1 = %@",initTmp1);
+    
+    
+    /*  如果Add的对象中有相同的Entries，将不能添加成功   */
+    CustomLog(@"\n****  setByAddingObject  ****");
+    NSSet *mySet1_1 = [initTmp1 setByAddingObject:@"what's the fuck"];
+    CustomLog(@"\nmySet1_1 = %@",mySet1_1);
+    
+    
+    
+    CustomLog(@"\n****  setByAddingObjectsFromArray  ****");
+    NSSet *mySet1_2 = [initTmp1 setByAddingObjectsFromSet:initTmp1];
+    CustomLog(@"\nmySet1_2 = %@",mySet1_2);
+    
+    
+    
+    CustomLog(@"\n****  setByAddingObjectsFromArray  ****");
+    NSSet *mySet1_3 = [initTmp1 setByAddingObjectsFromArray:@[@"I", @"He", @"She"]];
+    CustomLog(@"\nmySet1_3 = %@",mySet1_3);
+    
+    
+    
+    CustomLog(@"\n****  filteredSetUsingPredicate  ****");
+    NSSet *sourceSet = [NSSet setWithObjects:@"One", @"Two", @"Three", @"Four", nil];
+    NSPredicate *predicate =
+    [NSPredicate predicateWithFormat:@"SELF beginswith 'T'"];
+    NSSet *mySet1_4 = [sourceSet filteredSetUsingPredicate:predicate];
+    CustomLog(@"\nmySet1_4 = %@",mySet1_4);
+}
 
 
 

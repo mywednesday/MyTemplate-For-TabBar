@@ -38,6 +38,9 @@
 - (void)viewDidLoad{
     
     self.title = @"会话";
+    // 设置导航默认标题的颜色及字体大小
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor brownColor],
+                                                                    NSFontAttributeName: [UIFont systemFontOfSize:19.0]};
     self.view.backgroundColor = VIEW_NORMAL_BG_COLOR;
     
     
@@ -169,6 +172,7 @@
         cell = [[MyTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     cell.selectedBackgroundView = nil;
     [cell setBackgroundColor:[UIColor whiteColor]];
+    cell.textLabel.font = [UIFont systemFontOfSize: 15.0];
     cell.detailTextLabel.textColor = [UIColor lightGrayColor];
     
     

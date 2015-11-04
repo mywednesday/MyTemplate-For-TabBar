@@ -14,6 +14,7 @@
 #import "TextSizeCaculateViewController.h"
 #import "OCGrammarViewController.h"
 #import "DataPersistenceViewController.h"
+#import "FileManageViewController.h"
 
 
 
@@ -53,6 +54,9 @@
 - (void) viewDidLoad {
 
     self.title = @"个人中心";
+    // 设置导航默认标题的颜色及字体大小
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor brownColor],
+                                                                    NSFontAttributeName: [UIFont systemFontOfSize:19.0]};
     self.view.backgroundColor = VIEW_NORMAL_BG_COLOR;
     
     
@@ -199,7 +203,7 @@
     NSInteger numberofrows = 0;
     switch (section) {
         case 0:
-            numberofrows = 4;
+            numberofrows = 5;
             break;
         default:
             break;
@@ -215,13 +219,15 @@
         cell = [[MyTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     cell.selectedBackgroundView = nil;
     [cell setBackgroundColor:[UIColor whiteColor]];
+    cell.textLabel.font = [UIFont systemFontOfSize: 15.0];
     cell.detailTextLabel.textColor = [UIColor lightGrayColor];
     
     
     NSArray *titleAndContents = @[@[@"IOS页面间传值的方式",@"Delegate/NSNotification/Block/NSUserDefault/单例/设置属性",],
                                   @[@"动态计算高度",@"根据UILabel中的文字，动态计算其高度",],
-                                  @[@"OC Grammar",@"Array用法",],
-                                  @[@"数据持久化",@"自定义对象、NSArray、NSDictionary",]];
+                                  @[@"OC基本知识",@"NSArray、NSDictionary",],
+                                  @[@"数据持久化",@"自定义对象、NSArray、NSDictionary",],
+                                  @[@"文件操作",@"NSFileManager",]];
     
     
     if (indexPath.section < 1) {
@@ -234,22 +240,27 @@
     switch (indexPath.row) {
         case 0:
         {
-            
+            CustomLog(@"%@",titleAndContents[indexPath.row][0]);
             break;
         }
         case 1:
         {
-            
+            CustomLog(@"%@",titleAndContents[indexPath.row][0]);
             break;
         }
         case 2:
         {
-            
+            CustomLog(@"%@",titleAndContents[indexPath.row][0]);
             break;
         }
         case 3:
         {
-            
+            CustomLog(@"%@",titleAndContents[indexPath.row][0]);
+            break;
+        }
+        case 4:
+        {
+            CustomLog(@"%@",titleAndContents[indexPath.row][0]);
             break;
         }
         default:
