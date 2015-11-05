@@ -55,7 +55,7 @@
 
     self.title = @"个人中心";
     // 设置导航默认标题的颜色及字体大小
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor brownColor],
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor],
                                                                     NSFontAttributeName: [UIFont systemFontOfSize:19.0]};
     self.view.backgroundColor = VIEW_NORMAL_BG_COLOR;
     

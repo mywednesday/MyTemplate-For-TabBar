@@ -17,6 +17,8 @@
 @property (nonatomic, strong) UIButton *myArrayButton;              //NSArray按钮
 @property (nonatomic, strong) UIButton *myDictionaryButton;         //NSDictionary按钮
 @property (nonatomic, strong) UIButton *mySetButton;                //NSSet按钮
+@property (nonatomic, strong) UIButton *myPredicateButton;          //NSPredicate按钮
+@property (nonatomic, strong) UIButton *myStringButton;             //NSString按钮
 
 @end
 
@@ -79,6 +81,40 @@
         make.height.mas_equalTo(30);
         make.centerX.equalTo(self.view);
     }];
+    
+    
+#pragma mark -- NSPredicate按钮 --
+    _myPredicateButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
+    [_myPredicateButton setTitle:@"按钮(NSPredicate)" forState:UIControlStateNormal];
+    [_myPredicateButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_myPredicateButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateFocused];
+    [_myPredicateButton setBackgroundColor:[UIColor redColor]];
+    [_myPredicateButton addTarget:self action:@selector(predicateBtnAction) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:_myPredicateButton];
+    [_myPredicateButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_mySetButton.mas_bottom).offset(40);
+        make.width.mas_equalTo(180);
+        make.height.mas_equalTo(30);
+        make.centerX.equalTo(self.view);
+    }];
+    
+    
+#pragma mark -- NSPredicate按钮 --
+    _myStringButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
+    [_myStringButton setTitle:@"按钮(NSString)" forState:UIControlStateNormal];
+    [_myStringButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_myStringButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateFocused];
+    [_myStringButton setBackgroundColor:[UIColor redColor]];
+    [_myStringButton addTarget:self action:@selector(stringBtnAction) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:_myStringButton];
+    [_myStringButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_myPredicateButton.mas_bottom).offset(40);
+        make.width.mas_equalTo(180);
+        make.height.mas_equalTo(30);
+        make.centerX.equalTo(self.view);
+    }];
+    
+    
     
     
     
@@ -754,6 +790,167 @@
     NSSet *mySet1_4 = [sourceSet filteredSetUsingPredicate:predicate];
     CustomLog(@"\nmySet1_4 = %@",mySet1_4);
 }
+
+
+
+/**
+    NSPredicate按钮点击事件
+    http://blog.csdn.net/ztp800201/article/details/8116081
+ */
+- (void) predicateBtnAction {
+    NSArray *array = [[NSArray alloc]initWithObjects:@"beijing",@"shanghai",@"guangzou",@"wuhan", nil];
+    NSString *string = @"ang";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF CONTAINS %@",string];
+    CustomLog(@"%@",[array filteredArrayUsingPredicate:pred]);
+    
+}
+
+
+
+/**
+    NSString按钮点击事件
+    NSString 中存储的是 Unicode 字符
+ */
+- (void) stringBtnAction {
+    /*
+     NSString是不可变的
+     */
+    
+    
+#pragma mark -- 关于strong week内存管理上的区别测试 --
+    CustomLog(@"\n1.___关于strong week内存管理上的区别测试___");
+//    CustomLog(@"\n****  当赋值改变时，打印内存地址  ****");
+//    
+//    NSString *myStr1 = @"wenzhiping";
+//    NSString *myStr2 = myStr1;
+//    CustomLog(@"\nmyStr1 = %@\tmyStr2 = %@",myStr1,myStr2);
+//    CustomLog(@"\nmyStr1 = %p\tmyStr2 = %p",myStr1,myStr2);
+//    myStr1 = @"温志平";
+//    CustomLog(@"\nmyStr1 = %@\tmyStr2 = %@",myStr1,myStr2);
+//    CustomLog(@"\nmyStr1 = %p\tmyStr2 = %p",myStr1,myStr2);
+    
+    
+    
+    
+#pragma mark -- Creating and Initializing Strings --
+    CustomLog(@"\n2.___Creating and Initializing Strings___");
+//    CustomLog(@"\n****  string  ****");
+//    NSString *myString2_1 = [NSString string];      //返回一个空字符串
+//    CustomLog(@"\nmyString2_1 = %@",myString2_1);
+//    
+//    
+//    
+//    CustomLog(@"\n****  init  ****");
+//    NSString *myString2_2 = [[NSString alloc] init];      //返回一个空字符串
+//    CustomLog(@"\nmyString2_2 = %@",myString2_2);
+//    
+//    
+//    
+//    CustomLog(@"\n****  initWithBytes: length: encoding:  ****");
+//    char str2_3[] = "温志平";
+//    NSString *myString2_3 = [[NSString alloc] initWithBytes:str2_3 length: strlen(str2_3) encoding:NSUTF8StringEncoding];
+//    CustomLog(@"\nmyString2_3 = %@",myString2_3);
+//    
+//    
+//    
+//    CustomLog(@"\n****  initWithBytesNoCopy: length: encoding: freeWhenDone:  ****");
+//    char str2_4[] = "温志平";
+//    //If YES, the receiver frees the memory when it no longer needs the data; if NO it won’t.
+//    NSString *myString2_4 = [[NSString alloc] initWithBytesNoCopy:str2_4
+//                                                           length: strlen(str2_4)
+//                                                         encoding:NSUTF8StringEncoding
+//                                                     freeWhenDone:NO];
+//    CustomLog(@"\nmyString2_4 = %@",myString2_4);
+//    
+//    
+//    
+//    CustomLog(@"\n****  initWithCharacters: length:  ****");
+//    unichar str2_5 = 0x5479;        //这里写Unicode的索引码
+//    //If YES, the receiver frees the memory when it no longer needs the data; if NO it won’t.
+//    NSString *myString2_5 = [[NSString alloc] initWithCharacters:&str2_5 length:1];
+//    CustomLog(@"\nmyString2_5 = %@",myString2_5);
+    
+    
+    
+    
+    
+    
+    
+#pragma mark -- Writing to a File or URL --
+    CustomLog(@"\n3.___Writing to a File or URL___");
+//    CustomLog(@"\n****  writeToFile:atomically:encoding:error:  ****");
+//    NSString *myString3_1 = @"\n\t测试字符串，用于测试《writeToFile:atomically:encoding:error:》方法的可用性";
+//    if ([myString3_1 writeToFile:@"/Volumes/D/wen.txt"
+//                      atomically:NO
+//                        encoding:NSUTF8StringEncoding
+//                           error:nil]) {
+//        
+//        CustomLog(@"\n文件写入成功：/Volumes/D/wen.txt");
+//    } else {
+//        CustomLog(@"\n文件写入失败！");
+//    }
+    
+    
+    
+    
+#pragma mark -- Getting a String’s Length --
+    CustomLog(@"\n4.___Getting a String’s Length___");
+//    CustomLog(@"\n****  length  ****");
+//    NSArray *myArray4_1 = @[@"测试字符串，用于测试《", @"admin", @"测试字符串", @"", @" ", @" "];
+//    for (NSString *tmpStr in myArray4_1) {
+//        CustomLog(@"\n\"%@\"的length为：%lu", tmpStr, (unsigned long)[tmpStr length]);
+//    }
+//    
+//    
+//    
+//    
+//    CustomLog(@"\n****  lengthOfBytesUsingEncoding:  ****");
+//    NSArray *myArray4_2 = @[@"测试字符串，用于测试《", @"admin", @"测试字符串", @"", @" ", @" "];
+//    for (NSString *tmpStr in myArray4_2) {
+//        CustomLog(@"\n\"%@\"的lengthOfBytesUsingEncoding为：%lu", tmpStr, (unsigned long)[tmpStr lengthOfBytesUsingEncoding:NSUTF8StringEncoding]);
+//    }
+//    
+//    
+//    
+//    
+//    CustomLog(@"\n****  maximumLengthOfBytesUsingEncoding::  ****");
+//    NSArray *myArray4_3 = @[@"测试字符串，用于测试《", @"admin", @"测试字符串", @"", @" ", @" "];
+//    for (NSString *tmpStr in myArray4_3) {
+//        CustomLog(@"\n\"%@\"的maximumLengthOfBytesUsingEncoding为：%lu", tmpStr, (unsigned long)[tmpStr maximumLengthOfBytesUsingEncoding: NSUTF8StringEncoding]);
+//    }
+    
+    
+    
+    
+#pragma mark -- Getting Characters and Bytes --
+    CustomLog(@"\n5.___Getting Characters and Bytes___");
+//    CustomLog(@"\n****  characterAtIndex:  ****");
+//    NSString *myString5_1 = @"测试abc字符串，用于测试《";
+//    for (int i = 0; i < [myString5_1 length]; i++) {
+//        //  %C  输出unichar格式的数据，请查看unichar的数据类型
+//        CustomLog(@"\n\"%@\"的第%d个字符是:%C", myString5_1, i+1, [myString5_1 characterAtIndex:i]);
+//    }
+    
+    
+    
+    
+//    CustomLog(@"\n****  characterAtIndex:  ****");
+//    NSString *myString5_2 = @"测试abc字符串，用于测试《";
+//    [myString5_2 get]
+//    CustomLog(@"\n\"%@\"的第%d个字符是:%C", myString5_1, i+1, [myString5_1 characterAtIndex:i]);
+    
+    
+    
+    
+    
+
+}
+
+
+
+
+
+
 
 
 
