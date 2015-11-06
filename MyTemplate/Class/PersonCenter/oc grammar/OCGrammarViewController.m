@@ -19,6 +19,7 @@
 @property (nonatomic, strong) UIButton *mySetButton;                //NSSet按钮
 @property (nonatomic, strong) UIButton *myPredicateButton;          //NSPredicate按钮
 @property (nonatomic, strong) UIButton *myStringButton;             //NSString按钮
+@property (nonatomic, strong) UIButton *myValueButton;             //NSValue按钮
 
 @end
 
@@ -109,6 +110,22 @@
     [self.view addSubview:_myStringButton];
     [_myStringButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_myPredicateButton.mas_bottom).offset(40);
+        make.width.mas_equalTo(180);
+        make.height.mas_equalTo(30);
+        make.centerX.equalTo(self.view);
+    }];
+    
+    
+#pragma mark -- NSValue按钮 --
+    _myValueButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
+    [_myValueButton setTitle:@"按钮(NSValue)" forState:UIControlStateNormal];
+    [_myValueButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_myValueButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateFocused];
+    [_myValueButton setBackgroundColor:[UIColor redColor]];
+    [_myValueButton addTarget:self action:@selector(valueBtnAction) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:_myValueButton];
+    [_myValueButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_myStringButton.mas_bottom).offset(40);
         make.width.mas_equalTo(180);
         make.height.mas_equalTo(30);
         make.centerX.equalTo(self.view);
@@ -937,13 +954,167 @@
 //    CustomLog(@"\n****  characterAtIndex:  ****");
 //    NSString *myString5_2 = @"测试abc字符串，用于测试《";
 //    [myString5_2 get]
-//    CustomLog(@"\n\"%@\"的第%d个字符是:%C", myString5_1, i+1, [myString5_1 characterAtIndex:i]);
+    //    CustomLog(@"\n\"%@\"的第%d个字符是:%C", myString5_1, i+1, [myString5_1 characterAtIndex:i]);
     
     
+    
+    
+#pragma mark -- Getting C Strings --
+    CustomLog(@"\n6.___Getting C Strings___");
+//    CustomLog(@"\n****  cStringUsingEncoding:  ****");
+//    NSString *myString6_1 = @"温志平abc";
+//    char myChar[256] = "";
+//    strcpy(myChar, [myString6_1 cStringUsingEncoding:NSUTF8StringEncoding]);
+//    CustomLog(@"\nmyChar = %s", myChar);
+    
+    
+    
+    
+#pragma mark -- Combining Strings --
+    CustomLog(@"\n7.___Combining Strings___");
+//    NSString *initTmp7 = @"initTmp7 字符串";
+//    
+//    
+//    CustomLog(@"\n****  stringByAppendingString:  ****");
+//    NSString *myString7_1 = [initTmp7 stringByAppendingString:initTmp7];
+//    CustomLog(@"\nmyString7_1 = %@", myString7_1);
+//    
+//    
+//    
+//    CustomLog(@"\n****  stringByAppendingString:  ****");
+//    NSString *myString7_2 = [initTmp7 stringByAppendingFormat:@"%@",@"___这个实现的方法是：stringByAppendingFormat "];
+//    CustomLog(@"\nmyString7_2 = %@", myString7_2);
+//    
+//    
+//    
+//    CustomLog(@"\n****  stringByPaddingToLength: withString: startingAtIndex:  ****");
+//    CustomLog(@"\n%@", [@"abc" stringByPaddingToLength: 9 withString: @"." startingAtIndex:0]);     // Results in "abc......"
+//    CustomLog(@"\n%@", [@"abc" stringByPaddingToLength: 2 withString: @"." startingAtIndex:0]);     // Results in "ab"
+//    CustomLog(@"\n%@", [@"abc" stringByPaddingToLength: 9 withString: @". " startingAtIndex:1]);    // Notice that the first character in the padding is " "
+    //    CustomLog(@"\n%@", [@"abc" stringByPaddingToLength: 9 withString: @"温志平_" startingAtIndex:1]);
+    
+    
+    
+    
+#pragma mark -- Dividing Strings --
+    CustomLog(@"\n8.___Dividing Strings___");
+//    NSString *initTmp8 = @"initTmp8,wenzhiping,wednesday,i want you,hehe,";
+//    
+//    
+//    
+//    CustomLog(@"\n****  componentsSeparatedByString:  ****");
+//    CustomLog(@"\n%@",[initTmp8 componentsSeparatedByString:@","]);     //注意逗号(,)后边也会有一个对象出现
+//    CustomLog(@"\n%@",[initTmp8 componentsSeparatedByString:@"w"]);
+//    
+//    
+//    
+//    CustomLog(@"\n****  componentsSeparatedByString:  ****");
+//    //NSCharacterSet中包含两个字符 w 和 h ,以这两个字符分割字符串, 并删除所有的 w 和 h
+//    CustomLog(@"\n%@",[initTmp8 componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"wh"]]);
+//    
+//    
+//    
+//    CustomLog(@"\n****  stringByTrimmingCharactersInSet:  ****");
+//    //删除字符串两端含有的NSCharacterSet中的字符，没有的不删除
+//    CustomLog(@"\n%@",[initTmp8 stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"i,"]]);
+//    
+//    
+//    
+//    CustomLog(@"\n****  substringFromIndex:  ****");
+//    //index  to  end
+//    CustomLog(@"\n%@",[initTmp8 substringFromIndex:[initTmp8 length]/2]);
+//    
+//    
+//    
+//    CustomLog(@"\n****  substringToIndex:  ****");
+//    //start to index
+//    CustomLog(@"\n%@",[initTmp8 substringToIndex:[initTmp8 length]/2]);
+//    
+//    
+//    
+//    CustomLog(@"\n****  substringWithRange:  ****");
+//    CustomLog(@"\n%@",[initTmp8 substringWithRange:NSMakeRange([initTmp8 length]/4, [initTmp8 length]/2)]);
+    
+    
+    
+    
+    
+#pragma mark -- Finding Characters and Substrings --
+    CustomLog(@"\n9.___Finding Characters and Substrings___");
+    NSString *initTmp9 = @"wenzhiping_wen_";
+    
+    
+    
+    CustomLog(@"\n****  componentsSeparatedByString:  ****");
+    NSRange myRange9_1 = [initTmp9 rangeOfCharacterFromSet:[NSCharacterSet characterSetWithCharactersInString:@"xxxx_wen"]];
+    if (NSNotFound != myRange9_1.location) {
+        CustomLog(@"\n%lu , %lu",myRange9_1.location, myRange9_1.length);
+    }else{
+        CustomLog(@"\nNot Found!");
+    }
+    
+    
+    
+    CustomLog(@"\n****  rangeOfString:  ****");
+    //这个方法默认好像是  倒序的
+    NSRange myRange9_4 = [initTmp9 rangeOfString:@"wen"];
+    if (NSNotFound != myRange9_4.location) {
+        CustomLog(@"\n%lu , %lu",myRange9_4.location, myRange9_4.length);
+    }else{
+        CustomLog(@"\nNot Found!");
+    }
+    
+    
+    
+    
+    CustomLog(@"\n****  rangeOfString: options:  ****");
+    NSRange myRange9_5 = [initTmp9 rangeOfString:@"wen" options:NSBackwardsSearch];
+    if (NSNotFound != myRange9_5.location) {
+        CustomLog(@"\n%lu , %lu",myRange9_5.location, myRange9_5.length);
+    }else{
+        CustomLog(@"\nNot Found!");
+    }
+    
+    
+    
+    
+    CustomLog(@"\n****  rangeOfString: options: range:  ****");
+//    NSRange myRange9_6 = [initTmp9 rangeOfString:@"wen" options:NSAnchoredSearch range:NSMakeRange(0, 9)];
+    NSRange myRange9_6 = [initTmp9 rangeOfString:@"wen" options:NSBackwardsSearch range:NSMakeRange(0, 9)];
+    if (NSNotFound != myRange9_6.location) {
+        CustomLog(@"\n%lu , %lu",myRange9_6.location, myRange9_6.length);
+    }else{
+        CustomLog(@"\nNot Found!");
+    }
     
     
     
 
+    
+    /*
+        NSString 的东西实在是太多了，后边再说吧
+        这个模块也是没有写完的，😢
+     */
+    
+    
+
+}
+
+
+
+/**
+    NSValue
+ */
+- (void) valueBtnAction {
+/*
+    An NSValue object is a simple container for a single C or Objective-C data item. It can hold any of the scalar types
+    such as int, float, and char, as well as pointers, structures, and object id references. Use this class to work with 
+    such data types in collections (such as NSArray and NSSet), key-value coding, and other APIs that require Objective-C
+    objects. NSValue objects are always immutable.
+ 
+    翻译：NSValue对象是C和OC数据的容器，它可以保存诸如int，float，char，指针，结构体以及id对象等标量类型的数据。使用NSValue可以将上述的类型
+    的数据放在NSArray，NSSet的集合，健值编码以及其他要求是Obejective-C的对象中。NSValue是不可改变的。
+ */
 }
 
 
