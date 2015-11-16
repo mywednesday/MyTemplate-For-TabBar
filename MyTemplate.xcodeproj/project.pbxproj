@@ -12,6 +12,7 @@
 		883CBD0D1BB5264C009CF223 /* MyOperateTipsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CBD0C1BB5264C009CF223 /* MyOperateTipsHelper.m */; };
 		8843FAE01BDA230900066628 /* TextSizeCaculateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8843FADF1BDA230900066628 /* TextSizeCaculateViewController.m */; };
 		88471A391BE9959200E35EA2 /* FileManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88471A381BE9959200E35EA2 /* FileManageViewController.m */; };
+		8848D7C11BF3218500CA4F77 /* MultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848D7C01BF3218500CA4F77 /* MultiThreadViewController.m */; };
 		884DA8BF1BE8B5FA0095FD83 /* DataPersistenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884DA8BE1BE8B5FA0095FD83 /* DataPersistenceViewController.m */; };
 		8862171D1BE7069A00D32893 /* OCGrammarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8862171C1BE7069A00D32893 /* OCGrammarViewController.m */; };
 		88735D711BABFE970080AFB8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88735D701BABFE970080AFB8 /* LoginViewController.m */; };
@@ -58,6 +59,8 @@
 		8843FADF1BDA230900066628 /* TextSizeCaculateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextSizeCaculateViewController.m; sourceTree = "<group>"; };
 		88471A371BE9959200E35EA2 /* FileManageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManageViewController.h; sourceTree = "<group>"; };
 		88471A381BE9959200E35EA2 /* FileManageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManageViewController.m; sourceTree = "<group>"; };
+		8848D7BF1BF3218500CA4F77 /* MultiThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiThreadViewController.h; sourceTree = "<group>"; };
+		8848D7C01BF3218500CA4F77 /* MultiThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiThreadViewController.m; sourceTree = "<group>"; };
 		884DA8BD1BE8B5FA0095FD83 /* DataPersistenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataPersistenceViewController.h; sourceTree = "<group>"; };
 		884DA8BE1BE8B5FA0095FD83 /* DataPersistenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataPersistenceViewController.m; sourceTree = "<group>"; };
 		8862171B1BE7069A00D32893 /* OCGrammarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCGrammarViewController.h; sourceTree = "<group>"; };
@@ -166,6 +169,15 @@
 				88471A381BE9959200E35EA2 /* FileManageViewController.m */,
 			);
 			path = "file manager";
+			sourceTree = "<group>";
+		};
+		8848D7BE1BF3216C00CA4F77 /* multi thread */ = {
+			isa = PBXGroup;
+			children = (
+				8848D7BF1BF3218500CA4F77 /* MultiThreadViewController.h */,
+				8848D7C01BF3218500CA4F77 /* MultiThreadViewController.m */,
+			);
+			path = "multi thread";
 			sourceTree = "<group>";
 		};
 		884DA8BC1BE8B5DB0095FD83 /* data persistence */ = {
@@ -329,6 +341,7 @@
 		88C10EB31BA6A2FD00E1D0E8 /* PersonCenter */ = {
 			isa = PBXGroup;
 			children = (
+				8848D7BE1BF3216C00CA4F77 /* multi thread */,
 				88471A361BE9957A00E35EA2 /* file manager */,
 				884DA8BC1BE8B5DB0095FD83 /* data persistence */,
 				8862171A1BE7066E00D32893 /* oc grammar */,
@@ -456,6 +469,7 @@
 				TargetAttributes = {
 					88C10E7A1BA65AB700E1D0E8 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = D8L7KG4VS6;
 					};
 					88C10E931BA65AB700E1D0E8 = {
 						CreatedOnToolsVersion = 6.4;
@@ -562,6 +576,7 @@
 				88CFD0821BE06B870079D130 /* CustomViewController.m in Sources */,
 				88C10EB91BA6A3B600E1D0E8 /* MyPersonCenterNavViewController.m in Sources */,
 				88CFD0861BE0C68D0079D130 /* MapkitViewController.m in Sources */,
+				8848D7C11BF3218500CA4F77 /* MultiThreadViewController.m in Sources */,
 				88D21D861BD72D0C005BB8E9 /* ProDelegateFirstViewController.m in Sources */,
 				884DA8BF1BE8B5FA0095FD83 /* DataPersistenceViewController.m in Sources */,
 				88D4DBA11BDF1EAD0068BE2F /* CustomNetworkError_AFNetworking.m in Sources */,
@@ -697,6 +712,7 @@
 			baseConfigurationReference = E46EE02C02F4C2CFCB69AB25 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "MyTemplate/My-Prefix.pch";
 				INFOPLIST_FILE = MyTemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -744,6 +760,7 @@
 			baseConfigurationReference = 0442254637E7E9A47F8ECD9A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "MyTemplate/My-Prefix.pch";
 				INFOPLIST_FILE = MyTemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

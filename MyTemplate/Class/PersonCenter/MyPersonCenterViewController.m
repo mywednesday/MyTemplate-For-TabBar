@@ -13,6 +13,7 @@
 #import "ProDelegateFirstViewController.h"
 #import "TextSizeCaculateViewController.h"
 #import "OCGrammarViewController.h"
+#import "MultiThreadViewController.h"
 #import "DataPersistenceViewController.h"
 #import "FileManageViewController.h"
 
@@ -169,7 +170,39 @@
         }
         case 3:
         {
+            MultiThreadViewController *myVC = [[MultiThreadViewController alloc] initWithNibName:nil bundle:nil];
+            myVC.leftBarButtonItemStyle = UILeftBarButtonItemStyleImage;
+            myVC.sideSlipForNavBackWorked = YES;
+            myVC.hidesBottomBarWhenPushed = YES;        //隐藏底部导航Bar
+            if(self.navigationController){
+                [self.navigationController pushViewController:myVC animated:YES];
+                
+            }else if(self.presentingViewController){
+                [self presentViewController:myVC animated:YES completion:^{
+                    
+                }];
+            }
+            break;
+        }
+        case 4:
+        {
             DataPersistenceViewController *myVC = [[DataPersistenceViewController alloc] initWithNibName:nil bundle:nil];
+            myVC.leftBarButtonItemStyle = UILeftBarButtonItemStyleImage;
+            myVC.sideSlipForNavBackWorked = YES;
+            myVC.hidesBottomBarWhenPushed = YES;        //隐藏底部导航Bar
+            if(self.navigationController){
+                [self.navigationController pushViewController:myVC animated:YES];
+                
+            }else if(self.presentingViewController){
+                [self presentViewController:myVC animated:YES completion:^{
+                    
+                }];
+            }
+            break;
+        }
+        case 5:
+        {
+            FileManageViewController *myVC = [[FileManageViewController alloc] initWithNibName:nil bundle:nil];
             myVC.leftBarButtonItemStyle = UILeftBarButtonItemStyleImage;
             myVC.sideSlipForNavBackWorked = YES;
             myVC.hidesBottomBarWhenPushed = YES;        //隐藏底部导航Bar
@@ -203,7 +236,7 @@
     NSInteger numberofrows = 0;
     switch (section) {
         case 0:
-            numberofrows = 5;
+            numberofrows = 6;
             break;
         default:
             break;
@@ -226,6 +259,7 @@
     NSArray *titleAndContents = @[@[@"IOS页面间传值的方式",@"Delegate/NSNotification/Block/NSUserDefault/单例/设置属性",],
                                   @[@"动态计算高度",@"根据UILabel中的文字，动态计算其高度",],
                                   @[@"OC基本知识",@"NSArray、NSDictionary",],
+                                  @[@"多线程",@"NSThread、NSOperation、GCD",],
                                   @[@"数据持久化",@"自定义对象、NSArray、NSDictionary",],
                                   @[@"文件操作",@"NSFileManager",]];
     
@@ -259,6 +293,11 @@
             break;
         }
         case 4:
+        {
+            CustomLog(@"%@",titleAndContents[indexPath.row][0]);
+            break;
+        }
+        case 5:
         {
             CustomLog(@"%@",titleAndContents[indexPath.row][0]);
             break;
