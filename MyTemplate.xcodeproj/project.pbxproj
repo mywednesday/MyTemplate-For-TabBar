@@ -19,6 +19,7 @@
 		8885D2D51BD487D90010B6D9 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8885D2D41BD487D90010B6D9 /* MyTableViewCell.m */; };
 		88A907491BAFFE7E00A50224 /* MyGlobalHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A907481BAFFE7E00A50224 /* MyGlobalHelper.m */; };
 		88A9074C1BB001C900A50224 /* MyMessageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A9074B1BB001C900A50224 /* MyMessageHelper.m */; };
+		88BBAC671BFB409100C87E8E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88BBAC661BFB409100C87E8E /* Info.plist */; };
 		88C10E811BA65AB700E1D0E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C10E801BA65AB700E1D0E8 /* main.m */; };
 		88C10E841BA65AB700E1D0E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C10E831BA65AB700E1D0E8 /* AppDelegate.m */; };
 		88C10E8C1BA65AB700E1D0E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88C10E8B1BA65AB700E1D0E8 /* Images.xcassets */; };
@@ -33,9 +34,9 @@
 		88CFD0861BE0C68D0079D130 /* MapkitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFD0851BE0C68D0079D130 /* MapkitViewController.m */; };
 		88D21D861BD72D0C005BB8E9 /* ProDelegateFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D21D851BD72D0C005BB8E9 /* ProDelegateFirstViewController.m */; };
 		88D21D891BD72D2F005BB8E9 /* ProDelegateSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D21D881BD72D2F005BB8E9 /* ProDelegateSecondViewController.m */; };
+		88D3E7B91BFCBA21003193CB /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D3E7B81BFCBA21003193CB /* QRCodeViewController.m */; };
 		88D4DBA11BDF1EAD0068BE2F /* CustomNetworkError_AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D4DBA01BDF1EAD0068BE2F /* CustomNetworkError_AFNetworking.m */; };
 		88D4DBA41BDF1EEC0068BE2F /* CustomNetworkEngine_AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D4DBA31BDF1EEC0068BE2F /* CustomNetworkEngine_AFNetworking.m */; };
-		BB5DE01D347A29B04CE945DA /* libPods-MyTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E7AF75FF6F85FEF3D77B4B /* libPods-MyTemplate.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		88A907481BAFFE7E00A50224 /* MyGlobalHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGlobalHelper.m; sourceTree = "<group>"; };
 		88A9074A1BB001C900A50224 /* MyMessageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMessageHelper.h; sourceTree = "<group>"; };
 		88A9074B1BB001C900A50224 /* MyMessageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMessageHelper.m; sourceTree = "<group>"; };
+		88BBAC661BFB409100C87E8E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88C10E7B1BA65AB700E1D0E8 /* MyTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C10E801BA65AB700E1D0E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		88C10E821BA65AB700E1D0E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +105,8 @@
 		88D21D851BD72D0C005BB8E9 /* ProDelegateFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProDelegateFirstViewController.m; sourceTree = "<group>"; };
 		88D21D871BD72D2F005BB8E9 /* ProDelegateSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProDelegateSecondViewController.h; sourceTree = "<group>"; };
 		88D21D881BD72D2F005BB8E9 /* ProDelegateSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProDelegateSecondViewController.m; sourceTree = "<group>"; };
+		88D3E7B71BFCBA21003193CB /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		88D3E7B81BFCBA21003193CB /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
 		88D4DB9F1BDF1EAD0068BE2F /* CustomNetworkError_AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNetworkError_AFNetworking.h; sourceTree = "<group>"; };
 		88D4DBA01BDF1EAD0068BE2F /* CustomNetworkError_AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNetworkError_AFNetworking.m; sourceTree = "<group>"; };
 		88D4DBA21BDF1EEC0068BE2F /* CustomNetworkEngine_AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNetworkEngine_AFNetworking.h; sourceTree = "<group>"; };
@@ -119,7 +123,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				233FF178749BB2822714D140 /* libPods.a in Frameworks */,
-				BB5DE01D347A29B04CE945DA /* libPods-MyTemplate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +289,7 @@
 		88C10E7E1BA65AB700E1D0E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				88BBAC661BFB409100C87E8E /* Info.plist */,
 				88C10E801BA65AB700E1D0E8 /* main.m */,
 				88C10E8B1BA65AB700E1D0E8 /* Images.xcassets */,
 				88C10EC11BA6AAF100E1D0E8 /* My-Prefix.pch */,
@@ -358,6 +362,7 @@
 		88C10EBA1BA6A73700E1D0E8 /* Talks */ = {
 			isa = PBXGroup;
 			children = (
+				88D3E7B61BFCBA0B003193CB /* qr_code */,
 				88CFD0831BE0C6670079D130 /* mapkit_view */,
 				88CFD07F1BE06B540079D130 /* custom_nav_viewcontroller */,
 				88C10EBB1BA6A78B00E1D0E8 /* MyTalksNavViewController.h */,
@@ -397,6 +402,15 @@
 				88CB44E71BD8BF0E009279BD /* ProDelegateSingleton.m */,
 			);
 			path = protocol_delegate;
+			sourceTree = "<group>";
+		};
+		88D3E7B61BFCBA0B003193CB /* qr_code */ = {
+			isa = PBXGroup;
+			children = (
+				88D3E7B71BFCBA21003193CB /* QRCodeViewController.h */,
+				88D3E7B81BFCBA21003193CB /* QRCodeViewController.m */,
+			);
+			path = qr_code;
 			sourceTree = "<group>";
 		};
 		88D4DB9D1BDF1DA20068BE2F /* CustomNetworkEngine(AFNetworking) */ = {
@@ -469,7 +483,7 @@
 				TargetAttributes = {
 					88C10E7A1BA65AB700E1D0E8 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = D8L7KG4VS6;
+						DevelopmentTeam = S3H767DKT8;
 					};
 					88C10E931BA65AB700E1D0E8 = {
 						CreatedOnToolsVersion = 6.4;
@@ -503,6 +517,7 @@
 			files = (
 				88C10E8F1BA65AB700E1D0E8 /* LaunchScreen.xib in Resources */,
 				88C10E8C1BA65AB700E1D0E8 /* Images.xcassets in Resources */,
+				88BBAC671BFB409100C87E8E /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +603,7 @@
 				8885D2D51BD487D90010B6D9 /* MyTableViewCell.m in Sources */,
 				88CB44E81BD8BF0E009279BD /* ProDelegateSingleton.m in Sources */,
 				88735D711BABFE970080AFB8 /* LoginViewController.m in Sources */,
+				88D3E7B91BFCBA21003193CB /* QRCodeViewController.m in Sources */,
 				88C10EC01BA6A7B100E1D0E8 /* MyTalksViewController.m in Sources */,
 				88C10EBD1BA6A78B00E1D0E8 /* MyTalksNavViewController.m in Sources */,
 				88207F961BCF8CAC00C3B3A0 /* MyBaseViewController.m in Sources */,
@@ -664,6 +680,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_NAME = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -701,6 +719,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_NAME = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -713,6 +733,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "MyTemplate/My-Prefix.pch";
 				INFOPLIST_FILE = MyTemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -751,6 +772,7 @@
 					"-weak_framework",
 					"\"Photos\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzp1.MyTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -761,6 +783,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "MyTemplate/My-Prefix.pch";
 				INFOPLIST_FILE = MyTemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -799,6 +822,7 @@
 					"-weak_framework",
 					"\"Photos\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzp1.MyTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

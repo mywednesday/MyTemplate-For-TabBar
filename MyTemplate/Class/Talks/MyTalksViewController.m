@@ -8,10 +8,11 @@
 
 #import "MyTalksViewController.h"
 #import "MyOperateTipsHelper.h"
-#import "Masonry.h"
+#import <Masonry.h>
 #import "MyTableViewCell.h"
 #import "CustomViewController.h"
 #import "MapkitViewController.h"
+#import "QRCodeViewController.h"
 
 
 
@@ -142,6 +143,18 @@
                 }];
             }
             break;
+        }
+        case 2:
+        {
+            QRCodeViewController *mapkitVC = [[QRCodeViewController alloc] initWithNibName:nil bundle:nil];
+            if(self.navigationController){
+                [self.navigationController pushViewController:mapkitVC animated:YES];
+                
+            }else if(self.presentingViewController){
+                [self presentViewController:mapkitVC animated:YES completion:^{
+                    
+                }];
+            }
             break;
         }
         default:
@@ -161,7 +174,7 @@
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 2;
+    return 3;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -178,7 +191,7 @@
     
     NSArray *titleAndContents = @[@[@"CustomViewController",@"自定义的ViewController，可根据需要设置风格",],
                                   @[@"地图",@"高德地图，苹果内置地图也是调用的高德接口",],
-                                  @[@"0",@"1",],
+                                  @[@"二维码",@"ZXing",],
                                   @[@"2",@"3",]];
     
     
@@ -192,12 +205,17 @@
     switch (indexPath.row) {
         case 0:
         {
-            
+            CustomLog(@"\n%@",titleAndContents[indexPath.row][1]);
             break;
         }
         case 1:
         {
-            
+            CustomLog(@"\n%@",titleAndContents[indexPath.row][1]);
+            break;
+        }
+        case 3:
+        {
+            CustomLog(@"\n%@",titleAndContents[indexPath.row][1]);            
             break;
         }
         default:
