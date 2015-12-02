@@ -14,6 +14,7 @@
 #import "MapkitViewController.h"
 #import "QRCodeViewController.h"
 #import "CommonModel.h"
+#import "UIView+WZPSeparator.h"
 
 
 
@@ -244,7 +245,8 @@
     }
     
     
-    [cell addSeparatorLine];
+    
+    [cell addSeparatorToBottom:1 leftEdge:15 rightEdge:15 withHeight:2 withColor:nil];
     
     return cell;
 }

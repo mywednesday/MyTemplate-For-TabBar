@@ -10,14 +10,14 @@
 
 @interface MyTableViewCell : UITableViewCell
 
-
-/**
- 添加Cell底部的分割线
- */
-- (void) addSeparatorLine;
-
-/**
- 删除Cell底部的分割线
- */
-- (void)removeSepartor;
+//
+///**
+// 添加Cell底部的分割线
+// */
+//- (void) addSeparatorLine;
+//
+///**
+// 删除Cell底部的分割线
+// */
+//- (void)removeSepartor;
 @end
