@@ -10,22 +10,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyTemplate/Class/Talks/qr_code/QRCodeViewController.m"
-            timestampString = "469550861.501685"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
-            landmarkName = "-imagePickerController:didFinishPickingImage:editingInfo:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyTemplate/Class/Talks/qr_code/QRCodeViewController.m"
             timestampString = "469550896.624889"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"

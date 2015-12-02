@@ -181,7 +181,7 @@
     if (self.navigationController) {
         [self.navigationController pushViewController:secondVC animated:YES];
     }else{
-        CustomLog(@"self.navigationController  跳转失败");
+        CusDebugLog(@"self.navigationController  跳转失败");
     }
 }
 
@@ -203,7 +203,7 @@
 //委托传值
 - (void) sendDataFrom_2_To_1:(NSString *)fetchString {
     _myFetchLabel.text = fetchString;
-    CustomLog(@"Delegate逆向传值:%@",fetchString);
+    CusDebugLog(@"Delegate逆向传值:%@",fetchString);
 }
 
 
@@ -212,7 +212,7 @@
 - (void) getPassedValue: (NSNotification *) notify {
     NSDictionary *nameDictionary = [notify userInfo];
     _myFetchLabel.text = [nameDictionary objectForKey:@"myValue"];
-    CustomLog(@"NSNotification 传值:%@",_myFetchLabel.text);
+    CusDebugLog(@"NSNotification 传值:%@",_myFetchLabel.text);
 }
 
 

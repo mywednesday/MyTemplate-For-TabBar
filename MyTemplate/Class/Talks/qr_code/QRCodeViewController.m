@@ -128,7 +128,7 @@
         // This CGImageRef image can be placed in a UIImage, NSImage, or written to a file.
     } else {
         NSString *errorMessage = [error localizedDescription];
-        CustomLog(@"\n%@",retImage);
+        CusDebugLog(@"\n%@",retImage);
     }
     
     return retImage;

@@ -148,70 +148,70 @@
     /*
         NSArray创建后，其中的内容将不能改变
      */
-    CustomLog(@"\n-- NSArray按钮点击事件 --");
+    CusDebugLog(@"\n-- NSArray按钮点击事件 --");
     
 #pragma mark -- Creating an Array --
-    CustomLog(@"\n1.___Creating an Array___");
-//    CustomLog(@"\n****  initWithObjects  ****");
+    CusDebugLog(@"\n1.___Creating an Array___");
+//    CusDebugLog(@"\n****  initWithObjects  ****");
 //    NSArray *myArray1_1 = [[NSArray alloc] initWithObjects:@"we",@"slkk",@"wg",@"sd", nil];
-//    CustomLog(@"\nmyArray1_1 = %@",myArray1_1);
+//    CusDebugLog(@"\nmyArray1_1 = %@",myArray1_1);
 //    
 //    
-//    CustomLog(@"\narrayWithObjects  可以跟多个对象(只要是对象就行)");
+//    CusDebugLog(@"\narrayWithObjects  可以跟多个对象(只要是对象就行)");
 //    NSArray *myArray1_2 = [NSArray arrayWithObjects:@"we",myArray1_1,@"slkk",@"wg",@"sd", nil];
-//    CustomLog(@"\nmyArray1_2 = %@",myArray1_2);
+//    CusDebugLog(@"\nmyArray1_2 = %@",myArray1_2);
 //    
 //    
-//    CustomLog(@"\arrayWithObject  只能跟一个对象(只要是对象就行)");
+//    CusDebugLog(@"\arrayWithObject  只能跟一个对象(只要是对象就行)");
 ////    NSArray *myArray1_3 = [NSArray arrayWithObject:@"we"];
 //    NSArray *myArray1_3 = [NSArray arrayWithObject:myArray1_2];
-//    CustomLog(@"\nmyArray1_3 = %@",myArray1_3);
+//    CusDebugLog(@"\nmyArray1_3 = %@",myArray1_3);
 //    
 //    
-//    CustomLog(@"\n另外一种直接初始化的方法");
+//    CusDebugLog(@"\n另外一种直接初始化的方法");
 //    NSArray *myArray1_4 = @[@"四大皆空", myArray1_1, @"速度速度"];
-//    CustomLog(@"\nmyArray1_4 = %@",myArray1_4);
+//    CusDebugLog(@"\nmyArray1_4 = %@",myArray1_4);
 //    
 //    
-//    CustomLog(@"\n从另一个Array初始化");
+//    CusDebugLog(@"\n从另一个Array初始化");
 //    NSString *strings[3];
 //    strings[0] = @"First";
 //    strings[1] = @"Second";
 //    strings[2] = @"Third";
 //    NSArray *myArray1_5 = [NSArray arrayWithObjects:strings count:2];           //包含了strings 中的前两个
-//    CustomLog(@"\nmyArray1_5 = %@",myArray1_5);
+//    CusDebugLog(@"\nmyArray1_5 = %@",myArray1_5);
     
     
     
     
     
 #pragma mark -- Initializing an Array --
-    CustomLog(@"\n2.___Initializing an Array___");
+    CusDebugLog(@"\n2.___Initializing an Array___");
 //    NSArray *initTmp2 = @[@"周一",@"周二",@"周三",@"周四",@"周五",@"周六",@"周日"];
 //    
 //    
-//    CustomLog(@"\n****  initWithObjects  ****");
+//    CusDebugLog(@"\n****  initWithObjects  ****");
 //    NSArray *myArray2_1 = [[NSArray alloc] initWithArray: initTmp2];
-//    CustomLog(@"\nmyArray2_1 = %@",myArray2_1);
+//    CusDebugLog(@"\nmyArray2_1 = %@",myArray2_1);
 //    
 //    
-//    CustomLog(@"\n****  initWithObjects  ****");
+//    CusDebugLog(@"\n****  initWithObjects  ****");
 //    NSArray *myArray2_2 = [[NSArray alloc] initWithArray: initTmp2 copyItems:YES];       // if flag is YES, copies of the objects—in array.
-//    CustomLog(@"\nmyArray2_2 = %@",myArray2_2);
+//    CusDebugLog(@"\nmyArray2_2 = %@",myArray2_2);
 //    
 //    /*  打印对象地址
-//    CustomLog(@"\ninitTmp = %p",initTmp);
-//    CustomLog(@"\nmyArray2_1 = %p",myArray2_1);
-//    CustomLog(@"\nmyArray2_2 = %p",myArray2_2);
+//    CusDebugLog(@"\ninitTmp = %p",initTmp);
+//    CusDebugLog(@"\nmyArray2_1 = %p",myArray2_1);
+//    CusDebugLog(@"\nmyArray2_2 = %p",myArray2_2);
 //    */
 //    
 //    
-//    CustomLog(@"\n****  initWithObjects  ****");
+//    CusDebugLog(@"\n****  initWithObjects  ****");
 //    NSArray *myArray2_3 = [[NSArray alloc] initWithObjects:initTmp2, nil];
-//    CustomLog(@"\nmyArray2_3 = %@",myArray2_3);
+//    CusDebugLog(@"\nmyArray2_3 = %@",myArray2_3);
 //    
 //    
-//    CustomLog(@"\n****  initWithObjects  ****");
+//    CusDebugLog(@"\n****  initWithObjects  ****");
 //    NSString *strings2[7];
 //    strings2[0] = @"周一";
 //    strings2[1] = @"周二";
@@ -221,85 +221,85 @@
 //    strings2[5] = @"周六";
 //    strings2[6] = @"周日";
 //    NSArray *myArray2_4 = [[NSArray alloc] initWithObjects:strings2  count:5];          //这里的Objects必须是 C数组[] 的形式
-//    CustomLog(@"\nmyArray2_4 = %@",myArray2_4);
+//    CusDebugLog(@"\nmyArray2_4 = %@",myArray2_4);
     
     
     
     
     
 #pragma mark -- Querying an Array --
-//    CustomLog(@"\n3.___Querying an Array___");
+//    CusDebugLog(@"\n3.___Querying an Array___");
 //    NSArray *initTmp3 = @[@"周一",@"周二",@"周三",@"周四",@"周五",@"周六",@"周日"];
 //    
 //    
-//    CustomLog(@"\n****  containsObject  ****");
-//    CustomLog(@"\ninitTmp3中%@%@",[initTmp3 containsObject:@"周三"] ? @"含有" : @"没有", @"周三");
+//    CusDebugLog(@"\n****  containsObject  ****");
+//    CusDebugLog(@"\ninitTmp3中%@%@",[initTmp3 containsObject:@"周三"] ? @"含有" : @"没有", @"周三");
 //    
 //    
-//    CustomLog(@"\n****  count  ****");
-//    CustomLog(@"\ninitTmp3中一共有%lu个对象",(unsigned long)[initTmp3 count]);
+//    CusDebugLog(@"\n****  count  ****");
+//    CusDebugLog(@"\ninitTmp3中一共有%lu个对象",(unsigned long)[initTmp3 count]);
 //    
 //    
-//    CustomLog(@"\n****  getObjects: range:  不知道怎么用  ****");
+//    CusDebugLog(@"\n****  getObjects: range:  不知道怎么用  ****");
 //    
 //    
-//    CustomLog(@"\n****  firstObject  ****");
-//    CustomLog(@"\ninitTmp3的第一个对象，firstObject是:%@", [initTmp3 firstObject]);     //不能智能提示出来....
+//    CusDebugLog(@"\n****  firstObject  ****");
+//    CusDebugLog(@"\ninitTmp3的第一个对象，firstObject是:%@", [initTmp3 firstObject]);     //不能智能提示出来....
 //    
 //    
-//    CustomLog(@"\n****  lastObject  ****");
-//    CustomLog(@"\ninitTmp3的最后一个对象，lastObject是:%@", [initTmp3 lastObject]);
+//    CusDebugLog(@"\n****  lastObject  ****");
+//    CusDebugLog(@"\ninitTmp3的最后一个对象，lastObject是:%@", [initTmp3 lastObject]);
 //    
 //    
-//    CustomLog(@"\n****  objectAtIndex  ****");
+//    CusDebugLog(@"\n****  objectAtIndex  ****");
 //    int index = 3;
-//    CustomLog(@"\ninitTmp3的第%d个对象是:%@", index, [initTmp3 objectAtIndex: (index - 1)]);
+//    CusDebugLog(@"\ninitTmp3的第%d个对象是:%@", index, [initTmp3 objectAtIndex: (index - 1)]);
 //    
 //    
-//    CustomLog(@"\n****  objectAtIndexedSubscript  ****");
+//    CusDebugLog(@"\n****  objectAtIndexedSubscript  ****");
 //    int idx = 3;
-//    CustomLog(@"\ninitTmp3的第%d个对象是:%@", idx, [initTmp3 objectAtIndexedSubscript: (idx - 1)]);
+//    CusDebugLog(@"\ninitTmp3的第%d个对象是:%@", idx, [initTmp3 objectAtIndexedSubscript: (idx - 1)]);
 //    
 //    
-//    CustomLog(@"\n****  objectsAtIndexes  ****");
+//    CusDebugLog(@"\n****  objectsAtIndexes  ****");
 //    NSUInteger loc = 2;
 //    NSUInteger len = 4;
-//    CustomLog(@"\ninitTmp3的第%lu个位置开始的%lu个对象是:%@", loc+1,
+//    CusDebugLog(@"\ninitTmp3的第%lu个位置开始的%lu个对象是:%@", loc+1,
 //              (unsigned long)len,
 //              [initTmp3 objectsAtIndexes: [NSIndexSet indexSetWithIndexesInRange: NSMakeRange(loc, len)]]);
 //    
 //    
-//    CustomLog(@"\n****  objectEnumerator  ****");
+//    CusDebugLog(@"\n****  objectEnumerator  ****");
 //    NSEnumerator *enumerator = [initTmp3 objectEnumerator];         //将NSArray中的对象转换成枚举类型
-//    CustomLog(@"对应的枚举类型为:");
+//    CusDebugLog(@"对应的枚举类型为:");
 //    id anObj;
 //    while (anObj = [enumerator nextObject]) {
-//        CustomLog(@"\n%@",anObj);
+//        CusDebugLog(@"\n%@",anObj);
 //    }
 //    
 //    
-//    CustomLog(@"\n****  reverseObjectEnumerator  ****");
+//    CusDebugLog(@"\n****  reverseObjectEnumerator  ****");
 //    //与objectEnumerator的区别是：reverseObjectEnumerator将NSArray中的对象逆序排序了
 //    NSEnumerator *enumerator1 = [initTmp3 reverseObjectEnumerator];
-//    CustomLog(@"对应的枚举类型为:");
+//    CusDebugLog(@"对应的枚举类型为:");
 //    id anObj1;
 //    while (anObj1 = [enumerator1 nextObject]) {
-//        CustomLog(@"\n%@",anObj1);
+//        CusDebugLog(@"\n%@",anObj1);
 //    }
     
     
 #pragma mark -- Finding Objects in an Array --
-//    CustomLog(@"\n3.___Finding Objects in an Array___");
+//    CusDebugLog(@"\n3.___Finding Objects in an Array___");
 //    NSArray *initTmp3 = @[@"周一",@"周二",@"周三",@"周四",@"周五",@"周六",@"周日"];
 //    NSString *targetObj = @"周三";
 //    
-//    CustomLog(@"\n****  indexOfObject  ****");
-//    CustomLog(@"\ntargetObj是initTmp3中的第%lu个对象",(unsigned long)[initTmp3 indexOfObject: targetObj]);     //使用 isEqual 实现
+//    CusDebugLog(@"\n****  indexOfObject  ****");
+//    CusDebugLog(@"\ntargetObj是initTmp3中的第%lu个对象",(unsigned long)[initTmp3 indexOfObject: targetObj]);     //使用 isEqual 实现
 //    
 //    
-//    CustomLog(@"\n****  indexOfObject: inRange:  ****");
+//    CusDebugLog(@"\n****  indexOfObject: inRange:  ****");
 //    NSUInteger targetIndex = [initTmp3 indexOfObject: targetObj inRange: NSMakeRange(2, 2)];        ////使用 isEqual 实现，不明白该函数存在的意义
-//    CustomLog(@"\ntargetObj是initTmp3中的第%lu个对象", NSNotFound == targetIndex ? 1111 : targetIndex);
+//    CusDebugLog(@"\ntargetObj是initTmp3中的第%lu个对象", NSNotFound == targetIndex ? 1111 : targetIndex);
     
     
     
@@ -317,10 +317,10 @@
      NSDictionary中的Key是唯一的（PS：初始化时重复也不会报错，先到先得，后边添加相同的Key将会失败）
      不同Key的Value可以是相同的
      */
-    CustomLog(@"\n-- NSDictionary按钮点击事件 --");
+    CusDebugLog(@"\n-- NSDictionary按钮点击事件 --");
     
 #pragma mark -- Creating a Dictionary --
-    CustomLog(@"\n1.___Creating a Dictionary___");
+    CusDebugLog(@"\n1.___Creating a Dictionary___");
 //    NSDictionary *initTmp1 = @{@"1": @"周一",         //key: value
 //                               @"2": @"周二",
 //                               @"3": @"周三",
@@ -331,26 +331,26 @@
 //    
 //    
 //    
-//    CustomLog(@"\n****  dictionaryWithDictionary  ****");
+//    CusDebugLog(@"\n****  dictionaryWithDictionary  ****");
 //    NSDictionary *myDictionary1_1 = [NSDictionary dictionaryWithDictionary:initTmp1];
-//    CustomLog(@"\nmyDictionary1_1 = %@",myDictionary1_1);
+//    CusDebugLog(@"\nmyDictionary1_1 = %@",myDictionary1_1);
 //    
 //    
 //    
-//    CustomLog(@"\n****  dictionaryWithObject: forKey:  ****");                  //这里用的单个对象
+//    CusDebugLog(@"\n****  dictionaryWithObject: forKey:  ****");                  //这里用的单个对象
 //    NSDictionary *myDictionary1_2 = [NSDictionary dictionaryWithObject:@"wo de tian" forKey:@"only"];
-//    CustomLog(@"\nmyDictionary1_2 = %@",myDictionary1_2);
+//    CusDebugLog(@"\nmyDictionary1_2 = %@",myDictionary1_2);
 //    
 //    
 //    
-//    CustomLog(@"\n****  dictionaryWithObjects: forKeys:  ****");                //这里用的只能是NSArray形式的参数
+//    CusDebugLog(@"\n****  dictionaryWithObjects: forKeys:  ****");                //这里用的只能是NSArray形式的参数
 //    NSDictionary *myDictionary1_3 = [NSDictionary dictionaryWithObjects:@[@"周一", @"周二", @"周三", @"周四", @"周五", @"周六", @"周日"]
 //                                                                forKeys:@[@"1", @"2", @"3", @"4", @"5", @"6", @"7"]];
-//    CustomLog(@"\nmyDictionary1_3 = %@",myDictionary1_3);
+//    CusDebugLog(@"\nmyDictionary1_3 = %@",myDictionary1_3);
 //    
 //    
 //    
-//    CustomLog(@"\n****  dictionaryWithObjects: forKeys: count: ****");          //这里用的只能是C数组形式的参数
+//    CusDebugLog(@"\n****  dictionaryWithObjects: forKeys: count: ****");          //这里用的只能是C数组形式的参数
 //    NSString *values1_4[7];
 //    values1_4[0] = @"Monday";
 //    values1_4[1] = @"Tuesday";
@@ -372,22 +372,22 @@
 //    NSDictionary *myDictionary1_4 = [NSDictionary dictionaryWithObjects:values1_4
 //                                                                forKeys:keys1_4
 //                                                                  count:5];
-//    CustomLog(@"\nmyDictionary1_4 = %@",myDictionary1_4);
+//    CusDebugLog(@"\nmyDictionary1_4 = %@",myDictionary1_4);
 //    
 //    
 //    
 //    
 //    
-//    CustomLog(@"\n****  dictionaryWithObjects: forKeys: count: ****");          //和开始的时候直接初始化很像,但是这里的方式全部都是逗号(,)
+//    CusDebugLog(@"\n****  dictionaryWithObjects: forKeys: count: ****");          //和开始的时候直接初始化很像,但是这里的方式全部都是逗号(,)
 //    NSDictionary *myDictionary1_5 = [NSDictionary dictionaryWithObjectsAndKeys: @"value1", @"key1", @"value2", @"key2", nil];
-//    CustomLog(@"\nmyDictionary1_5 = %@",myDictionary1_5);
+//    CusDebugLog(@"\nmyDictionary1_5 = %@",myDictionary1_5);
     
     
     
     
     
 #pragma mark -- Initializing an NSDictionary Instance --
-    CustomLog(@"\n2.___Initializing an NSDictionary Instance___");
+    CusDebugLog(@"\n2.___Initializing an NSDictionary Instance___");
 //    NSDictionary *initTmp2 = @{@"1": @"Monday",         //key: value
 //                               @"2": @"Tuesday",
 //                               @"3": @"Wednesday",
@@ -398,27 +398,27 @@
 //    
 //    
 //    
-//    CustomLog(@"\n****  initWithDictionary  ****");
+//    CusDebugLog(@"\n****  initWithDictionary  ****");
 //    NSDictionary *myDictionary2_1 = [[NSDictionary alloc] initWithDictionary:initTmp2];
-//    CustomLog(@"\nmyDictionary2_1 = %@",myDictionary2_1);
+//    CusDebugLog(@"\nmyDictionary2_1 = %@",myDictionary2_1);
 //    
 //    
 //    
-//    CustomLog(@"\n****  initWithDictionary: copyItems:  ****");
+//    CusDebugLog(@"\n****  initWithDictionary: copyItems:  ****");
 //    NSDictionary *myDictionary2_2 = [[NSDictionary alloc] initWithDictionary:initTmp2 copyItems:YES];
-//    CustomLog(@"\nmyDictionary2_2 = %@",myDictionary2_2);
+//    CusDebugLog(@"\nmyDictionary2_2 = %@",myDictionary2_2);
 //    
 //    
 //    
 //    
-//    CustomLog(@"\n****  initWithObjects: forKeys:  ****");                //这里用的只能是NSArray形式的参数
+//    CusDebugLog(@"\n****  initWithObjects: forKeys:  ****");                //这里用的只能是NSArray形式的参数
 //    NSDictionary *myDictionary2_3 = [[NSDictionary alloc] initWithObjects:@[@"Monday", @"Tuesday", @"Wednesday", @"Thursday", @"Friday", @"Saturday", @"Sunday"]
 //                                                                  forKeys:@[@"1", @"2", @"3", @"4", @"5", @"6", @"7"]];
-//    CustomLog(@"\nmyDictionary2_3 = %@",myDictionary2_3);
+//    CusDebugLog(@"\nmyDictionary2_3 = %@",myDictionary2_3);
 //    
 //    
 //    
-//    CustomLog(@"\n****  dictionaryWithObjects: forKeys: count: ****");          //这里用的只能是C数组形式的参数
+//    CusDebugLog(@"\n****  dictionaryWithObjects: forKeys: count: ****");          //这里用的只能是C数组形式的参数
 //    NSString *values2_4[7];
 //    values2_4[0] = @"Monday";
 //    values2_4[1] = @"Tuesday";
@@ -440,13 +440,13 @@
 //    NSDictionary *myDictionary2_4 = [NSDictionary dictionaryWithObjects:values2_4
 //                                                                forKeys:keys2_4
 //                                                                  count:5];
-//    CustomLog(@"\nmyDictionary2_4 = %@",myDictionary2_4);
+//    CusDebugLog(@"\nmyDictionary2_4 = %@",myDictionary2_4);
 //    
 //    
 //    
-//    CustomLog(@"\n****  dictionaryWithObjects: forKeys: count: ****");          //和开始的时候直接初始化很像,但是这里的方式全部都是逗号(,)
+//    CusDebugLog(@"\n****  dictionaryWithObjects: forKeys: count: ****");          //和开始的时候直接初始化很像,但是这里的方式全部都是逗号(,)
 //    NSDictionary *myDictionary2_5 = [NSDictionary dictionaryWithObjectsAndKeys: @"value1", @"key1", @"value2", @"key2", nil];
-//    CustomLog(@"\nmyDictionary2_5 = %@",myDictionary2_5);
+//    CusDebugLog(@"\nmyDictionary2_5 = %@",myDictionary2_5);
     
     
     
@@ -454,7 +454,7 @@
     
     
 #pragma mark -- Creating Key Sets for Shared-Key Optimized Dictionaries --
-    CustomLog(@"\n3.___Creating Key Sets for Shared-Key Optimized Dictionaries___");
+    CusDebugLog(@"\n3.___Creating Key Sets for Shared-Key Optimized Dictionaries___");
     
     
     
@@ -462,7 +462,7 @@
     
     
 #pragma mark -- Counting Entries --
-    CustomLog(@"\n4.___Counting Entries___");
+    CusDebugLog(@"\n4.___Counting Entries___");
 //    NSDictionary *initTmp4 = @{@"1": @"Monday",         //key: value
 //                               @"2": @"Tuesday",
 //                               @"1": @"Wednesday",          //key重复的将不能成功写入，count = 6
@@ -470,15 +470,15 @@
 //                               @"5": @"Friday",
 //                               @"6": @"Saturday",
 //                               @"7": @"Sunday"};
-//    CustomLog(@"\n****  count  ****");
-//    CustomLog(@"\ninitTmp4 中有%lu个Entry(键值对)!", (unsigned long)[initTmp4 count]);
+//    CusDebugLog(@"\n****  count  ****");
+//    CusDebugLog(@"\ninitTmp4 中有%lu个Entry(键值对)!", (unsigned long)[initTmp4 count]);
     
     
     
     
    
 #pragma mark -- Comparing Dictionaries --
-    CustomLog(@"\n5.___Comparing Dictionaries___");
+    CusDebugLog(@"\n5.___Comparing Dictionaries___");
 //    NSDictionary *initTmp5 = @{@"1": @"Monday",         //key: value
 //                               @"2": @"Tuesday",
 //                               @"3": @"Wednesday",
@@ -486,7 +486,7 @@
 //                               @"5": @"Friday",
 //                               @"6": @"Saturday",
 //                               @"7": @"Sunday"};
-//    CustomLog(@"\n****  isEqualToDictionary: ****");
+//    CusDebugLog(@"\n****  isEqualToDictionary: ****");
 //    NSDictionary *myDictionary5_1 = [NSDictionary dictionaryWithDictionary:initTmp5];    
 ////    NSDictionary *myDictionary5_1 = @{@"2": @"Tuesday",         //key: value
 ////                               @"1": @"Monday",
@@ -496,7 +496,7 @@
 ////                               @"6": @"Saturday",
 ////                               @"7": @"Sunday"};
 //    //key和value必须都对应才可以返回YES，顺序可以是乱的
-//    CustomLog(@"\nmyDictionary5_1 isEqualTo initTmp4 ?  Answer is %@ .", [myDictionary5_1 isEqualToDictionary: initTmp5] ? @"YES" : @"NO");
+//    CusDebugLog(@"\nmyDictionary5_1 isEqualTo initTmp4 ?  Answer is %@ .", [myDictionary5_1 isEqualToDictionary: initTmp5] ? @"YES" : @"NO");
     
     
     
@@ -504,7 +504,7 @@
     
     
 #pragma mark -- Accessing Keys and Values --
-    CustomLog(@"\n6.___Accessing Keys and Values___");
+    CusDebugLog(@"\n6.___Accessing Keys and Values___");
 //    NSDictionary *initTmp6 = @{@"1": @"Monday",         //key: value
 //                               @"2": @"Tuesday",
 //                               @"3": @"Wednesday",
@@ -512,53 +512,53 @@
 //                               @"5": @"Tuesday",
 //                               @"7": @"Saturday",
 //                               @"7": @"Sunday"};
-//    CustomLog(@"\n****  allKeys  ****");
+//    CusDebugLog(@"\n****  allKeys  ****");
 //    //相同的key只输出一次
-//    CustomLog(@"\ninitTmp6 的 allKeys: %@", [initTmp6 allKeys]);
+//    CusDebugLog(@"\ninitTmp6 的 allKeys: %@", [initTmp6 allKeys]);
 //    
 //
 //    
-//    CustomLog(@"\n****  allKeysForObject  ****");
+//    CusDebugLog(@"\n****  allKeysForObject  ****");
 //    NSString *targetObj = @"Tuesday";
-//    CustomLog(@"\ninitTmp6 中 Value 为 %@ 的Key有:%@", targetObj, [initTmp6 allKeysForObject:targetObj]);
+//    CusDebugLog(@"\ninitTmp6 中 Value 为 %@ 的Key有:%@", targetObj, [initTmp6 allKeysForObject:targetObj]);
 //    
 //    
 //    
-//    CustomLog(@"\n****  allValues  ****");
+//    CusDebugLog(@"\n****  allValues  ****");
 //    //当有相同的key存在时，只输出其中的一个
-//    CustomLog(@"\ninitTmp6 的 allValues: %@", [initTmp6 allValues]);
+//    CusDebugLog(@"\ninitTmp6 的 allValues: %@", [initTmp6 allValues]);
 //    
 //    
 //    
-//    CustomLog(@"\n****  objectForKey:  ****");
+//    CusDebugLog(@"\n****  objectForKey:  ****");
 //    NSString *targetKey = @"3";
-//    CustomLog(@"\ninitTmp6 中 Key:%@对应的Value是: %@", targetKey, [initTmp6 objectForKey: targetKey]);
+//    CusDebugLog(@"\ninitTmp6 中 Key:%@对应的Value是: %@", targetKey, [initTmp6 objectForKey: targetKey]);
 //    
 //    
 //    
-//    CustomLog(@"\n****  objectForKeyedSubscript:  ****");
+//    CusDebugLog(@"\n****  objectForKeyedSubscript:  ****");
 //    NSString *targetKey_1 = @"3";
-//    CustomLog(@"\ninitTmp6 中 Key:%@对应的Value是: %@", targetKey, [initTmp6 objectForKeyedSubscript: targetKey_1]);
+//    CusDebugLog(@"\ninitTmp6 中 Key:%@对应的Value是: %@", targetKey, [initTmp6 objectForKeyedSubscript: targetKey_1]);
 //    
 //    
 //    
 //    
-//    CustomLog(@"\n****  objectsForKeys:notFoundMarker:  ****");
+//    CusDebugLog(@"\n****  objectsForKeys:notFoundMarker:  ****");
 //    NSArray *targetKeys = @[@"3",@"4",@"8"];
-//    CustomLog(@"\ninitTmp6 中 Key:%@对应的Value是: %@", targetKey, [initTmp6 objectsForKeys:targetKeys notFoundMarker:@"fuck"]); //notFoundMarker:找不到Key时默认的返回值
+//    CusDebugLog(@"\ninitTmp6 中 Key:%@对应的Value是: %@", targetKey, [initTmp6 objectsForKeys:targetKeys notFoundMarker:@"fuck"]); //notFoundMarker:找不到Key时默认的返回值
 //    
 //    
 //    
-//    CustomLog(@"\n****  valueForKey:  ****");
+//    CusDebugLog(@"\n****  valueForKey:  ****");
 //    NSString *targetKey_2 = @"3";
-//    CustomLog(@"\ninitTmp6 中 Key:%@对应的Value是: %@", targetKey, [initTmp6 valueForKey: targetKey_2]);     //这个时KVC定义的取值方式
+//    CusDebugLog(@"\ninitTmp6 中 Key:%@对应的Value是: %@", targetKey, [initTmp6 valueForKey: targetKey_2]);     //这个时KVC定义的取值方式
     
     
     
     
     
 #pragma mark -- Enumerating Dictionaries --
-    CustomLog(@"\n7.___Enumerating Dictionaries___");
+    CusDebugLog(@"\n7.___Enumerating Dictionaries___");
 //    NSDictionary *initTmp7 = @{@"1": @"Monday",         //key: value
 //                               @"2": @"Tuesday",
 //                               @"3": @"Wednesday",
@@ -569,23 +569,23 @@
 //    
 //    
 //    
-//    CustomLog(@"\n****  keyEnumerator  ****");
+//    CusDebugLog(@"\n****  keyEnumerator  ****");
 //    NSEnumerator *enumerator = [initTmp7 keyEnumerator];        //将Key转换成枚举
 //    id key;
 //    while ((key = [enumerator nextObject])) {
 //        /* code that uses the returned key */
-//        CustomLog(@"\n%@", key);
+//        CusDebugLog(@"\n%@", key);
 //    }
 //    
 //    
 //    
 //    
-//    CustomLog(@"\n****  objectEnumerator  ****");
+//    CusDebugLog(@"\n****  objectEnumerator  ****");
 //    NSEnumerator *enumerator_1 = [initTmp7 objectEnumerator];   //将Value转换成枚举
 //    id key_1;
 //    while ((key_1 = [enumerator_1 nextObject])) {
 //        /* code that uses the returned key */
-//        CustomLog(@"\n%@", key_1);
+//        CusDebugLog(@"\n%@", key_1);
 //    }
 //    
 //    
@@ -596,7 +596,7 @@
 //        你，每组都会执行这个block。这其实就是传递一个block到另一个方法，在这个例子里它会带着特定参数被反复调用，直到找到一个ENOUGH的key，然后就
 //        会通过重新赋值那个BOOL *stop来停止运行，停止遍历同时停止调用block。
 //     */
-//    CustomLog(@"\n****  enumerateKeysAndObjectsUsingBlock  ****");
+//    CusDebugLog(@"\n****  enumerateKeysAndObjectsUsingBlock  ****");
 //    [initTmp7 enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
 //        NSString *tmp = @"";
 //        if([key isKindOfClass:[NSString class]]) {
@@ -604,7 +604,7 @@
 //            if ([tmp isEqual:@"1"])
 //                *stop = YES;        //注意这里是给 *stop 赋值，同时Block上的格式是这样的：^(id key, id obj, BOOL *stop)不能带有_Nonnull
 //        }
-//        CustomLog(@"\n%@", tmp);
+//        CusDebugLog(@"\n%@", tmp);
 //    }];
 //    
 //    
@@ -619,7 +619,7 @@
 //        而且在以后cpu升级成更多核心后不用改代码也可以享受带来的好处。同时，对于遍历的外部是保持同步的（遍历都完成后才继续执行下一行），
 //        猜想内部大概是gcd的dispatch_group或者信号量控制。
 //     */
-//    CustomLog(@"\n****  enumerateKeysAndObjectsWithOptions: usingBlock:  ****");
+//    CusDebugLog(@"\n****  enumerateKeysAndObjectsWithOptions: usingBlock:  ****");
 //    //NSEnumerationConcurrent不进行顺序同步，NSEnumerationReverse保持按正常顺序输出，和enumerateKeysAndObjectsUsingBlock的效果一致
 //    [initTmp7 enumerateKeysAndObjectsWithOptions:NSEnumerationReverse usingBlock:^(id key, id obj, BOOL * _Nonnull stop) {
 //        NSString *tmp = @"";
@@ -628,7 +628,7 @@
 //            if ([tmp isEqual:@"1"])
 //                *stop = YES;            //注意这里是给 *stop 赋值，同时Block上的格式是这样的：^(id key, id obj, BOOL *stop)
 //        }
-//        CustomLog(@"\n%@", tmp);
+//        CusDebugLog(@"\n%@", tmp);
 //    }];
     
     
@@ -638,7 +638,7 @@
     
     
 #pragma mark -- Sorting Dictionaries --
-    CustomLog(@"\n8.___Sorting Dictionaries___");
+    CusDebugLog(@"\n8.___Sorting Dictionaries___");
 //    NSDictionary *initTmp8 = @{@"1": @"Monday",         //key: value
 //                               @"2": @"Tuesday",
 //                               @"3": @"Wednesday",
@@ -650,9 +650,9 @@
 //    
 //    
 //    
-//    CustomLog(@"\n****  keysSortedByValueUsingSelector:  ****");
+//    CusDebugLog(@"\n****  keysSortedByValueUsingSelector:  ****");
 //    //算了，还是没搞明白怎么用
-////    CustomLog(@"\n%@", [initTmp8 keysSortedByValueUsingSelector:@selector(mySortCompareSelector:)]);
+////    CusDebugLog(@"\n%@", [initTmp8 keysSortedByValueUsingSelector:@selector(mySortCompareSelector:)]);
 //    
 //    
 //    //还有几个类似的方法，以后再看吧
@@ -662,7 +662,7 @@
     
     
 #pragma mark -- Filtering Dictionaries --
-    CustomLog(@"\n9.___Filtering Dictionaries___");
+    CusDebugLog(@"\n9.___Filtering Dictionaries___");
     
     
     
@@ -672,7 +672,7 @@
     
     
 #pragma mark -- Storing Dictionaries --
-    CustomLog(@"\n10.___Storing Dictionaries___");
+    CusDebugLog(@"\n10.___Storing Dictionaries___");
 //    NSDictionary *initTmp10 = @{@"1": @"Monday",         //key: value
 //                                @"2": @"Tuesday",
 //                                @"3": @"Wednesday",
@@ -680,7 +680,7 @@
 //                                @"5": @"Friday",
 //                                @"6": @"Saturday",
 //                                @"7": @"Sunday"};
-//    CustomLog(@"\n****  writeToFile: atomically:  ****");
+//    CusDebugLog(@"\n****  writeToFile: atomically:  ****");
 //    NSString *error;
 //    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 //    NSString *plistPath = [rootPath stringByAppendingPathComponent:@"Data.plist"];
@@ -695,34 +695,34 @@
 //    }
 //    //从文件直接读取Dic内容
 //    NSDictionary *plistDic = [NSDictionary dictionaryWithContentsOfFile:plistPath];
-//    CustomLog(@"\n%@",plistDic);
+//    CusDebugLog(@"\n%@",plistDic);
     
     
     
     
     
 #pragma mark -- Accessing File Attributes --
-    CustomLog(@"\n11.___Accessing File Attributes___");
+    CusDebugLog(@"\n11.___Accessing File Attributes___");
 //    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 //    NSFileManager *fileManager = [[NSFileManager alloc] init];
 //    NSString *path = [rootPath stringByAppendingPathComponent:@"Data.plist"];
 //    NSDictionary *fileAttributes = [fileManager fileAttributesAtPath:path traverseLink:YES];
 //    if (fileAttributes != nil) {
 //        
-//        CustomLog(@"\nfileAttributes = %@", fileAttributes);
+//        CusDebugLog(@"\nfileAttributes = %@", fileAttributes);
 //        
 //        
 //        NSNumber *fileSize;
 //        NSString *fileOwner;
 //        NSDate *fileModDate;
 //        if (fileSize = [fileAttributes objectForKey:NSFileSize]) {
-//            CustomLog(@"File size: %qi\n", [fileSize unsignedLongLongValue]);
+//            CusDebugLog(@"File size: %qi\n", [fileSize unsignedLongLongValue]);
 //        }
 //        if (fileOwner = [fileAttributes objectForKey:NSFileOwnerAccountName]) {
-//            CustomLog(@"Owner: %@\n", fileOwner);
+//            CusDebugLog(@"Owner: %@\n", fileOwner);
 //        }
 //        if (fileModDate = [fileAttributes objectForKey:NSFileModificationDate]) {
-//            CustomLog(@"Modification date: %@\n", fileModDate);
+//            CusDebugLog(@"Modification date: %@\n", fileModDate);
 //        }
 //    }
 //    else {
@@ -737,7 +737,7 @@
     
     
 #pragma mark -- Creating a Description --
-    CustomLog(@"\n12.___Creating a Description___");
+    CusDebugLog(@"\n12.___Creating a Description___");
     
     
     
@@ -771,41 +771,41 @@
      NSSet由于在底层使用hash的思想实现的，所以他就保证了里面存储的对象必须是唯一的，而数组可以存储相同的几个对象。
      由于NSSet是用hash实现的所以就造就了它查询速度比较快，但是我们不能把某某对象存在第几个元素后面之类的有关脚标的操作。
      */
-    CustomLog(@"\n-- NSSet按钮点击事件 --");
+    CusDebugLog(@"\n-- NSSet按钮点击事件 --");
     
     
 #pragma mark -- Creating a Set --
-    CustomLog(@"\n1.___Creating a Set___");
-    CustomLog(@"\n****  setWithObjects  ****");
+    CusDebugLog(@"\n1.___Creating a Set___");
+    CusDebugLog(@"\n****  setWithObjects  ****");
     NSSet *initTmp1 = [NSSet setWithObjects:@"Monday", @"Tuesday", @"Wednesday", @"Thursday", @"Friday", @"Saturday", @"Sunday", nil];
-    CustomLog(@"\ninitTmp1 = %@",initTmp1);
+    CusDebugLog(@"\ninitTmp1 = %@",initTmp1);
     
     
     /*  如果Add的对象中有相同的Entries，将不能添加成功   */
-    CustomLog(@"\n****  setByAddingObject  ****");
+    CusDebugLog(@"\n****  setByAddingObject  ****");
     NSSet *mySet1_1 = [initTmp1 setByAddingObject:@"what's the fuck"];
-    CustomLog(@"\nmySet1_1 = %@",mySet1_1);
+    CusDebugLog(@"\nmySet1_1 = %@",mySet1_1);
     
     
     
-    CustomLog(@"\n****  setByAddingObjectsFromArray  ****");
+    CusDebugLog(@"\n****  setByAddingObjectsFromArray  ****");
     NSSet *mySet1_2 = [initTmp1 setByAddingObjectsFromSet:initTmp1];
-    CustomLog(@"\nmySet1_2 = %@",mySet1_2);
+    CusDebugLog(@"\nmySet1_2 = %@",mySet1_2);
     
     
     
-    CustomLog(@"\n****  setByAddingObjectsFromArray  ****");
+    CusDebugLog(@"\n****  setByAddingObjectsFromArray  ****");
     NSSet *mySet1_3 = [initTmp1 setByAddingObjectsFromArray:@[@"I", @"He", @"She"]];
-    CustomLog(@"\nmySet1_3 = %@",mySet1_3);
+    CusDebugLog(@"\nmySet1_3 = %@",mySet1_3);
     
     
     
-    CustomLog(@"\n****  filteredSetUsingPredicate  ****");
+    CusDebugLog(@"\n****  filteredSetUsingPredicate  ****");
     NSSet *sourceSet = [NSSet setWithObjects:@"One", @"Two", @"Three", @"Four", nil];
     NSPredicate *predicate =
     [NSPredicate predicateWithFormat:@"SELF beginswith 'T'"];
     NSSet *mySet1_4 = [sourceSet filteredSetUsingPredicate:predicate];
-    CustomLog(@"\nmySet1_4 = %@",mySet1_4);
+    CusDebugLog(@"\nmySet1_4 = %@",mySet1_4);
 }
 
 
@@ -818,7 +818,7 @@
     NSArray *array = [[NSArray alloc]initWithObjects:@"beijing",@"shanghai",@"guangzou",@"wuhan", nil];
     NSString *string = @"ang";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF CONTAINS %@",string];
-    CustomLog(@"%@",[array filteredArrayUsingPredicate:pred]);
+    CusDebugLog(@"%@",[array filteredArrayUsingPredicate:pred]);
     
 }
 
@@ -835,57 +835,57 @@
     
     
 #pragma mark -- 关于strong week内存管理上的区别测试 --
-    CustomLog(@"\n1.___关于strong week内存管理上的区别测试___");
-//    CustomLog(@"\n****  当赋值改变时，打印内存地址  ****");
+    CusDebugLog(@"\n1.___关于strong week内存管理上的区别测试___");
+//    CusDebugLog(@"\n****  当赋值改变时，打印内存地址  ****");
 //    
 //    NSString *myStr1 = @"wenzhiping";
 //    NSString *myStr2 = myStr1;
-//    CustomLog(@"\nmyStr1 = %@\tmyStr2 = %@",myStr1,myStr2);
-//    CustomLog(@"\nmyStr1 = %p\tmyStr2 = %p",myStr1,myStr2);
+//    CusDebugLog(@"\nmyStr1 = %@\tmyStr2 = %@",myStr1,myStr2);
+//    CusDebugLog(@"\nmyStr1 = %p\tmyStr2 = %p",myStr1,myStr2);
 //    myStr1 = @"温志平";
-//    CustomLog(@"\nmyStr1 = %@\tmyStr2 = %@",myStr1,myStr2);
-//    CustomLog(@"\nmyStr1 = %p\tmyStr2 = %p",myStr1,myStr2);
+//    CusDebugLog(@"\nmyStr1 = %@\tmyStr2 = %@",myStr1,myStr2);
+//    CusDebugLog(@"\nmyStr1 = %p\tmyStr2 = %p",myStr1,myStr2);
     
     
     
     
 #pragma mark -- Creating and Initializing Strings --
-    CustomLog(@"\n2.___Creating and Initializing Strings___");
-//    CustomLog(@"\n****  string  ****");
+    CusDebugLog(@"\n2.___Creating and Initializing Strings___");
+//    CusDebugLog(@"\n****  string  ****");
 //    NSString *myString2_1 = [NSString string];      //返回一个空字符串
-//    CustomLog(@"\nmyString2_1 = %@",myString2_1);
+//    CusDebugLog(@"\nmyString2_1 = %@",myString2_1);
 //    
 //    
 //    
-//    CustomLog(@"\n****  init  ****");
+//    CusDebugLog(@"\n****  init  ****");
 //    NSString *myString2_2 = [[NSString alloc] init];      //返回一个空字符串
-//    CustomLog(@"\nmyString2_2 = %@",myString2_2);
+//    CusDebugLog(@"\nmyString2_2 = %@",myString2_2);
 //    
 //    
 //    
-//    CustomLog(@"\n****  initWithBytes: length: encoding:  ****");
+//    CusDebugLog(@"\n****  initWithBytes: length: encoding:  ****");
 //    char str2_3[] = "温志平";
 //    NSString *myString2_3 = [[NSString alloc] initWithBytes:str2_3 length: strlen(str2_3) encoding:NSUTF8StringEncoding];
-//    CustomLog(@"\nmyString2_3 = %@",myString2_3);
+//    CusDebugLog(@"\nmyString2_3 = %@",myString2_3);
 //    
 //    
 //    
-//    CustomLog(@"\n****  initWithBytesNoCopy: length: encoding: freeWhenDone:  ****");
+//    CusDebugLog(@"\n****  initWithBytesNoCopy: length: encoding: freeWhenDone:  ****");
 //    char str2_4[] = "温志平";
 //    //If YES, the receiver frees the memory when it no longer needs the data; if NO it won’t.
 //    NSString *myString2_4 = [[NSString alloc] initWithBytesNoCopy:str2_4
 //                                                           length: strlen(str2_4)
 //                                                         encoding:NSUTF8StringEncoding
 //                                                     freeWhenDone:NO];
-//    CustomLog(@"\nmyString2_4 = %@",myString2_4);
+//    CusDebugLog(@"\nmyString2_4 = %@",myString2_4);
 //    
 //    
 //    
-//    CustomLog(@"\n****  initWithCharacters: length:  ****");
+//    CusDebugLog(@"\n****  initWithCharacters: length:  ****");
 //    unichar str2_5 = 0x5479;        //这里写Unicode的索引码
 //    //If YES, the receiver frees the memory when it no longer needs the data; if NO it won’t.
 //    NSString *myString2_5 = [[NSString alloc] initWithCharacters:&str2_5 length:1];
-//    CustomLog(@"\nmyString2_5 = %@",myString2_5);
+//    CusDebugLog(@"\nmyString2_5 = %@",myString2_5);
     
     
     
@@ -894,197 +894,197 @@
     
     
 #pragma mark -- Writing to a File or URL --
-    CustomLog(@"\n3.___Writing to a File or URL___");
-//    CustomLog(@"\n****  writeToFile:atomically:encoding:error:  ****");
+    CusDebugLog(@"\n3.___Writing to a File or URL___");
+//    CusDebugLog(@"\n****  writeToFile:atomically:encoding:error:  ****");
 //    NSString *myString3_1 = @"\n\t测试字符串，用于测试《writeToFile:atomically:encoding:error:》方法的可用性";
 //    if ([myString3_1 writeToFile:@"/Volumes/D/wen.txt"
 //                      atomically:NO
 //                        encoding:NSUTF8StringEncoding
 //                           error:nil]) {
 //        
-//        CustomLog(@"\n文件写入成功：/Volumes/D/wen.txt");
+//        CusDebugLog(@"\n文件写入成功：/Volumes/D/wen.txt");
 //    } else {
-//        CustomLog(@"\n文件写入失败！");
+//        CusDebugLog(@"\n文件写入失败！");
 //    }
     
     
     
     
 #pragma mark -- Getting a String’s Length --
-    CustomLog(@"\n4.___Getting a String’s Length___");
-//    CustomLog(@"\n****  length  ****");
+    CusDebugLog(@"\n4.___Getting a String’s Length___");
+//    CusDebugLog(@"\n****  length  ****");
 //    NSArray *myArray4_1 = @[@"测试字符串，用于测试《", @"admin", @"测试字符串", @"", @" ", @" "];
 //    for (NSString *tmpStr in myArray4_1) {
-//        CustomLog(@"\n\"%@\"的length为：%lu", tmpStr, (unsigned long)[tmpStr length]);
+//        CusDebugLog(@"\n\"%@\"的length为：%lu", tmpStr, (unsigned long)[tmpStr length]);
 //    }
 //    
 //    
 //    
 //    
-//    CustomLog(@"\n****  lengthOfBytesUsingEncoding:  ****");
+//    CusDebugLog(@"\n****  lengthOfBytesUsingEncoding:  ****");
 //    NSArray *myArray4_2 = @[@"测试字符串，用于测试《", @"admin", @"测试字符串", @"", @" ", @" "];
 //    for (NSString *tmpStr in myArray4_2) {
-//        CustomLog(@"\n\"%@\"的lengthOfBytesUsingEncoding为：%lu", tmpStr, (unsigned long)[tmpStr lengthOfBytesUsingEncoding:NSUTF8StringEncoding]);
+//        CusDebugLog(@"\n\"%@\"的lengthOfBytesUsingEncoding为：%lu", tmpStr, (unsigned long)[tmpStr lengthOfBytesUsingEncoding:NSUTF8StringEncoding]);
 //    }
 //    
 //    
 //    
 //    
-//    CustomLog(@"\n****  maximumLengthOfBytesUsingEncoding::  ****");
+//    CusDebugLog(@"\n****  maximumLengthOfBytesUsingEncoding::  ****");
 //    NSArray *myArray4_3 = @[@"测试字符串，用于测试《", @"admin", @"测试字符串", @"", @" ", @" "];
 //    for (NSString *tmpStr in myArray4_3) {
-//        CustomLog(@"\n\"%@\"的maximumLengthOfBytesUsingEncoding为：%lu", tmpStr, (unsigned long)[tmpStr maximumLengthOfBytesUsingEncoding: NSUTF8StringEncoding]);
+//        CusDebugLog(@"\n\"%@\"的maximumLengthOfBytesUsingEncoding为：%lu", tmpStr, (unsigned long)[tmpStr maximumLengthOfBytesUsingEncoding: NSUTF8StringEncoding]);
 //    }
     
     
     
     
 #pragma mark -- Getting Characters and Bytes --
-    CustomLog(@"\n5.___Getting Characters and Bytes___");
-//    CustomLog(@"\n****  characterAtIndex:  ****");
+    CusDebugLog(@"\n5.___Getting Characters and Bytes___");
+//    CusDebugLog(@"\n****  characterAtIndex:  ****");
 //    NSString *myString5_1 = @"测试abc字符串，用于测试《";
 //    for (int i = 0; i < [myString5_1 length]; i++) {
 //        //  %C  输出unichar格式的数据，请查看unichar的数据类型
-//        CustomLog(@"\n\"%@\"的第%d个字符是:%C", myString5_1, i+1, [myString5_1 characterAtIndex:i]);
+//        CusDebugLog(@"\n\"%@\"的第%d个字符是:%C", myString5_1, i+1, [myString5_1 characterAtIndex:i]);
 //    }
     
     
     
     
-//    CustomLog(@"\n****  characterAtIndex:  ****");
+//    CusDebugLog(@"\n****  characterAtIndex:  ****");
 //    NSString *myString5_2 = @"测试abc字符串，用于测试《";
 //    [myString5_2 get]
-    //    CustomLog(@"\n\"%@\"的第%d个字符是:%C", myString5_1, i+1, [myString5_1 characterAtIndex:i]);
+    //    CusDebugLog(@"\n\"%@\"的第%d个字符是:%C", myString5_1, i+1, [myString5_1 characterAtIndex:i]);
     
     
     
     
 #pragma mark -- Getting C Strings --
-    CustomLog(@"\n6.___Getting C Strings___");
-//    CustomLog(@"\n****  cStringUsingEncoding:  ****");
+    CusDebugLog(@"\n6.___Getting C Strings___");
+//    CusDebugLog(@"\n****  cStringUsingEncoding:  ****");
 //    NSString *myString6_1 = @"温志平abc";
 //    char myChar[256] = "";
 //    strcpy(myChar, [myString6_1 cStringUsingEncoding:NSUTF8StringEncoding]);
-//    CustomLog(@"\nmyChar = %s", myChar);
+//    CusDebugLog(@"\nmyChar = %s", myChar);
     
     
     
     
 #pragma mark -- Combining Strings --
-    CustomLog(@"\n7.___Combining Strings___");
+    CusDebugLog(@"\n7.___Combining Strings___");
 //    NSString *initTmp7 = @"initTmp7 字符串";
 //    
 //    
-//    CustomLog(@"\n****  stringByAppendingString:  ****");
+//    CusDebugLog(@"\n****  stringByAppendingString:  ****");
 //    NSString *myString7_1 = [initTmp7 stringByAppendingString:initTmp7];
-//    CustomLog(@"\nmyString7_1 = %@", myString7_1);
+//    CusDebugLog(@"\nmyString7_1 = %@", myString7_1);
 //    
 //    
 //    
-//    CustomLog(@"\n****  stringByAppendingString:  ****");
+//    CusDebugLog(@"\n****  stringByAppendingString:  ****");
 //    NSString *myString7_2 = [initTmp7 stringByAppendingFormat:@"%@",@"___这个实现的方法是：stringByAppendingFormat "];
-//    CustomLog(@"\nmyString7_2 = %@", myString7_2);
+//    CusDebugLog(@"\nmyString7_2 = %@", myString7_2);
 //    
 //    
 //    
-//    CustomLog(@"\n****  stringByPaddingToLength: withString: startingAtIndex:  ****");
-//    CustomLog(@"\n%@", [@"abc" stringByPaddingToLength: 9 withString: @"." startingAtIndex:0]);     // Results in "abc......"
-//    CustomLog(@"\n%@", [@"abc" stringByPaddingToLength: 2 withString: @"." startingAtIndex:0]);     // Results in "ab"
-//    CustomLog(@"\n%@", [@"abc" stringByPaddingToLength: 9 withString: @". " startingAtIndex:1]);    // Notice that the first character in the padding is " "
-    //    CustomLog(@"\n%@", [@"abc" stringByPaddingToLength: 9 withString: @"温志平_" startingAtIndex:1]);
+//    CusDebugLog(@"\n****  stringByPaddingToLength: withString: startingAtIndex:  ****");
+//    CusDebugLog(@"\n%@", [@"abc" stringByPaddingToLength: 9 withString: @"." startingAtIndex:0]);     // Results in "abc......"
+//    CusDebugLog(@"\n%@", [@"abc" stringByPaddingToLength: 2 withString: @"." startingAtIndex:0]);     // Results in "ab"
+//    CusDebugLog(@"\n%@", [@"abc" stringByPaddingToLength: 9 withString: @". " startingAtIndex:1]);    // Notice that the first character in the padding is " "
+    //    CusDebugLog(@"\n%@", [@"abc" stringByPaddingToLength: 9 withString: @"温志平_" startingAtIndex:1]);
     
     
     
     
 #pragma mark -- Dividing Strings --
-    CustomLog(@"\n8.___Dividing Strings___");
+    CusDebugLog(@"\n8.___Dividing Strings___");
 //    NSString *initTmp8 = @"initTmp8,wenzhiping,wednesday,i want you,hehe,";
 //    
 //    
 //    
-//    CustomLog(@"\n****  componentsSeparatedByString:  ****");
-//    CustomLog(@"\n%@",[initTmp8 componentsSeparatedByString:@","]);     //注意逗号(,)后边也会有一个对象出现
-//    CustomLog(@"\n%@",[initTmp8 componentsSeparatedByString:@"w"]);
+//    CusDebugLog(@"\n****  componentsSeparatedByString:  ****");
+//    CusDebugLog(@"\n%@",[initTmp8 componentsSeparatedByString:@","]);     //注意逗号(,)后边也会有一个对象出现
+//    CusDebugLog(@"\n%@",[initTmp8 componentsSeparatedByString:@"w"]);
 //    
 //    
 //    
-//    CustomLog(@"\n****  componentsSeparatedByString:  ****");
+//    CusDebugLog(@"\n****  componentsSeparatedByString:  ****");
 //    //NSCharacterSet中包含两个字符 w 和 h ,以这两个字符分割字符串, 并删除所有的 w 和 h
-//    CustomLog(@"\n%@",[initTmp8 componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"wh"]]);
+//    CusDebugLog(@"\n%@",[initTmp8 componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"wh"]]);
 //    
 //    
 //    
-//    CustomLog(@"\n****  stringByTrimmingCharactersInSet:  ****");
+//    CusDebugLog(@"\n****  stringByTrimmingCharactersInSet:  ****");
 //    //删除字符串两端含有的NSCharacterSet中的字符，没有的不删除
-//    CustomLog(@"\n%@",[initTmp8 stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"i,"]]);
+//    CusDebugLog(@"\n%@",[initTmp8 stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"i,"]]);
 //    
 //    
 //    
-//    CustomLog(@"\n****  substringFromIndex:  ****");
+//    CusDebugLog(@"\n****  substringFromIndex:  ****");
 //    //index  to  end
-//    CustomLog(@"\n%@",[initTmp8 substringFromIndex:[initTmp8 length]/2]);
+//    CusDebugLog(@"\n%@",[initTmp8 substringFromIndex:[initTmp8 length]/2]);
 //    
 //    
 //    
-//    CustomLog(@"\n****  substringToIndex:  ****");
+//    CusDebugLog(@"\n****  substringToIndex:  ****");
 //    //start to index
-//    CustomLog(@"\n%@",[initTmp8 substringToIndex:[initTmp8 length]/2]);
+//    CusDebugLog(@"\n%@",[initTmp8 substringToIndex:[initTmp8 length]/2]);
 //    
 //    
 //    
-//    CustomLog(@"\n****  substringWithRange:  ****");
-//    CustomLog(@"\n%@",[initTmp8 substringWithRange:NSMakeRange([initTmp8 length]/4, [initTmp8 length]/2)]);
+//    CusDebugLog(@"\n****  substringWithRange:  ****");
+//    CusDebugLog(@"\n%@",[initTmp8 substringWithRange:NSMakeRange([initTmp8 length]/4, [initTmp8 length]/2)]);
     
     
     
     
     
 #pragma mark -- Finding Characters and Substrings --
-    CustomLog(@"\n9.___Finding Characters and Substrings___");
+    CusDebugLog(@"\n9.___Finding Characters and Substrings___");
     NSString *initTmp9 = @"wenzhiping_wen_";
     
     
     
-    CustomLog(@"\n****  componentsSeparatedByString:  ****");
+    CusDebugLog(@"\n****  componentsSeparatedByString:  ****");
     NSRange myRange9_1 = [initTmp9 rangeOfCharacterFromSet:[NSCharacterSet characterSetWithCharactersInString:@"xxxx_wen"]];
     if (NSNotFound != myRange9_1.location) {
-        CustomLog(@"\n%lu , %lu",myRange9_1.location, myRange9_1.length);
+        CusDebugLog(@"\n%lu , %lu",myRange9_1.location, myRange9_1.length);
     }else{
-        CustomLog(@"\nNot Found!");
+        CusDebugLog(@"\nNot Found!");
     }
     
     
     
-    CustomLog(@"\n****  rangeOfString:  ****");
+    CusDebugLog(@"\n****  rangeOfString:  ****");
     //这个方法默认好像是  倒序的
     NSRange myRange9_4 = [initTmp9 rangeOfString:@"wen"];
     if (NSNotFound != myRange9_4.location) {
-        CustomLog(@"\n%lu , %lu",myRange9_4.location, myRange9_4.length);
+        CusDebugLog(@"\n%lu , %lu",myRange9_4.location, myRange9_4.length);
     }else{
-        CustomLog(@"\nNot Found!");
+        CusDebugLog(@"\nNot Found!");
     }
     
     
     
     
-    CustomLog(@"\n****  rangeOfString: options:  ****");
+    CusDebugLog(@"\n****  rangeOfString: options:  ****");
     NSRange myRange9_5 = [initTmp9 rangeOfString:@"wen" options:NSBackwardsSearch];
     if (NSNotFound != myRange9_5.location) {
-        CustomLog(@"\n%lu , %lu",myRange9_5.location, myRange9_5.length);
+        CusDebugLog(@"\n%lu , %lu",myRange9_5.location, myRange9_5.length);
     }else{
-        CustomLog(@"\nNot Found!");
+        CusDebugLog(@"\nNot Found!");
     }
     
     
     
     
-    CustomLog(@"\n****  rangeOfString: options: range:  ****");
+    CusDebugLog(@"\n****  rangeOfString: options: range:  ****");
 //    NSRange myRange9_6 = [initTmp9 rangeOfString:@"wen" options:NSAnchoredSearch range:NSMakeRange(0, 9)];
     NSRange myRange9_6 = [initTmp9 rangeOfString:@"wen" options:NSBackwardsSearch range:NSMakeRange(0, 9)];
     if (NSNotFound != myRange9_6.location) {
-        CustomLog(@"\n%lu , %lu",myRange9_6.location, myRange9_6.length);
+        CusDebugLog(@"\n%lu , %lu",myRange9_6.location, myRange9_6.length);
     }else{
-        CustomLog(@"\nNot Found!");
+        CusDebugLog(@"\nNot Found!");
     }
     
     

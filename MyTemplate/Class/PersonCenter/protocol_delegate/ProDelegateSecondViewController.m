@@ -195,7 +195,7 @@
     if (self.navigationController) {
         [self.navigationController popViewControllerAnimated:YES];
     }else{
-        CustomLog(@"self.navigationController  跳转失败");
+        CusDebugLog(@"self.navigationController  跳转失败");
     }
 }
 
@@ -212,7 +212,7 @@
     if (self.navigationController) {
         [self.navigationController popViewControllerAnimated:YES];
     }else{
-        CustomLog(@"self.navigationController  跳转失败");
+        CusDebugLog(@"self.navigationController  跳转失败");
     }
 }
 

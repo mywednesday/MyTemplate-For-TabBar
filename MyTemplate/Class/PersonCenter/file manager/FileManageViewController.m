@@ -10,18 +10,26 @@
 
 @interface FileManageViewController ()
 
+@property (nonatomic, copy) NSArray *citys;
+@property (nonatomic, copy) NSArray *ages;
+@property (nonatomic, copy) NSArray *genders;
+@property (nonatomic, copy) NSArray *originalArray;
+@property (nonatomic, copy) NSArray *results;
+
+@property (nonatomic, strong) UITableView *tableView;
 @end
 
 @implementation FileManageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"文件操作";
+//    self.title = @"文件操作";
     self.view.backgroundColor = VIEW_NORMAL_BG_COLOR;
     
     
-    
-    
 }
+
+
+
 
 @end

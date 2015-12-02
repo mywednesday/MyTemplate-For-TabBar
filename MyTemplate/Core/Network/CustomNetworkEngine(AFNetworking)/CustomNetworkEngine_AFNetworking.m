@@ -75,24 +75,24 @@
                     NSString *errorMsg = json[@"msg"];
                     CustomNetworkError_AFNetworking *e = [CustomNetworkError_AFNetworking errorWithCode:[json[@"code"] integerValue] errorMessage:errorMsg];
                     completionBlock(XWRequestFailure, nil, e);
-                    CustomLog(@"\n请求接口：%@\n错误信息：%@", [self getRequestUrl:strUrlPath], errorMsg);
+                    CusDebugLog(@"\n请求接口：%@\n错误信息：%@", [self getRequestUrl:strUrlPath], errorMsg);
                 }else{
                     // 接口调用成功
-                    CustomLog(@"\n请求接口：%@\n请求的结果：%@\n", [self getRequestUrl:strUrlPath], resJson);
+                    CusDebugLog(@"\n请求接口：%@\n请求的结果：%@\n", [self getRequestUrl:strUrlPath], resJson);
                     //                    completionBlock(XWRequestSuccess, json[@"data"], nil);
                     completionBlock(XWRequestSuccess, json, nil);
                     
                 }
             }else{
                 // 接口数据为空
-                CustomLog(@"\n请求接口：%@\n接口数据异常", [self getRequestUrl:strUrlPath]);
+                CusDebugLog(@"\n请求接口：%@\n接口数据异常", [self getRequestUrl:strUrlPath]);
                 CustomNetworkError_AFNetworking *e = [CustomNetworkError_AFNetworking errorWithCode:-1 errorMessage:@"数据异常"];
                 completionBlock(XWRequestFailure, @{}, e);
             }
         });
         
     } failure:^(AFHTTPRequestOperation __unused *operation, NSError *error) {
-        CustomLog(@"\n网络错误，请求的错误提示：%@\n", error);
+        CusDebugLog(@"\n网络错误，请求的错误提示：%@\n", error);
         dispatch_async(dispatch_get_main_queue(), ^{
             if (completionBlock != nil) {
                 CustomNetworkError_AFNetworking *e = [CustomNetworkError_AFNetworking errorWithNSError:error];
@@ -155,24 +155,24 @@
                     NSString *errorMsg = json[@"msg"];
                     CustomNetworkError_AFNetworking *e = [CustomNetworkError_AFNetworking errorWithCode:[json[@"code"] integerValue] errorMessage:errorMsg];
                     completionBlock(XWRequestFailure, nil, e);
-                    CustomLog(@"\n请求接口：%@\n错误信息：%@", [self getRequestUrl:strUrlPath], errorMsg);
+                    CusDebugLog(@"\n请求接口：%@\n错误信息：%@", [self getRequestUrl:strUrlPath], errorMsg);
                 }else{
                     // 接口调用成功
-                    CustomLog(@"\n请求接口：%@\n请求的结果：%@\n", [self getRequestUrl:strUrlPath], resJson);
+                    CusDebugLog(@"\n请求接口：%@\n请求的结果：%@\n", [self getRequestUrl:strUrlPath], resJson);
                     //                    completionBlock(XWRequestSuccess, json[@"data"], nil);
                     completionBlock(XWRequestSuccess, json, nil);
                     
                 }
             }else{
                 // 接口数据为空
-                CustomLog(@"\n请求接口：%@\n接口数据异常", [self getRequestUrl:strUrlPath]);
+                CusDebugLog(@"\n请求接口：%@\n接口数据异常", [self getRequestUrl:strUrlPath]);
                 CustomNetworkError_AFNetworking *e = [CustomNetworkError_AFNetworking errorWithCode:-1 errorMessage:@"数据异常"];
                 completionBlock(XWRequestFailure, @{}, e);
             }
         });
         
     } failure:^(AFHTTPRequestOperation __unused *operation, NSError *error) {
-        CustomLog(@"\n网络错误，请求的错误提示：%@\n", error);
+        CusDebugLog(@"\n网络错误，请求的错误提示：%@\n", error);
         dispatch_async(dispatch_get_main_queue(), ^{
             if (completionBlock != nil) {
                 CustomNetworkError_AFNetworking *e = [CustomNetworkError_AFNetworking errorWithNSError:error];
@@ -204,7 +204,7 @@
         return [cacheDirectoryURL URLByAppendingPathComponent:fileName];
         
     } completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
-        CustomLog(@"文件下载完成到: %@", filePath);
+        CusDebugLog(@"文件下载完成到: %@", filePath);
         downloadCompletionBlock(error?XWRequestFailure:XWRequestSuccess, response, error?[CustomNetworkError_AFNetworking errorWithNSError:error]:nil);
     }];
     [downloadTask resume];

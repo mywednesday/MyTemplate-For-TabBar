@@ -13,13 +13,17 @@
 #import "CustomViewController.h"
 #import "MapkitViewController.h"
 #import "QRCodeViewController.h"
+#import "CommonModel.h"
 
 
 
 
 
 @interface MyTalksViewController ()<UITableViewDelegate,UITableViewDataSource>
+
 @property (nonatomic, strong) UITableView *myTableView;
+@property (nonatomic, strong) NSArray *myVCContactModelArr;     //VCContactModel数组
+
 @end
 
 
@@ -51,8 +55,6 @@
     
     NSMutableDictionary *userInfoForNotify = [[NSMutableDictionary alloc] init];
     [userInfoForNotify setObject:@"会话" forKey:@"comeFromView"];
-
-    
     //发送通知
     [[NSNotificationCenter defaultCenter] postNotificationName:MyNotification_Login_Success
                                                         object:nil
@@ -69,6 +71,22 @@
     NSLog(@"\nTmp : %@",[MyGlobalHelper getSandboxDirectoryForTmp]);
     NSLog(@"\nCURRENT_SYSTEM_VERSION = %@",CURRENT_SYSTEM_VERSION);
     
+    
+    
+    
+    
+    NSArray *titleAndContents = @[@[@"CustomViewController",@"自定义的ViewController，可根据需要设置风格",],
+                                  @[@"地图",@"高德地图，苹果内置地图也是调用的高德接口",],
+                                  @[@"二维码",@"ZXing",],
+                                  @[@"2",@"3",]];
+    
+    
+    
+    //初始化视图关系对象
+    if (!_myVCContactModelArr) {
+        _myVCContactModelArr = [NSArray arrayWithObjects:[VCContactModel contactModelWithTitleName:@"CustomViewController"
+                                                                                      SubTitleName:@"自定义的ViewController，可根据需要设置风格" Class:NSClassFromString(@"CustomViewController")], nil];
+    }
     
     
     
@@ -159,7 +177,7 @@
         }
         default:
         {
-            CustomLog(@"indexPath.Row  越界");
+            CusDebugLog(@"indexPath.Row  越界");
             break;
         }
     }
@@ -205,22 +223,22 @@
     switch (indexPath.row) {
         case 0:
         {
-            CustomLog(@"\n%@",titleAndContents[indexPath.row][1]);
+            CusDebugLog(@"\n%@",titleAndContents[indexPath.row][1]);
             break;
         }
         case 1:
         {
-            CustomLog(@"\n%@",titleAndContents[indexPath.row][1]);
+            CusDebugLog(@"\n%@",titleAndContents[indexPath.row][1]);
             break;
         }
         case 3:
         {
-            CustomLog(@"\n%@",titleAndContents[indexPath.row][1]);            
+            CusDebugLog(@"\n%@",titleAndContents[indexPath.row][1]);            
             break;
         }
         default:
         {
-            CustomLog(@"indexPath.Row  越界");
+            CusDebugLog(@"indexPath.Row  越界");
             break;
         }
     }

@@ -12,6 +12,7 @@
 #import "MyTableViewCell.h"
 #import "ProDelegateFirstViewController.h"
 #import "TextSizeCaculateViewController.h"
+#import "RichTextViewController.h"
 #import "OCGrammarViewController.h"
 #import "MultiThreadViewController.h"
 #import "DataPersistenceViewController.h"
@@ -154,7 +155,7 @@
         }
         case 2:
         {
-            OCGrammarViewController *myVC = [[OCGrammarViewController alloc] initWithNibName:nil bundle:nil];
+            RichTextViewController *myVC = [[RichTextViewController alloc] initWithNibName:nil bundle:nil];
             myVC.leftBarButtonItemStyle = UILeftBarButtonItemStyleImage;
             myVC.sideSlipForNavBackWorked = YES;
             myVC.hidesBottomBarWhenPushed = YES;        //隐藏底部导航Bar
@@ -170,7 +171,7 @@
         }
         case 3:
         {
-            MultiThreadViewController *myVC = [[MultiThreadViewController alloc] initWithNibName:nil bundle:nil];
+            OCGrammarViewController *myVC = [[OCGrammarViewController alloc] initWithNibName:nil bundle:nil];
             myVC.leftBarButtonItemStyle = UILeftBarButtonItemStyleImage;
             myVC.sideSlipForNavBackWorked = YES;
             myVC.hidesBottomBarWhenPushed = YES;        //隐藏底部导航Bar
@@ -186,7 +187,7 @@
         }
         case 4:
         {
-            DataPersistenceViewController *myVC = [[DataPersistenceViewController alloc] initWithNibName:nil bundle:nil];
+            MultiThreadViewController *myVC = [[MultiThreadViewController alloc] initWithNibName:nil bundle:nil];
             myVC.leftBarButtonItemStyle = UILeftBarButtonItemStyleImage;
             myVC.sideSlipForNavBackWorked = YES;
             myVC.hidesBottomBarWhenPushed = YES;        //隐藏底部导航Bar
@@ -201,6 +202,22 @@
             break;
         }
         case 5:
+        {
+            DataPersistenceViewController *myVC = [[DataPersistenceViewController alloc] initWithNibName:nil bundle:nil];
+            myVC.leftBarButtonItemStyle = UILeftBarButtonItemStyleImage;
+            myVC.sideSlipForNavBackWorked = YES;
+            myVC.hidesBottomBarWhenPushed = YES;        //隐藏底部导航Bar
+            if(self.navigationController){
+                [self.navigationController pushViewController:myVC animated:YES];
+                
+            }else if(self.presentingViewController){
+                [self presentViewController:myVC animated:YES completion:^{
+                    
+                }];
+            }
+            break;
+        }
+        case 6:
         {
             FileManageViewController *myVC = [[FileManageViewController alloc] initWithNibName:nil bundle:nil];
             myVC.leftBarButtonItemStyle = UILeftBarButtonItemStyleImage;
@@ -218,7 +235,7 @@
         }
         default:
         {
-            CustomLog(@"indexPath.Row  越界");
+            CusDebugLog(@"indexPath.Row  越界");
             break;
         }
     }
@@ -236,7 +253,7 @@
     NSInteger numberofrows = 0;
     switch (section) {
         case 0:
-            numberofrows = 6;
+            numberofrows = 7;
             break;
         default:
             break;
@@ -258,6 +275,7 @@
     
     NSArray *titleAndContents = @[@[@"IOS页面间传值的方式",@"Delegate/NSNotification/Block/NSUserDefault/单例/设置属性",],
                                   @[@"动态计算高度",@"根据UILabel中的文字，动态计算其高度",],
+                                  @[@"富文本",@"NSMutableAttributedString",],
                                   @[@"OC基本知识",@"NSArray、NSDictionary",],
                                   @[@"多线程",@"NSThread、NSOperation、GCD",],
                                   @[@"数据持久化",@"自定义对象、NSArray、NSDictionary",],
@@ -274,37 +292,42 @@
     switch (indexPath.row) {
         case 0:
         {
-            CustomLog(@"%@",titleAndContents[indexPath.row][0]);
+            CusDebugLog(@"%@",titleAndContents[indexPath.row][0]);
             break;
         }
         case 1:
         {
-            CustomLog(@"%@",titleAndContents[indexPath.row][0]);
+            CusDebugLog(@"%@",titleAndContents[indexPath.row][0]);
             break;
         }
         case 2:
         {
-            CustomLog(@"%@",titleAndContents[indexPath.row][0]);
+            CusDebugLog(@"%@",titleAndContents[indexPath.row][0]);
             break;
         }
         case 3:
         {
-            CustomLog(@"%@",titleAndContents[indexPath.row][0]);
+            CusDebugLog(@"%@",titleAndContents[indexPath.row][0]);
             break;
         }
         case 4:
         {
-            CustomLog(@"%@",titleAndContents[indexPath.row][0]);
+            CusDebugLog(@"%@",titleAndContents[indexPath.row][0]);
             break;
         }
         case 5:
         {
-            CustomLog(@"%@",titleAndContents[indexPath.row][0]);
+            CusDebugLog(@"%@",titleAndContents[indexPath.row][0]);
+            break;
+        }
+        case 6:
+        {
+            CusDebugLog(@"%@",titleAndContents[indexPath.row][0]);
             break;
         }
         default:
         {
-            CustomLog(@"indexPath.Row  越界");
+            CusDebugLog(@"indexPath.Row  越界");
             break;
         }
     }
