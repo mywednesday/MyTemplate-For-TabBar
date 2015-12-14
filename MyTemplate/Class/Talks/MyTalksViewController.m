@@ -17,7 +17,13 @@
 #import "UIView+WZPSeparator.h"
 
 
-
+typedef NS_ENUM(NSInteger,SJAccountRights) { //账户权限
+    SJAccountRightsNone = 0,
+    SJAccountRightsVerifyCoupon = 1 << 0,
+    SJAccountRightsReturnCoupon = 1 << 1,
+    SJAccountRightsOrder = 1 << 2,
+    SJAccountRightsAll = SJAccountRightsVerifyCoupon | SJAccountRightsReturnCoupon | SJAccountRightsOrder
+};
 
 
 @interface MyTalksViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -110,9 +116,49 @@
     //----
     
     
-    
+    SJAccountRights myRights = SJAccountRightsReturnCoupon | SJAccountRightsVerifyCoupon;
+    if (myRights & SJAccountRightsOrder) {
+        NSLog(@"SJAccountRightsOrder");
+    }
+    if (myRights & SJAccountRightsReturnCoupon) {
+        NSLog(@"SJAccountRightsReturnCoupon");
+    }
+    if (myRights & SJAccountRightsVerifyCoupon) {
+        NSLog(@"SJAccountRightsVerifyCoupon");
+    }
+    if (myRights & (SJAccountRightsReturnCoupon | SJAccountRightsVerifyCoupon)) {
+        NSLog(@"SJAccountRightsReturnCoupon and SJAccountRightsVerifyCoupon");
+    }
 
+
+    
+    
+    NSDate *birthday = [NSDate dateWithTimeIntervalSince1970:0];
+    NSDate *birthday1 = [NSDate dateWithTimeIntervalSince1970:1000000];
+    NSDate *birthday2 = [NSDate dateWithTimeIntervalSince1970:-1000000];
+    
+    
+    
+    NSString *birthdayStr = [self getStringFromDate:birthday];
+    NSString *birthdayStr1 = [self getStringFromDate:birthday1];
+    NSString *birthdayStr2 = [self getStringFromDate:birthday2];
+    NSString *gyu = @"1988-12-12";
+    long long a = [gyu longLongValue];
+    NSDate *adf = [NSDate dateWithTimeIntervalSince1970:[gyu longLongValue]];
+    NSLog(@"\n%@",birthday);
+    NSLog(@"\n%@",birthday1);
+    NSLog(@"\n%@",birthday2);
+    
 }
+
+- (NSString *)getStringFromDate:(NSDate *)date{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    //zzz表示时区，zzz可以删除，这样返回的日期字符将不包含时区信息。
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    return [dateFormatter stringFromDate:date];
+}
+
+
 - (void) viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 

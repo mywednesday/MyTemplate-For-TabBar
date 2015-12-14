@@ -32,6 +32,7 @@
 		88C10EBD1BA6A78B00E1D0E8 /* MyTalksNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C10EBC1BA6A78B00E1D0E8 /* MyTalksNavViewController.m */; };
 		88C10EC01BA6A7B100E1D0E8 /* MyTalksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C10EBF1BA6A7B100E1D0E8 /* MyTalksViewController.m */; };
 		88CB44E81BD8BF0E009279BD /* ProDelegateSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CB44E71BD8BF0E009279BD /* ProDelegateSingleton.m */; };
+		88CECFAC1C112CF000994715 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CECFAB1C112CF000994715 /* Storyboard.storyboard */; };
 		88CFD0821BE06B870079D130 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFD0811BE06B870079D130 /* CustomViewController.m */; };
 		88CFD0861BE0C68D0079D130 /* MapkitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFD0851BE0C68D0079D130 /* MapkitViewController.m */; };
 		88D21D861BD72D0C005BB8E9 /* ProDelegateFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D21D851BD72D0C005BB8E9 /* ProDelegateFirstViewController.m */; };
@@ -39,6 +40,7 @@
 		88D3E7B91BFCBA21003193CB /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D3E7B81BFCBA21003193CB /* QRCodeViewController.m */; };
 		88D4DBA11BDF1EAD0068BE2F /* CustomNetworkError_AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D4DBA01BDF1EAD0068BE2F /* CustomNetworkError_AFNetworking.m */; };
 		88D4DBA41BDF1EEC0068BE2F /* CustomNetworkEngine_AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D4DBA31BDF1EEC0068BE2F /* CustomNetworkEngine_AFNetworking.m */; };
+		88E9E0FA1C1EB059001F2832 /* NSDate+WZPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E9E0F91C1EB059001F2832 /* NSDate+WZPExtension.m */; };
 		88F78ADA1C055E4800E787E8 /* CATransition+QNTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F78ACB1C055E4800E787E8 /* CATransition+QNTransition.m */; };
 		88F78ADB1C055E4800E787E8 /* MBProgressHUD+GGHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F78ACD1C055E4800E787E8 /* MBProgressHUD+GGHud.m */; };
 		88F78ADC1C055E4800E787E8 /* NSDictionary+CLExtenstion.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F78ACF1C055E4800E787E8 /* NSDictionary+CLExtenstion.m */; };
@@ -113,6 +115,7 @@
 		88C10EC11BA6AAF100E1D0E8 /* My-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "My-Prefix.pch"; sourceTree = "<group>"; };
 		88CB44E61BD8BF0E009279BD /* ProDelegateSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProDelegateSingleton.h; sourceTree = "<group>"; };
 		88CB44E71BD8BF0E009279BD /* ProDelegateSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProDelegateSingleton.m; sourceTree = "<group>"; };
+		88CECFAB1C112CF000994715 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		88CFD0801BE06B870079D130 /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
 		88CFD0811BE06B870079D130 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		88CFD0841BE0C68D0079D130 /* MapkitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapkitViewController.h; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 		88D4DBA01BDF1EAD0068BE2F /* CustomNetworkError_AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNetworkError_AFNetworking.m; sourceTree = "<group>"; };
 		88D4DBA21BDF1EEC0068BE2F /* CustomNetworkEngine_AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNetworkEngine_AFNetworking.h; sourceTree = "<group>"; };
 		88D4DBA31BDF1EEC0068BE2F /* CustomNetworkEngine_AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNetworkEngine_AFNetworking.m; sourceTree = "<group>"; };
+		88E9E0F81C1EB059001F2832 /* NSDate+WZPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+WZPExtension.h"; sourceTree = "<group>"; };
+		88E9E0F91C1EB059001F2832 /* NSDate+WZPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+WZPExtension.m"; sourceTree = "<group>"; };
 		88F78ACA1C055E4800E787E8 /* CATransition+QNTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransition+QNTransition.h"; sourceTree = "<group>"; };
 		88F78ACB1C055E4800E787E8 /* CATransition+QNTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransition+QNTransition.m"; sourceTree = "<group>"; };
 		88F78ACC1C055E4800E787E8 /* MBProgressHUD+GGHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+GGHud.h"; sourceTree = "<group>"; };
@@ -293,6 +298,8 @@
 				88F78AD91C055E4800E787E8 /* UIImage+CLExtenstion.m */,
 				883892541C0E8B0B000A9DDD /* UIView+WZPSeparator.h */,
 				883892551C0E8B0B000A9DDD /* UIView+WZPSeparator.m */,
+				88E9E0F81C1EB059001F2832 /* NSDate+WZPExtension.h */,
+				88E9E0F91C1EB059001F2832 /* NSDate+WZPExtension.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -442,6 +449,7 @@
 				88C10EBC1BA6A78B00E1D0E8 /* MyTalksNavViewController.m */,
 				88C10EBE1BA6A7B100E1D0E8 /* MyTalksViewController.h */,
 				88C10EBF1BA6A7B100E1D0E8 /* MyTalksViewController.m */,
+				88CECFAB1C112CF000994715 /* Storyboard.storyboard */,
 			);
 			path = Talks;
 			sourceTree = "<group>";
@@ -620,6 +628,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88C10E8F1BA65AB700E1D0E8 /* LaunchScreen.xib in Resources */,
+				88CECFAC1C112CF000994715 /* Storyboard.storyboard in Resources */,
 				88C10E8C1BA65AB700E1D0E8 /* Images.xcassets in Resources */,
 				88BBAC671BFB409100C87E8E /* Info.plist in Resources */,
 			);
@@ -699,6 +708,7 @@
 				88CFD0861BE0C68D0079D130 /* MapkitViewController.m in Sources */,
 				8848D7C11BF3218500CA4F77 /* MultiThreadViewController.m in Sources */,
 				88F78AE11C055E4800E787E8 /* UIImage+CLExtenstion.m in Sources */,
+				88E9E0FA1C1EB059001F2832 /* NSDate+WZPExtension.m in Sources */,
 				88D21D861BD72D0C005BB8E9 /* ProDelegateFirstViewController.m in Sources */,
 				884DA8BF1BE8B5FA0095FD83 /* DataPersistenceViewController.m in Sources */,
 				88D4DBA11BDF1EAD0068BE2F /* CustomNetworkError_AFNetworking.m in Sources */,
@@ -793,7 +803,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "";
@@ -833,7 +843,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "";
