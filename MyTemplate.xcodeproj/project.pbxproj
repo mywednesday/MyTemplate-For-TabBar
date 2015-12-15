@@ -16,6 +16,7 @@
 		88471A391BE9959200E35EA2 /* FileManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88471A381BE9959200E35EA2 /* FileManageViewController.m */; };
 		8848D7C11BF3218500CA4F77 /* MultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848D7C01BF3218500CA4F77 /* MultiThreadViewController.m */; };
 		884DA8BF1BE8B5FA0095FD83 /* DataPersistenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884DA8BE1BE8B5FA0095FD83 /* DataPersistenceViewController.m */; };
+		885ECF4A1C1FBC970099F806 /* UIViewController+WZPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 885ECF491C1FBC970099F806 /* UIViewController+WZPExtension.m */; };
 		8862171D1BE7069A00D32893 /* OCGrammarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8862171C1BE7069A00D32893 /* OCGrammarViewController.m */; };
 		88735D711BABFE970080AFB8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88735D701BABFE970080AFB8 /* LoginViewController.m */; };
 		8885D2D51BD487D90010B6D9 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8885D2D41BD487D90010B6D9 /* MyTableViewCell.m */; };
@@ -82,6 +83,8 @@
 		8848D7C01BF3218500CA4F77 /* MultiThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiThreadViewController.m; sourceTree = "<group>"; };
 		884DA8BD1BE8B5FA0095FD83 /* DataPersistenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataPersistenceViewController.h; sourceTree = "<group>"; };
 		884DA8BE1BE8B5FA0095FD83 /* DataPersistenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataPersistenceViewController.m; sourceTree = "<group>"; };
+		885ECF481C1FBC970099F806 /* UIViewController+WZPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WZPExtension.h"; sourceTree = "<group>"; };
+		885ECF491C1FBC970099F806 /* UIViewController+WZPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WZPExtension.m"; sourceTree = "<group>"; };
 		8862171B1BE7069A00D32893 /* OCGrammarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCGrammarViewController.h; sourceTree = "<group>"; };
 		8862171C1BE7069A00D32893 /* OCGrammarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCGrammarViewController.m; sourceTree = "<group>"; };
 		88735D6F1BABFE970080AFB8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -300,6 +303,8 @@
 				883892551C0E8B0B000A9DDD /* UIView+WZPSeparator.m */,
 				88E9E0F81C1EB059001F2832 /* NSDate+WZPExtension.h */,
 				88E9E0F91C1EB059001F2832 /* NSDate+WZPExtension.m */,
+				885ECF481C1FBC970099F806 /* UIViewController+WZPExtension.h */,
+				885ECF491C1FBC970099F806 /* UIViewController+WZPExtension.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -717,6 +722,7 @@
 				88C10E811BA65AB700E1D0E8 /* main.m in Sources */,
 				88F78ADA1C055E4800E787E8 /* CATransition+QNTransition.m in Sources */,
 				88F78ADC1C055E4800E787E8 /* NSDictionary+CLExtenstion.m in Sources */,
+				885ECF4A1C1FBC970099F806 /* UIViewController+WZPExtension.m in Sources */,
 				88F78AF11C05D7F200E787E8 /* ImageViewVC.m in Sources */,
 				88D4DBA41BDF1EEC0068BE2F /* CustomNetworkEngine_AFNetworking.m in Sources */,
 				88D21D891BD72D2F005BB8E9 /* ProDelegateSecondViewController.m in Sources */,
