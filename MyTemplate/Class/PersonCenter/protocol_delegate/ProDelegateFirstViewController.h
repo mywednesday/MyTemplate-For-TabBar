@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 wzp. All rights reserved.
 //
 
-#import "MyBaseViewController.h"
+#import "BaseVC.h"
 
-@interface ProDelegateFirstViewController : MyBaseViewController
+@interface ProDelegateFirstViewController : BaseVC
 
 @end
 

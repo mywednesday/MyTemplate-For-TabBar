@@ -1,21 +1,21 @@
 //
-//  MyBaseViewController.m
+//  BaseVC.m
 //  MyTemplate
 //
 //  Created by qnsoft on 15/10/15.
 //  Copyright (c) 2015年 wzp. All rights reserved.
 //
 
-#import "MyBaseViewController.h"
+#import "BaseVC.h"
 
-@interface MyBaseViewController ()
+@interface BaseVC ()
 
 
 @end
 
 
 
-@implementation MyBaseViewController
+@implementation BaseVC
 
 
 - (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -29,7 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //    self.title = @"MyBaseViewController";
+    //    self.title = @"BaseVC";
     [self.view setBackgroundColor:VIEW_NORMAL_BG_COLOR];
     
     if([UIDevice currentDevice].systemVersion.floatValue < 8.0) {

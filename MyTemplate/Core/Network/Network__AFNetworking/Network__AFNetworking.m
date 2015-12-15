@@ -6,24 +6,24 @@
 //  Copyright (c) 2015年 wzp. All rights reserved.
 //
 
-#import "CustomNetworkEngine_AFNetworking.h"
+#import "Network__AFNetworking.h"
 
 
 
 
 
-@implementation CustomNetworkEngine_AFNetworking
+@implementation Network__AFNetworking
 
 
 
 + (instancetype)sharedInstance
 {
     
-    static CustomNetworkEngine_AFNetworking *sharedInstance = nil;
+    static Network__AFNetworking *sharedInstance = nil;
     static dispatch_once_t pred;
     
     dispatch_once(&pred, ^{
-        sharedInstance = [[CustomNetworkEngine_AFNetworking alloc] init];
+        sharedInstance = [[Network__AFNetworking alloc] init];
     });
     
     return sharedInstance;
@@ -73,7 +73,7 @@
                 {
                     // 出错啦，取错误信息
                     NSString *errorMsg = json[@"msg"];
-                    CustomNetworkError_AFNetworking *e = [CustomNetworkError_AFNetworking errorWithCode:[json[@"code"] integerValue] errorMessage:errorMsg];
+                    NetworkError__AFNetworking *e = [NetworkError__AFNetworking errorWithCode:[json[@"code"] integerValue] errorMessage:errorMsg];
                     completionBlock(XWRequestFailure, nil, e);
                     CusDebugLog(@"\n请求接口：%@\n错误信息：%@", [self getRequestUrl:strUrlPath], errorMsg);
                 }else{
@@ -86,7 +86,7 @@
             }else{
                 // 接口数据为空
                 CusDebugLog(@"\n请求接口：%@\n接口数据异常", [self getRequestUrl:strUrlPath]);
-                CustomNetworkError_AFNetworking *e = [CustomNetworkError_AFNetworking errorWithCode:-1 errorMessage:@"数据异常"];
+                NetworkError__AFNetworking *e = [NetworkError__AFNetworking errorWithCode:-1 errorMessage:@"数据异常"];
                 completionBlock(XWRequestFailure, @{}, e);
             }
         });
@@ -95,7 +95,7 @@
         CusDebugLog(@"\n网络错误，请求的错误提示：%@\n", error);
         dispatch_async(dispatch_get_main_queue(), ^{
             if (completionBlock != nil) {
-                CustomNetworkError_AFNetworking *e = [CustomNetworkError_AFNetworking errorWithNSError:error];
+                NetworkError__AFNetworking *e = [NetworkError__AFNetworking errorWithNSError:error];
                 completionBlock(XWRequestFailure, nil, e);
             }
         });
@@ -153,7 +153,7 @@
                 {
                     // 出错啦，取错误信息
                     NSString *errorMsg = json[@"msg"];
-                    CustomNetworkError_AFNetworking *e = [CustomNetworkError_AFNetworking errorWithCode:[json[@"code"] integerValue] errorMessage:errorMsg];
+                    NetworkError__AFNetworking *e = [NetworkError__AFNetworking errorWithCode:[json[@"code"] integerValue] errorMessage:errorMsg];
                     completionBlock(XWRequestFailure, nil, e);
                     CusDebugLog(@"\n请求接口：%@\n错误信息：%@", [self getRequestUrl:strUrlPath], errorMsg);
                 }else{
@@ -166,7 +166,7 @@
             }else{
                 // 接口数据为空
                 CusDebugLog(@"\n请求接口：%@\n接口数据异常", [self getRequestUrl:strUrlPath]);
-                CustomNetworkError_AFNetworking *e = [CustomNetworkError_AFNetworking errorWithCode:-1 errorMessage:@"数据异常"];
+                NetworkError__AFNetworking *e = [NetworkError__AFNetworking errorWithCode:-1 errorMessage:@"数据异常"];
                 completionBlock(XWRequestFailure, @{}, e);
             }
         });
@@ -175,7 +175,7 @@
         CusDebugLog(@"\n网络错误，请求的错误提示：%@\n", error);
         dispatch_async(dispatch_get_main_queue(), ^{
             if (completionBlock != nil) {
-                CustomNetworkError_AFNetworking *e = [CustomNetworkError_AFNetworking errorWithNSError:error];
+                NetworkError__AFNetworking *e = [NetworkError__AFNetworking errorWithNSError:error];
                 completionBlock(XWRequestFailure, nil, e);
             }
         });
@@ -205,7 +205,7 @@
         
     } completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
         CusDebugLog(@"文件下载完成到: %@", filePath);
-        downloadCompletionBlock(error?XWRequestFailure:XWRequestSuccess, response, error?[CustomNetworkError_AFNetworking errorWithNSError:error]:nil);
+        downloadCompletionBlock(error?XWRequestFailure:XWRequestSuccess, response, error?[NetworkError__AFNetworking errorWithNSError:error]:nil);
     }];
     [downloadTask resume];
 }

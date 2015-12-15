@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 wzp. All rights reserved.
 //
 
-#import "MyBaseViewController.h"
+#import "BaseVC.h"
 
-@interface CustomViewController : MyBaseViewController
+@interface CustomViewController : BaseVC
 
 @end

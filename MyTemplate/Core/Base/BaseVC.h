@@ -1,5 +1,5 @@
 //
-//  MyBaseViewController.h
+//  BaseVC.h
 //  MyTemplate
 //
 //  Created by qnsoft on 15/10/15.
@@ -18,7 +18,7 @@ typedef NS_ENUM(NSInteger, UILeftBarButtonItemStyle) {
 
 
 
-@interface MyBaseViewController : UIViewController
+@interface BaseVC : UIViewController
 
 
 /**

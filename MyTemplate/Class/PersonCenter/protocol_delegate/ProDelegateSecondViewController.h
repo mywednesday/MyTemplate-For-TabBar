@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 wzp. All rights reserved.
 //
 
-#import "MyBaseViewController.h"
+#import "BaseVC.h"
 
 //定义一个Block
 typedef void (^StrBlock) (NSString *str);
@@ -39,7 +39,7 @@ typedef NS_ENUM(NSInteger, DataPassWay) {
 
 
 
-@interface ProDelegateSecondViewController : MyBaseViewController
+@interface ProDelegateSecondViewController : BaseVC
 
 
 @property (nonatomic,strong) NSString *myFirstVCString;         //第一个页面的数据

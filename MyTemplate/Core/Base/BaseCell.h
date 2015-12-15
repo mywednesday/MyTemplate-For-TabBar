@@ -1,5 +1,5 @@
 //
-//  MyTableViewCell.h
+//  BaseCell.h
 //  MyTemplate
 //
 //  Created by qnsoft on 15/10/19.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyTableViewCell : UITableViewCell
+@interface BaseCell : UITableViewCell
 
 //
 ///**

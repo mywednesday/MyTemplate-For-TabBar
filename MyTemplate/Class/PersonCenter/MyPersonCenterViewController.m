@@ -9,7 +9,7 @@
 #import "MyPersonCenterViewController.h"
 #import "MyOperateTipsHelper.h"
 #import "Masonry.h"
-#import "MyTableViewCell.h"
+#import "BaseCell.h"
 #import "ProDelegateFirstViewController.h"
 #import "TextSizeCaculateViewController.h"
 #import "RichTextViewController.h"
@@ -264,10 +264,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString *cellIdentifier = @"grammarViewCell";     //作为Cell的唯一标识符，使不再页面中的Cell可以重复利用
-    MyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    BaseCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if (cell == nil)        //设置Cell风格
-        cell = [[MyTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+        cell = [[BaseCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     cell.selectedBackgroundView = nil;
     [cell setBackgroundColor:[UIColor whiteColor]];
     cell.textLabel.font = [UIFont systemFontOfSize: 15.0];

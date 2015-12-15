@@ -6,7 +6,7 @@
 //  Copyright © 2015年 wzp. All rights reserved.
 //  OC 语法练习
 
-#import "MyBaseViewController.h"
+#import "BaseVC.h"
 
 
 
@@ -27,6 +27,6 @@
 
 
 
-@interface OCGrammarViewController : MyBaseViewController
+@interface OCGrammarViewController : BaseVC
 
 @end

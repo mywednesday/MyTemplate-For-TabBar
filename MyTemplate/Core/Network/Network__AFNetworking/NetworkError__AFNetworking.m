@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 wzp. All rights reserved.
 //
 
-#import "CustomNetworkError_AFNetworking.h"
+#import "NetworkError__AFNetworking.h"
 
-@implementation CustomNetworkError_AFNetworking
+@implementation NetworkError__AFNetworking
 
 
 + (instancetype)errorWithNSError:(NSError*)error {
-    CustomNetworkError_AFNetworking* myError;
+    NetworkError__AFNetworking *myError;
     if(error){
         NSString *errorDomain;
         if(error.domain){
@@ -20,18 +20,18 @@
         }else{
             errorDomain = @"";
         }
-        myError = [CustomNetworkError_AFNetworking errorWithDomain:errorDomain code:error.code userInfo:error.userInfo];
+        myError = [NetworkError__AFNetworking errorWithDomain:errorDomain code:error.code userInfo:error.userInfo];
     }else{
         NSMutableDictionary* userInfo = [[NSMutableDictionary alloc] initWithCapacity:2];
         [userInfo setObject:[NSString stringWithFormat:@"%d", -1] forKey:@"code"];
         [userInfo setObject:@"网络连接失败，请稍后再试" forKey:@"msg"];
-        myError = [CustomNetworkError_AFNetworking errorWithDomain:@"ChannelSoft" code:-1 userInfo:userInfo];
+        myError = [NetworkError__AFNetworking errorWithDomain:@"ChannelSoft" code:-1 userInfo:userInfo];
     }
     
     return myError;
 }
 
-+ (CustomNetworkError_AFNetworking *)errorWithCode:(NSInteger)code errorMessage:(NSString*)errorMessage
++ (NetworkError__AFNetworking *)errorWithCode:(NSInteger)code errorMessage:(NSString*)errorMessage
 {
     NSMutableDictionary *userInfo = [[NSMutableDictionary alloc] initWithCapacity:2];
     [userInfo setObject:[NSString stringWithFormat:@"%ld", (long)code] forKey:@"code"];
@@ -39,7 +39,7 @@
         [userInfo setObject:errorMessage forKey:@"msg"];
     }
     
-    CustomNetworkError_AFNetworking *error = [CustomNetworkError_AFNetworking errorWithDomain:@"ChannelSoft" code:code userInfo:userInfo];
+    NetworkError__AFNetworking *error = [NetworkError__AFNetworking errorWithDomain:@"ChannelSoft" code:code userInfo:userInfo];
     return error;
     
 }

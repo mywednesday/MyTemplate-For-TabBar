@@ -6,8 +6,8 @@
 //  Copyright © 2015年 wzp. All rights reserved.
 //
 
-#import "MyBaseViewController.h"
+#import "BaseVC.h"
 
-@interface DataPersistenceViewController : MyBaseViewController
+@interface DataPersistenceViewController : BaseVC
 
 @end

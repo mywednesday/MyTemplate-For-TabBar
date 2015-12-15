@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CustomNetworkError_AFNetworking : NSError
+@interface NetworkError__AFNetworking : NSError
 
 + (instancetype)errorWithNSError:(NSError *)error;
-+ (CustomNetworkError_AFNetworking *)errorWithCode:(NSInteger)code errorMessage:(NSString *)errorMessage;
++ (NetworkError__AFNetworking *)errorWithCode:(NSInteger)code errorMessage:(NSString *)errorMessage;
 - (NSString *)titleForError;
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CustomNetworkError_AFNetworking.h"
+#import "NetworkError__AFNetworking.h"
 #import <AFNetworking/AFNetworking.h>
 
 
@@ -17,14 +17,14 @@ typedef NS_ENUM(NSInteger, XWRequestStatus)
     XWRequestFailure
 };
 
-typedef void(^XWCompletionBlock)(XWRequestStatus status, NSDictionary *data, CustomNetworkError_AFNetworking *xwError);
-typedef void(^XWDownloadCompletionBlock)(XWRequestStatus status, NSURLResponse *urlResponse, CustomNetworkError_AFNetworking *xwError);
+typedef void(^XWCompletionBlock)(XWRequestStatus status, NSDictionary *data, NetworkError__AFNetworking *xwError);
+typedef void(^XWDownloadCompletionBlock)(XWRequestStatus status, NSURLResponse *urlResponse, NetworkError__AFNetworking *xwError);
 
 
 
 
 
-@interface CustomNetworkEngine_AFNetworking : NSObject
+@interface Network__AFNetworking : NSObject
 
 
 
