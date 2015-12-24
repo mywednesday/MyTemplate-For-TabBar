@@ -9,16 +9,32 @@
 /* Begin PBXBuildFile section */
 		233FF178749BB2822714D140 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E285C43812B3E4B8CD42A4D6 /* libPods.a */; };
 		88207F961BCF8CAC00C3B3A0 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 88207F951BCF8CAC00C3B3A0 /* BaseVC.m */; };
+		883873281C2B97E60038C9D5 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 883873271C2B97E60038C9D5 /* RSAEncryptor.m */; };
+		8838732B1C2B985C0038C9D5 /* QNSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8838732A1C2B985C0038C9D5 /* QNSecurity.m */; };
+		8838732E1C2B98990038C9D5 /* AESEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8838732D1C2B98990038C9D5 /* AESEncryptor.m */; };
+		883873331C2BF10A0038C9D5 /* private_key1024.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 8838732F1C2BF0F80038C9D5 /* private_key1024.p12 */; };
+		883873341C2BF10A0038C9D5 /* public_key1024.der in Resources */ = {isa = PBXBuildFile; fileRef = 883873301C2BF0F80038C9D5 /* public_key1024.der */; };
+		883873371C2BF72D0038C9D5 /* private_key512.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 883873351C2BF72D0038C9D5 /* private_key512.p12 */; };
+		883873381C2BF72D0038C9D5 /* public_key512.der in Resources */ = {isa = PBXBuildFile; fileRef = 883873361C2BF72D0038C9D5 /* public_key512.der */; };
+		8838733B1C2BF8610038C9D5 /* private_key2048.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 883873391C2BF8610038C9D5 /* private_key2048.p12 */; };
+		8838733C1C2BF8610038C9D5 /* public_key2048.der in Resources */ = {isa = PBXBuildFile; fileRef = 8838733A1C2BF8610038C9D5 /* public_key2048.der */; };
 		883892561C0E8B0B000A9DDD /* UIView+WZPSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 883892551C0E8B0B000A9DDD /* UIView+WZPSeparator.m */; };
 		883B10F71C01F1CC00F57CBD /* RichTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883B10F61C01F1CC00F57CBD /* RichTextViewController.m */; };
+		883D92AF1C2AA54F008A1915 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 883D92AE1C2AA54F008A1915 /* NSData+Base64.m */; };
 		8843FAE01BDA230900066628 /* TextSizeCaculateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8843FADF1BDA230900066628 /* TextSizeCaculateViewController.m */; };
 		88471A391BE9959200E35EA2 /* FileManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88471A381BE9959200E35EA2 /* FileManageViewController.m */; };
+		8847395B1C21437100078E2D /* libHelloOC_a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8847395A1C21437100078E2D /* libHelloOC_a.a */; };
+		8847395E1C2149EC00078E2D /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 8847395D1C2149EC00078E2D /* NSData+AES.m */; };
+		884739611C214A0D00078E2D /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 884739601C214A0D00078E2D /* NSString+AES.m */; };
+		884739651C214D6200078E2D /* DataSecurityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 884739641C214D6200078E2D /* DataSecurityVC.m */; };
+		884739691C2153AA00078E2D /* personcenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884739681C2153AA00078E2D /* personcenter.storyboard */; };
 		8848D7C11BF3218500CA4F77 /* MultiThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848D7C01BF3218500CA4F77 /* MultiThreadViewController.m */; };
 		884DA8BF1BE8B5FA0095FD83 /* DataPersistenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884DA8BE1BE8B5FA0095FD83 /* DataPersistenceViewController.m */; };
 		885ECF4A1C1FBC970099F806 /* UIViewController+WZPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 885ECF491C1FBC970099F806 /* UIViewController+WZPExtension.m */; };
 		885ECF6F1C20031E0099F806 /* Network__AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 885ECF6A1C20031E0099F806 /* Network__AFNetworking.m */; };
 		885ECF701C20031E0099F806 /* NetworkError__AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 885ECF6C1C20031E0099F806 /* NetworkError__AFNetworking.m */; };
 		8862171D1BE7069A00D32893 /* OCGrammarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8862171C1BE7069A00D32893 /* OCGrammarViewController.m */; };
+		886A583A1C2A4F5E0050B722 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A58391C2A4F5E0050B722 /* Security.framework */; };
 		88735D711BABFE970080AFB8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88735D701BABFE970080AFB8 /* LoginViewController.m */; };
 		8885D2D51BD487D90010B6D9 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8885D2D41BD487D90010B6D9 /* BaseCell.m */; };
 		88A907491BAFFE7E00A50224 /* MyGlobalHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A907481BAFFE7E00A50224 /* MyGlobalHelper.m */; };
@@ -67,14 +83,37 @@
 		04CC08DC1C216DE592307910 /* Pods-MyTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTemplate/Pods-MyTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		88207F941BCF8CAC00C3B3A0 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
 		88207F951BCF8CAC00C3B3A0 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		883873261C2B97E60038C9D5 /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
+		883873271C2B97E60038C9D5 /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
+		883873291C2B985C0038C9D5 /* QNSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNSecurity.h; sourceTree = "<group>"; };
+		8838732A1C2B985C0038C9D5 /* QNSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNSecurity.m; sourceTree = "<group>"; };
+		8838732C1C2B98990038C9D5 /* AESEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESEncryptor.h; sourceTree = "<group>"; };
+		8838732D1C2B98990038C9D5 /* AESEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESEncryptor.m; sourceTree = "<group>"; };
+		8838732F1C2BF0F80038C9D5 /* private_key1024.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key1024.p12; sourceTree = "<group>"; };
+		883873301C2BF0F80038C9D5 /* public_key1024.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key1024.der; sourceTree = "<group>"; };
+		883873351C2BF72D0038C9D5 /* private_key512.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key512.p12; sourceTree = "<group>"; };
+		883873361C2BF72D0038C9D5 /* public_key512.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key512.der; sourceTree = "<group>"; };
+		883873391C2BF8610038C9D5 /* private_key2048.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key2048.p12; sourceTree = "<group>"; };
+		8838733A1C2BF8610038C9D5 /* public_key2048.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key2048.der; sourceTree = "<group>"; };
 		883892541C0E8B0B000A9DDD /* UIView+WZPSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WZPSeparator.h"; sourceTree = "<group>"; };
 		883892551C0E8B0B000A9DDD /* UIView+WZPSeparator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WZPSeparator.m"; sourceTree = "<group>"; };
 		883B10F51C01F1CC00F57CBD /* RichTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichTextViewController.h; sourceTree = "<group>"; };
 		883B10F61C01F1CC00F57CBD /* RichTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichTextViewController.m; sourceTree = "<group>"; };
+		883D92AD1C2AA54F008A1915 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		883D92AE1C2AA54F008A1915 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		8843FADE1BDA230900066628 /* TextSizeCaculateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextSizeCaculateViewController.h; sourceTree = "<group>"; };
 		8843FADF1BDA230900066628 /* TextSizeCaculateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextSizeCaculateViewController.m; sourceTree = "<group>"; };
 		88471A371BE9959200E35EA2 /* FileManageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManageViewController.h; sourceTree = "<group>"; };
 		88471A381BE9959200E35EA2 /* FileManageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManageViewController.m; sourceTree = "<group>"; };
+		884739591C21437100078E2D /* HelloOC_a.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloOC_a.h; sourceTree = "<group>"; };
+		8847395A1C21437100078E2D /* libHelloOC_a.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHelloOC_a.a; sourceTree = "<group>"; };
+		8847395C1C2149EC00078E2D /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		8847395D1C2149EC00078E2D /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		8847395F1C214A0D00078E2D /* NSString+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AES.h"; sourceTree = "<group>"; };
+		884739601C214A0D00078E2D /* NSString+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES.m"; sourceTree = "<group>"; };
+		884739631C214D6200078E2D /* DataSecurityVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSecurityVC.h; sourceTree = "<group>"; };
+		884739641C214D6200078E2D /* DataSecurityVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSecurityVC.m; sourceTree = "<group>"; };
+		884739681C2153AA00078E2D /* personcenter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = personcenter.storyboard; sourceTree = "<group>"; };
 		8848D7BF1BF3218500CA4F77 /* MultiThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiThreadViewController.h; sourceTree = "<group>"; };
 		8848D7C01BF3218500CA4F77 /* MultiThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiThreadViewController.m; sourceTree = "<group>"; };
 		884DA8BD1BE8B5FA0095FD83 /* DataPersistenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataPersistenceViewController.h; sourceTree = "<group>"; };
@@ -87,6 +126,7 @@
 		885ECF721C2004E20099F806 /* NetworkError__AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkError__AFNetworking.h; sourceTree = "<group>"; };
 		8862171B1BE7069A00D32893 /* OCGrammarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCGrammarViewController.h; sourceTree = "<group>"; };
 		8862171C1BE7069A00D32893 /* OCGrammarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCGrammarViewController.m; sourceTree = "<group>"; };
+		886A58391C2A4F5E0050B722 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		88735D6F1BABFE970080AFB8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		88735D701BABFE970080AFB8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		8885D2D31BD487D90010B6D9 /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
@@ -166,6 +206,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				886A583A1C2A4F5E0050B722 /* Security.framework in Frameworks */,
+				8847395B1C21437100078E2D /* libHelloOC_a.a in Frameworks */,
 				233FF178749BB2822714D140 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,10 +236,45 @@
 		6AFA7B53AE68155EAD9A5787 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				886A58391C2A4F5E0050B722 /* Security.framework */,
 				E285C43812B3E4B8CD42A4D6 /* libPods.a */,
 				F2E7AF75FF6F85FEF3D77B4B /* libPods-MyTemplate.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		881192381C2AAAB5009A0888 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				881192391C2AAAB5009A0888 /* rsaKey */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		881192391C2AAAB5009A0888 /* rsaKey */ = {
+			isa = PBXGroup;
+			children = (
+				883873391C2BF8610038C9D5 /* private_key2048.p12 */,
+				8838733A1C2BF8610038C9D5 /* public_key2048.der */,
+				883873351C2BF72D0038C9D5 /* private_key512.p12 */,
+				883873361C2BF72D0038C9D5 /* public_key512.der */,
+				8838732F1C2BF0F80038C9D5 /* private_key1024.p12 */,
+				883873301C2BF0F80038C9D5 /* public_key1024.der */,
+			);
+			path = rsaKey;
+			sourceTree = "<group>";
+		};
+		883873251C2B97E60038C9D5 /* QNSecuritySDK */ = {
+			isa = PBXGroup;
+			children = (
+				883873261C2B97E60038C9D5 /* RSAEncryptor.h */,
+				883873271C2B97E60038C9D5 /* RSAEncryptor.m */,
+				883873291C2B985C0038C9D5 /* QNSecurity.h */,
+				8838732A1C2B985C0038C9D5 /* QNSecurity.m */,
+				8838732C1C2B98990038C9D5 /* AESEncryptor.h */,
+				8838732D1C2B98990038C9D5 /* AESEncryptor.m */,
+			);
+			path = QNSecuritySDK;
 			sourceTree = "<group>";
 		};
 		883B10F41C01F1A300F57CBD /* rich text */ = {
@@ -225,6 +302,25 @@
 				88471A381BE9959200E35EA2 /* FileManageViewController.m */,
 			);
 			path = "file manager";
+			sourceTree = "<group>";
+		};
+		884739581C21434B00078E2D /* HelloOC_a */ = {
+			isa = PBXGroup;
+			children = (
+				884739591C21437100078E2D /* HelloOC_a.h */,
+				8847395A1C21437100078E2D /* libHelloOC_a.a */,
+			);
+			path = HelloOC_a;
+			sourceTree = "<group>";
+		};
+		884739621C214D1D00078E2D /* data security */ = {
+			isa = PBXGroup;
+			children = (
+				884739631C214D6200078E2D /* DataSecurityVC.h */,
+				884739641C214D6200078E2D /* DataSecurityVC.m */,
+				883873251C2B97E60038C9D5 /* QNSecuritySDK */,
+			);
+			path = "data security";
 			sourceTree = "<group>";
 		};
 		8848D7BE1BF3216C00CA4F77 /* multi thread */ = {
@@ -296,6 +392,7 @@
 		885ECF761C2007880099F806 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				884739581C21434B00078E2D /* HelloOC_a */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -332,6 +429,8 @@
 		88A907441BAFFDAB00A50224 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				883D92AD1C2AA54F008A1915 /* NSData+Base64.h */,
+				883D92AE1C2AA54F008A1915 /* NSData+Base64.m */,
 				88F78ACA1C055E4800E787E8 /* CATransition+QNTransition.h */,
 				88F78ACB1C055E4800E787E8 /* CATransition+QNTransition.m */,
 				88F78ACC1C055E4800E787E8 /* MBProgressHUD+GGHud.h */,
@@ -354,6 +453,10 @@
 				88E9E0F91C1EB059001F2832 /* NSDate+WZPExtension.m */,
 				885ECF481C1FBC970099F806 /* UIViewController+WZPExtension.h */,
 				885ECF491C1FBC970099F806 /* UIViewController+WZPExtension.m */,
+				8847395C1C2149EC00078E2D /* NSData+AES.h */,
+				8847395D1C2149EC00078E2D /* NSData+AES.m */,
+				8847395F1C214A0D00078E2D /* NSString+AES.h */,
+				884739601C214A0D00078E2D /* NSString+AES.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -400,6 +503,7 @@
 		88C10E7D1BA65AB700E1D0E8 /* MyTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				881192381C2AAAB5009A0888 /* Resources */,
 				88C10EAA1BA664B500E1D0E8 /* AppConfig.h */,
 				88C10EA91BA6649E00E1D0E8 /* AppDefine.h */,
 				88C10E821BA65AB700E1D0E8 /* AppDelegate.h */,
@@ -468,6 +572,7 @@
 		88C10EB31BA6A2FD00E1D0E8 /* PersonCenter */ = {
 			isa = PBXGroup;
 			children = (
+				884739621C214D1D00078E2D /* data security */,
 				88F78AEB1C05D7AB00E787E8 /* imageview */,
 				883B10F41C01F1A300F57CBD /* rich text */,
 				8848D7BE1BF3216C00CA4F77 /* multi thread */,
@@ -480,6 +585,7 @@
 				88C10EB51BA6A33C00E1D0E8 /* MyPersonCenterViewController.m */,
 				88C10EB71BA6A3B600E1D0E8 /* MyPersonCenterNavViewController.h */,
 				88C10EB81BA6A3B600E1D0E8 /* MyPersonCenterNavViewController.m */,
+				884739681C2153AA00078E2D /* personcenter.storyboard */,
 			);
 			path = PersonCenter;
 			sourceTree = "<group>";
@@ -654,7 +760,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				883873371C2BF72D0038C9D5 /* private_key512.p12 in Resources */,
+				8838733B1C2BF8610038C9D5 /* private_key2048.p12 in Resources */,
+				883873381C2BF72D0038C9D5 /* public_key512.der in Resources */,
+				8838733C1C2BF8610038C9D5 /* public_key2048.der in Resources */,
+				883873331C2BF10A0038C9D5 /* private_key1024.p12 in Resources */,
+				883873341C2BF10A0038C9D5 /* public_key1024.der in Resources */,
 				88C10E8F1BA65AB700E1D0E8 /* LaunchScreen.xib in Resources */,
+				884739691C2153AA00078E2D /* personcenter.storyboard in Resources */,
 				88CECFAC1C112CF000994715 /* Storyboard.storyboard in Resources */,
 				88C10E8C1BA65AB700E1D0E8 /* Images.xcassets in Resources */,
 				88BBAC671BFB409100C87E8E /* Info.plist in Resources */,
@@ -725,12 +838,16 @@
 			files = (
 				88C10EB61BA6A33C00E1D0E8 /* MyPersonCenterViewController.m in Sources */,
 				88C10E841BA65AB700E1D0E8 /* AppDelegate.m in Sources */,
+				8847395E1C2149EC00078E2D /* NSData+AES.m in Sources */,
 				88F78ADF1C055E4800E787E8 /* UIBarButtonItem+CLExtenstion.m in Sources */,
 				88471A391BE9959200E35EA2 /* FileManageViewController.m in Sources */,
 				88A907491BAFFE7E00A50224 /* MyGlobalHelper.m in Sources */,
+				884739651C214D6200078E2D /* DataSecurityVC.m in Sources */,
 				88CFD0821BE06B870079D130 /* CustomViewController.m in Sources */,
 				88F78ADD1C055E4800E787E8 /* NSError+QNExtension.m in Sources */,
 				88C10EB91BA6A3B600E1D0E8 /* MyPersonCenterNavViewController.m in Sources */,
+				8838732E1C2B98990038C9D5 /* AESEncryptor.m in Sources */,
+				883873281C2B97E60038C9D5 /* RSAEncryptor.m in Sources */,
 				88CFD0861BE0C68D0079D130 /* MapkitViewController.m in Sources */,
 				885ECF6F1C20031E0099F806 /* Network__AFNetworking.m in Sources */,
 				8848D7C11BF3218500CA4F77 /* MultiThreadViewController.m in Sources */,
@@ -742,6 +859,7 @@
 				883892561C0E8B0B000A9DDD /* UIView+WZPSeparator.m in Sources */,
 				88F78AE01C055E4800E787E8 /* UIDevice+QNExtension.m in Sources */,
 				88C10E811BA65AB700E1D0E8 /* main.m in Sources */,
+				883D92AF1C2AA54F008A1915 /* NSData+Base64.m in Sources */,
 				88F78ADA1C055E4800E787E8 /* CATransition+QNTransition.m in Sources */,
 				88F78ADC1C055E4800E787E8 /* NSDictionary+CLExtenstion.m in Sources */,
 				885ECF4A1C1FBC970099F806 /* UIViewController+WZPExtension.m in Sources */,
@@ -750,11 +868,13 @@
 				883B10F71C01F1CC00F57CBD /* RichTextViewController.m in Sources */,
 				8843FAE01BDA230900066628 /* TextSizeCaculateViewController.m in Sources */,
 				8862171D1BE7069A00D32893 /* OCGrammarViewController.m in Sources */,
+				884739611C214A0D00078E2D /* NSString+AES.m in Sources */,
 				88F78ADE1C055E4800E787E8 /* NSString+CLExtention.m in Sources */,
 				88F78ADB1C055E4800E787E8 /* MBProgressHUD+GGHud.m in Sources */,
 				8885D2D51BD487D90010B6D9 /* BaseCell.m in Sources */,
 				88CB44E81BD8BF0E009279BD /* ProDelegateSingleton.m in Sources */,
 				88735D711BABFE970080AFB8 /* LoginViewController.m in Sources */,
+				8838732B1C2B985C0038C9D5 /* QNSecurity.m in Sources */,
 				88D3E7B91BFCBA21003193CB /* QRCodeViewController.m in Sources */,
 				88C10EC01BA6A7B100E1D0E8 /* MyTalksViewController.m in Sources */,
 				88C10EBD1BA6A78B00E1D0E8 /* MyTalksNavViewController.m in Sources */,
@@ -889,6 +1009,10 @@
 				GCC_PREFIX_HEADER = "MyTemplate/My-Prefix.pch";
 				INFOPLIST_FILE = MyTemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyTemplate/Lib/HelloOC_a",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -939,6 +1063,10 @@
 				GCC_PREFIX_HEADER = "MyTemplate/My-Prefix.pch";
 				INFOPLIST_FILE = MyTemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyTemplate/Lib/HelloOC_a",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

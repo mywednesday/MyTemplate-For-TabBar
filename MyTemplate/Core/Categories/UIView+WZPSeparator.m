@@ -164,6 +164,15 @@
 
 
 
+- (__kindof UIView *) instanceInitialViewFromXibNamed:(NSString *)name
+                                                owner:(id)owner
+                                              options:(NSDictionary *)options{
+    return [[NSBundle mainBundle]loadNibNamed:name owner:owner options:options].firstObject;
+}
+
+
+
+
 @end
 
 

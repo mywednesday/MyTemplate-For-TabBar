@@ -47,4 +47,14 @@
 
 
 -(instancetype)stringOrEmptyStr;
+
+
+
+
+/**
+ * 随机生成 bits 位的字符串
+ */
++(NSString *) generateKeyWithBits:(NSUInteger) bits;
+
+
 @end

@@ -9,13 +9,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyTemplate/Class/Talks/qr_code/QRCodeViewController.m"
-            timestampString = "469550896.624889"
+            filePath = "MyTemplate/Class/PersonCenter/data security/QNSecuritySDK/RSAEncryptor.m"
+            timestampString = "472647675.199351"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
-            landmarkName = "-QRDecodeByZXing:"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "-privateKeyPassword"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyTemplate/Class/PersonCenter/data security/QNSecuritySDK/RSAEncryptor.m"
+            timestampString = "472649152.627287"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "-setCurRSAKeyLength:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

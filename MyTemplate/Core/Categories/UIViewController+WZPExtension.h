@@ -24,15 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
                                                                      bundle:(nullable NSBundle *)storyboardBundleOrNil
                                                                  identifier:(NSString *)identifier;
 
-/**
-    load ViewControlle from Xib file with
-    Xib'name
-    owner              and
-    options
- */
-- (__kindof UIView *) instanceInitialViewFromXibNamed:(NSString *)name
-                                                owner:(id)owner
-                                              options:(NSDictionary *)options;
 @end
 
 NS_ASSUME_NONNULL_END

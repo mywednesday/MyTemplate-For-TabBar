@@ -7,7 +7,6 @@
 //
 
 #import "MyTalksViewController.h"
-#import "MyOperateTipsHelper.h"
 #import <Masonry.h>
 #import "BaseCell.h"
 #import "CustomViewController.h"
@@ -15,6 +14,7 @@
 #import "QRCodeViewController.h"
 #import "CommonModel.h"
 #import "UIView+WZPSeparator.h"
+#import "HelloOC_a.h"
 
 
 typedef NS_ENUM(NSInteger,SJAccountRights) { //账户权限
@@ -113,41 +113,7 @@ typedef NS_ENUM(NSInteger,SJAccountRights) { //账户权限
         make.edges.equalTo(self.view);
     }];
     
-    //----
-    
-    
-    SJAccountRights myRights = SJAccountRightsReturnCoupon | SJAccountRightsVerifyCoupon;
-    if (myRights & SJAccountRightsOrder) {
-        NSLog(@"SJAccountRightsOrder");
-    }
-    if (myRights & SJAccountRightsReturnCoupon) {
-        NSLog(@"SJAccountRightsReturnCoupon");
-    }
-    if (myRights & SJAccountRightsVerifyCoupon) {
-        NSLog(@"SJAccountRightsVerifyCoupon");
-    }
-    if (myRights & (SJAccountRightsReturnCoupon | SJAccountRightsVerifyCoupon)) {
-        NSLog(@"SJAccountRightsReturnCoupon and SJAccountRightsVerifyCoupon");
-    }
 
-
-    
-    
-    NSDate *birthday = [NSDate dateWithTimeIntervalSince1970:0];
-    NSDate *birthday1 = [NSDate dateWithTimeIntervalSince1970:1000000];
-    NSDate *birthday2 = [NSDate dateWithTimeIntervalSince1970:-1000000];
-    
-    
-    
-    NSString *birthdayStr = [self getStringFromDate:birthday];
-    NSString *birthdayStr1 = [self getStringFromDate:birthday1];
-    NSString *birthdayStr2 = [self getStringFromDate:birthday2];
-    NSString *gyu = @"1988-12-12";
-    long long a = [gyu longLongValue];
-    NSDate *adf = [NSDate dateWithTimeIntervalSince1970:[gyu longLongValue]];
-    NSLog(@"\n%@",birthday);
-    NSLog(@"\n%@",birthday1);
-    NSLog(@"\n%@",birthday2);
     
 }
 

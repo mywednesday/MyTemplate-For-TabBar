@@ -22,5 +22,15 @@
 - (NSString *) timeIntervalTo_HHmmss_Format: (NSTimeInterval) interval;
     
     
-    
+
+/**
+ load ViewControlle from Xib file with
+ Xib'name
+ owner              and
+ options
+ */
+- (__kindof UIView *) instanceInitialViewFromXibNamed:(NSString *)name
+                                                owner:(id)owner
+                                              options:(NSDictionary *)options;
+
 @end

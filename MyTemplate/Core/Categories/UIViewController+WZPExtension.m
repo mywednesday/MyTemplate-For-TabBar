@@ -16,15 +16,7 @@
                                                                  identifier:(NSString *)identifier {
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:name bundle:storyboardBundleOrNil];
-    return [storyboard instantiateViewControllerWithIdentifier:@"MainVC"];
+    return [storyboard instantiateViewControllerWithIdentifier:identifier];
 }
-
-- (__kindof UIView *) instanceInitialViewFromXibNamed:(NSString *)name
-                                                owner:(id)owner
-                                              options:(NSDictionary *)options{
-    return [[NSBundle mainBundle]loadNibNamed:@"SJReportSummaryView" owner:owner options:options].firstObject;
-}
-
-
 
 @end

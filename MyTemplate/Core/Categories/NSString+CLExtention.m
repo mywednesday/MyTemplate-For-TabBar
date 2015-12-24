@@ -210,4 +210,17 @@
 -(instancetype)stringOrEmptyStr{
     return self.length ? self : @"";
 }
+
+
+
+
++(NSString *) generateKeyWithBits:(NSUInteger) bits {
+    char data[bits];
+    for (int x=0;x<bits;data[x++] = (char)('A' + (arc4random_uniform(26))));
+    return [[NSString alloc] initWithBytes:data length:bits encoding:NSUTF8StringEncoding];
+    
+}
+
+
+
 @end

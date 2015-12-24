@@ -7,7 +7,6 @@
 //
 
 #import "MyPersonCenterViewController.h"
-#import "MyOperateTipsHelper.h"
 #import "Masonry.h"
 #import "BaseCell.h"
 #import "ProDelegateFirstViewController.h"
@@ -17,7 +16,9 @@
 #import "MultiThreadViewController.h"
 #import "DataPersistenceViewController.h"
 #import "FileManageViewController.h"
+#import "DataSecurityVC.h"
 #import "UIView+WZPSeparator.h"
+#import "UIViewController+WZPExtension.h"
 
 
 
@@ -234,6 +235,24 @@
             }
             break;
         }
+        case 7:
+        {
+            DataSecurityVC *myVC = [[DataSecurityVC alloc] instanceInitialViewControllerFromStoryboard:@"personcenter"
+                                                                                                bundle:nil
+                                                                                            identifier:@"DataSecurityVC"];
+            myVC.leftBarButtonItemStyle = UILeftBarButtonItemStyleImage;
+            myVC.sideSlipForNavBackWorked = YES;
+            myVC.hidesBottomBarWhenPushed = YES;        //隐藏底部导航Bar
+            if(self.navigationController){
+                [self.navigationController pushViewController:myVC animated:YES];
+                
+            }else if(self.presentingViewController){
+                [self presentViewController:myVC animated:YES completion:^{
+                    
+                }];
+            }
+            break;
+        }
         default:
         {
             CusDebugLog(@"indexPath.Row  越界");
@@ -254,7 +273,7 @@
     NSInteger numberofrows = 0;
     switch (section) {
         case 0:
-            numberofrows = 7;
+            numberofrows = 8;
             break;
         default:
             break;
@@ -280,7 +299,8 @@
                                   @[@"OC基本知识",@"NSArray、NSDictionary",],
                                   @[@"多线程",@"NSThread、NSOperation、GCD",],
                                   @[@"数据持久化",@"自定义对象、NSArray、NSDictionary",],
-                                  @[@"文件操作",@"NSFileManager",]];
+                                  @[@"文件操作",@"NSFileManager",],
+                                  @[@"数据安全",@"对称、非对称加密（AES、RSA）",]];
     
     
     if (indexPath.section < 1) {
@@ -288,53 +308,11 @@
         cell.detailTextLabel.text = titleAndContents[indexPath.row][1];
     }
     
-    
-    //设置其他属性
-    switch (indexPath.row) {
-        case 0:
-        {
-            CusDebugLog(@"%@",titleAndContents[indexPath.row][0]);
-            break;
-        }
-        case 1:
-        {
-            CusDebugLog(@"%@",titleAndContents[indexPath.row][0]);
-            break;
-        }
-        case 2:
-        {
-            CusDebugLog(@"%@",titleAndContents[indexPath.row][0]);
-            break;
-        }
-        case 3:
-        {
-            CusDebugLog(@"%@",titleAndContents[indexPath.row][0]);
-            break;
-        }
-        case 4:
-        {
-            CusDebugLog(@"%@",titleAndContents[indexPath.row][0]);
-            break;
-        }
-        case 5:
-        {
-            CusDebugLog(@"%@",titleAndContents[indexPath.row][0]);
-            break;
-        }
-        case 6:
-        {
-            CusDebugLog(@"%@",titleAndContents[indexPath.row][0]);
-            break;
-        }
-        default:
-        {
-            CusDebugLog(@"indexPath.Row  越界");
-            break;
-        }
-    }
+    CusDebugLog(@"%@",titleAndContents[indexPath.row][0]);
     
     
-    [cell addSeparatorToBottom:1 leftEdge:15 rightEdge:15 withHeight:2 withColor:nil];
+    
+    [cell addSeparatorToBottom:0 leftEdge:15 rightEdge:15 withHeight:2 withColor:nil];
     return cell;
 }
 
